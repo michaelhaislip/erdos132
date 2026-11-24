@@ -12,7 +12,7 @@ This project records experiments, not a claimed solution or new theorem.
 ## Focused literature checkpoint, 2026-11-24
 
 `LITERATURE_REVIEW132.md` compares the target-three norm and recent
-Mersenne-weight criterion with ten identified sources. It translates
+Mersenne-weight criterion with identified sources. It translates
 our odd Pell terms into first Lehmer parameters (8,-1) and associated
 parameters (12,1), and identifies the norm as a primitive homogeneous
 cyclotomic factor. A standalone checker verifies 53 term translations
@@ -22,8 +22,11 @@ Bumby's Diophantine theorem is an established input. The inspected
 square-sequence and primitive-factor theorems do not directly imply
 the recent criterion under their displayed hypotheses. Finite differences
 are an established method. No matching exact criterion was found among
-the inspected theorems; priority remains undetermined. Original
-Rotkiewicz sources from 1983 and 1986 and later citations remain to be
+the inspected theorems; priority remains undetermined. The original
+Rotkiewicz 1983 paper has now been read from the user-supplied scan,
+resolving the conflicting later quotations. Its applicable theorem
+excludes U_p=p*x^2, a different equation from ours. The 1986 chapter,
+Schinzel's primitive-factor paper and further citations remain to be
 checked. The report and selected source ledger distinguish those gaps
 from verified comparisons; this is not an exhaustive priority review.
 

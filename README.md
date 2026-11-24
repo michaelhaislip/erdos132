@@ -11,9 +11,12 @@ new mathematical result.
 [LITERATURE_REVIEW132.md](LITERATURE_REVIEW132.md) records a focused
 first literature pass on the target-three results and Mersenne criterion.
 It identifies the standard Lehmer-sequence parameters and checks the
-hypotheses of nearby published results. No directly matching criterion
-was found among the inspected theorems, but relevant older sources
-remain unchecked and priority is undetermined.
+hypotheses of nearby published results, including the user-supplied
+original Rotkiewicz paper. No directly matching criterion was found
+among the inspected theorems; further sources remain unchecked and
+priority is undetermined.
+The [follow-up record](LITERATURE_AUDIT_RESPONSE.md) distinguishes
+Claude's source readings from the independently checked comparisons.
 
 ## Latest result
 

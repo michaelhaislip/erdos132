@@ -1,0 +1,40 @@
+{
+  "source": "Local board discussions 7 and 8; original review requests, reports and Codex integration record",
+  "baseline_commit": "ae8a4e7",
+  "files": [
+    {
+      "path": "source/BOARD_MESSAGE_18.json",
+      "bytes": 4262,
+      "sha256": "992070c82154cce75abdf3d1a60f7ddc53654a4b4de5efabdb7d564417b17722"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_19.json",
+      "bytes": 11780,
+      "sha256": "6e2bcf456132c534eef41cefa79b07182250397d01d9bbdf46cda0642f953d61"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_20.json",
+      "bytes": 3923,
+      "sha256": "8cb035e9289c53bc85038bb1594ed08501c1c4df8e26090f80b230e51cb8c633"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_21.json",
+      "bytes": 10013,
+      "sha256": "370501995fd65f54d7a3f38732cfdc12ed7d93375bca33245b2d5acc2bd389c5"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_22.json",
+      "bytes": 1036,
+      "sha256": "bb502e5ff1a984e822b28fe3b5c7638116d64c8a9cb6ea93cff4b75637a3cc18"
+    }
+  ],
+  "supplied_pdf": {
+    "path": "C:/Users/Michael/Downloads/Applications_of_Jacobi_s_symbol_to_.pdf",
+    "bytes": 805903,
+    "sha256": "13e78d8e4839adf5ee83730cd49f848ba0c23b0be53ad57dadfd48f12e7cc80c",
+    "pdf_pages": 13,
+    "printed_pages": "163-187",
+    "included_in_repository": false
+  },
+  "limits": "Literature applicability review only; Claude ran no scripts; 1986 chapter full text unread; no novelty determination"
+}

@@ -1,13 +1,16 @@
 # Focused literature review: target order 3 and the Mersenne criterion
 
-Checked 2026-11-24 against the working results at commit `00e39ba`.
-This is a bounded first pass, not a determination of publication priority.
+Checked 2026-11-24 against the working results at commit `00e39ba`;
+updated after Claude board discussions 7 and 8 and a direct check of the
+user-supplied Rotkiewicz paper. This is a bounded review, not a
+determination of publication priority. The model reports and review
+limits are preserved in `audits/claude_literature_20261124/`.
 
 The established ingredients have identifiable precedents. No directly
 matching statement of the Mersenne-weight criterion was found among the
 theorems inspected below. That leaves its priority **undetermined**:
-two relevant older references remain unread, and this search does not
-cover all later papers citing them. Erdős #132 and our general axis
+the 1986 Patras chapter and other follow-up sources remain unread, and
+this search does not cover all later papers citing them. Erdős #132 and our general axis
 classification remain unresolved.
 
 ## Claims being compared
@@ -120,11 +123,49 @@ and displayed theorem assumptions were inspected, not every proof.
 Their prime-index results are also different in scope from our arbitrary
 composite-index factor criterion.
 
-There is a reason to inspect the original Rotkiewicz paper: the two later
-papers display the Jacobi-symbol conditions of R1/R2 in different
-orientations. We do not resolve that discrepancy by choosing one version.
-It does not affect the parameter mismatch for R2 or either later main
-theorem.
+The original source now resolves the differing Jacobi-symbol orientations
+in these quotations: Luca–Walsh reproduce Theorems 3 and 5 faithfully;
+Yuan–Li reverse the symbols. Their printed version places an even
+parameter in a Jacobi denominator. The original and both later papers
+use the same root parameters, so this is an apparent transcription error,
+not a change of parameters. It does not affect the congruence mismatch
+for R2 or either later main theorem.
+
+### Rotkiewicz (1983): original source now inspected
+
+[Rotkiewicz, *Applications of Jacobi's symbol to Lehmer's numbers*][Rot83],
+Acta Arith. 42, 163–187, is available in the user-supplied scan. It has
+13 PDF pages containing 25 printed pages. Claude reports reading the
+whole paper; Codex independently inspected all rendered spreads, with
+particular attention to definitions, theorem hypotheses, and primitive
+factors. Neither review is a verification of every proof.
+
+Theorem 3 (p. 180) applies to odd nonsquare indices and requires either
+`4|L, M=1 mod 4, (L/M)=1`, or
+`L=3 mod 4, 4|M, (M/L)=1`. Theorem 4 has the same parameter
+restrictions, with additional index conditions. Our first Lehmer
+parameters `(8,-1)` satisfy neither case.
+
+Theorem 5 (p. 182) *does* apply: its second case is
+`4|L, M=-1 mod 4, (L/M)=1`, and the parameter symbol here has
+absolute denominator 1. It proves `U_p != p*x^2` for odd primes p.
+That is a different equation from `U_p=x^2` or `N_e=x^2`.
+Taking `(12,1)` as first Lehmer parameters instead gives W_n;
+Theorem 3's conclusion for W_n does not transfer to U_n.
+
+For our parameters Theorem 2, formula (5), p. 165, gives
+`(U_n/U_m)=+1` for coprime positive odd indices; Lemma 1(b) gives
+`U_n=1 mod 4`. Thus a Mersenne witness prime `ell>=7`, which is
+3 modulo 4, is not itself such a sequence-term denominator.
+These formulas do not directly evaluate `(N_e/ell)`.
+
+The proof of Theorem 4 defines `Q_k=Phi_k(alpha,beta)` on p. 181.
+For our roots and odd e this is exactly N_e. Its presence is relevant,
+but the factorization/coprimality argument is used with other parameter
+hypotheses; no applicable nonsquare or Mersenne-character theorem for
+our N_e was identified. The integer-root variants and the `2||M`
+results also do not supply our criterion. This closes the original-paper
+access gap without proving priority or the general norm conjecture.
 
 ### Granville (2012): the nearest broad primitive-factor result
 
@@ -185,32 +226,41 @@ Earlier leads are preserved in `PROOF_NOTES.md` and `RESEARCH.md`; this
 review does not clear them or reinterpret public informal posts as
 peer-reviewed proofs.
 
-## Unresolved leads and the next bounded step
+## Remaining leads and scope of the completed pass
 
-1. Read Rotkiewicz, *Applications of Jacobi's symbol to Lehmer's
-   numbers*, Acta Arith. 42 (1983), 163–187,
-   [publisher record][Rot83], DOI `10.4064/aa-42-2-163-187`.
-   The publisher record was verified, but original full-text retrieval
-   reached an archive bot challenge. Only the later papers' quotations
-   were inspected; this reference is **not cleared**.
+1. Rotkiewicz (1983) has now been inspected from the user-supplied
+   original; the source comparison is above. Further forward-citation
+   coverage is incomplete.
 2. Obtain Rotkiewicz, *Problems on Fibonacci numbers and their
    generalizations*, Math. Appl. 28 (1986), 241–255, identified in
-   [Granville's references][Granville]. Full text was not inspected.
-3. Follow later citations specifically for the primitive factor at
+   [Granville's references][Granville]. Claude reports inspecting its
+   zbMATH review by K. Szymiczek, which describes Fibonacci symbols and
+   pseudoprimes; that is not full-text inspection. No direct relevance
+   was found in the reported review. The chapter remains unchecked.
+3. Inspect Schinzel, *On primitive factors of Lehmer numbers I*,
+   Acta Arith. 8 (1963), 213–223, reference [8] in Rotkiewicz (1983).
+   It is an unread lead, not an applicable theorem established here.
+4. Follow later citations specifically for the primitive factor at
    `(L,M)=(8,-1)`, its associated `(12,1)` description, and modular
    characters at Mersenne primes. Search both e and 2e conventions.
+   Claude's limited later-source pass found no direct match. Its
+   Juricevic thesis inspection covered the abstract, contents and tables,
+   not the full argument. Counts of primitive divisors alone do not
+   supply an odd valuation or nonsquare conclusion.
 
 These are research tasks for the agents, not reading assignments for
 the user. No author contact or public novelty announcement has been made.
 We can retain the present proofs and computations as working results.
-Before spending another long session generalizing the weight theorem,
-the most useful next literature work is the original Jacobi-symbol
-source and its follow-up, rather than another large numerical census.
+The original Jacobi-symbol source no longer blocks this checkpoint.
+Remaining literature work concerns its follow-up and primitive-factor
+references; mathematical progress still requires an argument beyond
+the displayed square-theorem hypotheses.
 
 The selected query/access ledger is `literature_review132_sources.json`.
 Search-engine snippets and automated mathematical summaries were used
-only as leads, not as authority for theorem comparisons. No MathSciNet
-or zbMATH coverage is claimed. Failure to find a formula in this pass is
+only as leads, not as authority for theorem comparisons. A limited
+zbMATH-record/review check is reported by Claude; no comprehensive
+MathSciNet or zbMATH search is claimed. Failure to find a formula in this pass is
 not evidence sufficient to call it previously unpublished.
 
 [Bumby]: https://journals.msp.org/mscand/article/view/2474

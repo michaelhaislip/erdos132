@@ -1,6 +1,8 @@
 {
   "review_date": "2026-11-24",
   "baseline_commit": "00e39ba",
+  "followup_baseline_commit": "ae8a4e7",
+  "followup_board_responses": [19, 21],
   "scope": "Bounded first pass: target-order-three norms, Mersenne-weight criterion, and direct geometric context",
   "priority_assessment": "undetermined",
   "ledger_scope": "Selected substantive queries and sources; not an exhaustive search history",
@@ -98,22 +100,56 @@
       "doi": "10.4064/aa-42-2-163-187",
       "url": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/42/22/103738/applications-of-jacobi-s-symbol-to-lehmer-s-numbers",
       "archive_pdf_url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa42/aa4224.pdf",
-      "inspected": "Publisher metadata and later primary papers' quotations only",
-      "assessment": "Unresolved high-priority lead",
-      "limit": "Original full text not inspected; access reached archive bot challenge"
+      "inspected": "Claude reports full original pp.163-187; Codex inspected all 13 rendered spreads, focusing on definitions, theorem hypotheses, and primitive factors. Original Thms 2,3,4,5 and Q_k on p.181 were compared directly.",
+      "assessment": "At (8,-1), Thm 2 eq.(5) gives character +1 between coprime odd-index terms; Thm 5 excludes U_p=p*x^2. Thms 3-4 have different parameter hypotheses. No directly applicable theorem for our Mersenne criterion or general norm conjecture identified. Original symbol orientations match Luca-Walsh; Yuan-Li reverses them.",
+      "local_source": "C:/Users/Michael/Downloads/Applications_of_Jacobi_s_symbol_to_.pdf",
+      "local_source_sha256": "13e78d8e4839adf5ee83730cd49f848ba0c23b0be53ad57dadfd48f12e7cc80c",
+      "local_source_bytes": 805903,
+      "pdf_pages": 13,
+      "printed_pages": "163-187",
+      "limit": "Bounded applicability review, not a verification of all proofs or a priority determination. Forward-citation coverage incomplete. PDF is not included in the repository."
     },
     {
       "id": "rotkiewicz1986",
       "title": "Problems on Fibonacci numbers and their generalizations",
       "bibliography": "Fibonacci numbers and their applications (Patras, 1984), Math. Appl. 28 (1986), 241-255",
       "located_via": "Granville reference 6",
-      "inspected": "Bibliographic citation only",
-      "assessment": "Unresolved lead",
-      "limit": "No full-text inspection or theorem applicability claim"
+      "inspected": "Bibliographic citation; Claude reports reading the zbMATH review by K. Szymiczek (Zbl 0594.10004), not the full chapter",
+      "assessment": "No direct relevance found in the reported review; unresolved full-text lead",
+      "limit": "Review inspection is reported by Claude and has not been independently reproduced here; full text unread"
+    },
+    {
+      "id": "schinzel1963",
+      "title": "On primitive factors of Lehmer numbers I",
+      "bibliography": "Acta Arithmetica 8 (1963), 213-223",
+      "located_via": "Reference 8, p.186 of supplied Rotkiewicz 1983 original",
+      "inspected": "Bibliographic reference only",
+      "assessment": "Unread primitive-factor lead",
+      "limit": "No theorem applicability or priority claim"
+    }
+  ],
+  "claude_reported_later_leads": [
+    {
+      "title": "R. Juricevic, Lehmer Numbers with at Least 2 Primitive Divisors, Waterloo thesis (2007)",
+      "url": "https://uwspace.uwaterloo.ca/bitstreams/dc24ca7f-d2c2-400f-b42d-57719f0e532e/download",
+      "inspection_reported": "Abstract, contents and tables only",
+      "limit": "Not independently inspected by Codex; primitive-divisor counts alone do not imply odd valuation"
+    },
+    {
+      "title": "E. L. Roettger and H. C. Williams, Some Remarks Concerning the Lucas-Lehmer Primality Test, JIS 28 (2025), 25.2.5",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.html",
+      "inspection_reported": "Lucas-Lehmer starting-value lead; precise full-text coverage not stated",
+      "limit": "Not independently inspected by Codex; not counted as a cleared source"
+    },
+    {
+      "title": "OEIS A158892",
+      "url": "https://oeis.org/A158892",
+      "inspection_reported": "Primality indices for the same algebraic unit",
+      "limit": "Lead only; not a theorem proving our nonsquare or character assertion"
     }
   ],
   "search_limits": [
-    "No MathSciNet or zbMATH search claimed",
+    "No comprehensive MathSciNet or zbMATH search claimed; Claude reports limited zbMATH API record/review checks",
     "Backward and forward citation coverage incomplete",
     "Automated mathematical summaries and informal public posts not treated as theorem authority",
     "Negative search results do not establish priority",
