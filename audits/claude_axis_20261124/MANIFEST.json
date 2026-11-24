@@ -1,0 +1,25 @@
+{
+  "archive_sha256": "fdb62ad6db8c981ae28c097e112384f0f4af53f913c879cdfcc17ff94da0a6fd",
+  "members": {
+    "conj/fixed_sigma.py": "0683381cfcb6c00a84cf6a8d8698343d11ee80a734900dc0b9394a16d57c9b8d",
+    "conj/cluster_7_1001.jsonl": "87038ce5627a629a4c613faf9bd96a0e15bfa69f0382c62d75e7c0703ffd4c91",
+    "conj/sweep.sh": "c271af7b7679c29411d53b684bb6f33c5389443ce54938fdd017d8ad3cc818f9",
+    "conj/analyze_sweep.py": "ecfdb4d542b0d0fed6fe109f2cd4fbffad24a143a8fe474379c6ca29805a4da0",
+    "conj/FAILED_cluster_7_801_tol1e-9.jsonl": "54ab02097e12fdfda85a8f160856e8bee684fb6fd7cb4eb7528c97d30c0ee12f",
+    "conj/sweep_7_2001.jsonl": "7c634d69620111e3809f3cdf44a0aea6d614ad8178b5beff2d6f040665cedeef",
+    "conj/unexplained_big.txt": "bfedba4fa2a3d29042311a24d50433aeeb17b7a31c82bb9a2a4d05c2b62a1703",
+    "conj/cluster_composite.jsonl": "22da265aeff951f27238970a8ee9128ab5e9310f73b6b3f56c9f53ac758044e3",
+    "conj/fixed_sigma2_7_301.txt": "24db8d085c643a67be6f98e91cccc1fce76439f0dcf2024a6041304038d88e7b",
+    "conj/special.jsonl": "59bd4cfa8c60b22d1b2e83cd9e0a8c73c1bc709fbfc5fe02dd01ea004c90df32",
+    "conj/sieve.py": "29e17551d6826266ce984dbc25b1c8c0f9ec262d5b8cb36c74dd811516868163",
+    "conj/sweep_2003_5001.jsonl": "d887913cb810c2660a0968b08ea9d9d48c3ed12eb4c9d763c60796bc07164e34",
+    "conj/galois_7_2001.jsonl": "86d58d76ae2d4b4b78aa5804cbb87dcaab62ec98e299644b45e68bf512d319cd",
+    "conj/galois_2003_4001.jsonl": "3184c6cd201f54e209d60fc278d6a3a5386376f579fbd9e605064ff6fd303762",
+    "conj/galois_sieve.py": "ba41105fa6a22455e6f869840073a9f2dd4cf184c88a247963e63888123b2c85",
+    "conj/exactcheck.py": "0c80521f6ecdcf55bfa7b0f86270d437ee302bb7bc3b40ea6db36d0533716312",
+    "conj/clusterscan.py": "2f31c0a2d4140603535d0acedb82ba710d1422096dc319526f6db06db36a06f9",
+    "conj/run_all.sh": "2fda8338dd3acf6d9530b29998bdeb54224db5a0ebae5dee84ec31bfcd8da09c",
+    "conj/family_identities.py": "8f319759f2b58269d4f7c13438405c351083c7c8beef9fcf5fd18221c4160a67",
+    "conj/indep.py": "70bcb0d5449889fd4b0a5a44120adff8d7444283b4d324edbdc1cc9f03188b93"
+  }
+}

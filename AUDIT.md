@@ -91,6 +91,12 @@ The established working bound remains e>=ceil((m+1)/10).
 
 ## Remaining limitations
 
+Expanded-packet update: `CLAUDE_AXIS_REVIEW.md` reviews the subsequently
+supplied research log, short prime valuation proof, conditional family
+classification reduction, and Lemma G. It records two repairable proof
+gaps and the corrected arguments. This does not establish the general
+admissibility classification or formally verify the large computation.
+
 Scope update: the later proof in `PRIME_POLYGON_NOTES.md` was developed
 after this audit. Claude's favorable review and the independent finite
 checks must not be described as a review of its Galois/norm argument.

@@ -262,3 +262,31 @@ obstructions for 23 primes through 101, and the cubic factorization in
 the real inequality. These support the written proof, not a formal
 verification. The new argument is outside the scope of the prior Claude
 review; novelty and external validation remain unestablished.
+
+## Expanded Claude packet and detailed proofs
+
+The user supplied a research packet with per-order square-residue sieves,
+a reduced-conductor Galois sieve, numerical scans, exact near-miss checks,
+and later the full `RESEARCH_LOG.md`. Only the log was added in the updated
+archive; the earlier 20 files were unchanged. The original files and hashes
+are preserved under `audits/claude_axis_20261124/`.
+
+`CLAUDE_AXIS_REVIEW.md` records the review. The prime valuation proof and
+Lemma G are sound on review. The three-family coincidence reduction needs
+two small repairs: a complete folded-index F2 partner count, and the s=t
+case in heptagon root distinctness. Both repairs are supplied. The test
+`verify_family_indices132.py` passed 83,498 root-index assignments for 166
+odd multiples of three and exact rational heptagon controls.
+
+Saved direct-sieve logs cover 32,508,218,314 pairs, all odd orders 7..5001
+and 19 selected orders (18 above 5001). We audited coverage and survivors, replayed selected
+sieve and Galois cases, and exactly rejected all six numerical near misses.
+We did not replay the full large census. The archived sigma_2 transcript
+supports only the range through 301; the claimed 1001 range was not
+independently reproduced. The numerical cluster scan is corroboration,
+not an exact exclusion certificate.
+
+The general admissibility classification remains open. The heptagon
+harmlessness statement is conditional on the known-family classification;
+the source's detailed proof states that qualification. No general-plane
+solution or priority claim follows from this review.

@@ -10,6 +10,18 @@ new mathematical result.
 
 ## Latest result
 
+The expanded Claude research packet is reviewed in
+[CLAUDE_AXIS_REVIEW.md](CLAUDE_AXIS_REVIEW.md), with the source log and raw
+outputs preserved under `audits/claude_axis_20261124/`. Its conditional
+three-family reduction withstands review after two small proof repairs.
+The general admissibility classification is still unproved. The large
+computed range is supplied evidence with local spot checks, not a full
+locally repeated census. Run the new integer index controls with:
+
+```sh
+python verify_family_indices132.py
+```
+
 [PRIME_POLYGON_NOTES.md](PRIME_POLYGON_NOTES.md) gives a stronger working
 proof for prime orders: an added axis point matches at most one old chord
 length, and any noncentral, nonvertex point introduces at least
