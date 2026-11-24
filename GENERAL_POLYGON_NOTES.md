@@ -180,3 +180,8 @@ novelty. No external messages or submissions have been made.
 The remaining general-problem gap is substantial: arbitrary planar sets
 need not contain a large regular polygon. This result does not address
 that obstacle or resolve #132 for all point configurations.
+
+Prime-order update: `PRIME_POLYGON_NOTES.md` gives a stronger working
+bound for prime p>=7 using total reality and a norm obstruction. It
+handles a regular p-gon plus up to p-3 arbitrary additional points.
+That new argument has not received the prior second-model audit.

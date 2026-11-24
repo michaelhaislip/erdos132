@@ -10,6 +10,22 @@ new mathematical result.
 
 ## Latest result
 
+[PRIME_POLYGON_NOTES.md](PRIME_POLYGON_NOTES.md) gives a stronger working
+proof for prime orders: an added axis point matches at most one old chord
+length, and any noncentral, nonvertex point introduces at least
+`(p-1)/2` new distances. Consequently #132 holds for a regular prime
+`p`-gon (`p >= 7`) plus up to `p-3` arbitrary distinct added points.
+Example: a regular 101-gon plus any 98 added points. This new argument
+has not yet received the second-model audit described below.
+
+```sh
+python verify_prime132.py
+```
+
+The script checks exact norm products and supporting algebra for the
+23 primes from 7 through 101. It does not verify the general Galois or
+geometric reasoning; the theorem rests on the written argument.
+
 [GENERAL_POLYGON_NOTES.md](GENERAL_POLYGON_NOTES.md) gives an elementary
 working proof that a point other than a vertex or the center introduces
 at least `ceil((m+1)/10)` new distance values to a regular odd m-gon.

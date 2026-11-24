@@ -91,6 +91,10 @@ The established working bound remains e>=ceil((m+1)/10).
 
 ## Remaining limitations
 
+Scope update: the later proof in `PRIME_POLYGON_NOTES.md` was developed
+after this audit. Claude's favorable review and the independent finite
+checks must not be described as a review of its Galois/norm argument.
+
 - No formal verification or human mathematical review.
 - No established literature novelty.
 - The independent checker shares the mathematical candidate reduction,

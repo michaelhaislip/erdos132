@@ -241,3 +241,24 @@ diagnostic mode resumed 59,61,63 without changing the exact candidate
 calculations. These modes are recorded per order. The observed old-match
 bound h<=2 was reproduced throughout that finite range and remains a
 conjecture beyond it.
+
+## Prime-order proof of a stronger overlap bound
+
+`PRIME_POLYGON_NOTES.md` proves a working prime-order strengthening:
+for prime p>=7, a noncentral, nonvertex axis point has at most one old
+chord match. Two matches force the signed radius into the real cyclotomic
+field. A Galois automorphism sends any old target index to 1. Nonnegative
+discriminants leave source indices 0,1,(p-1)/2; norm-square obstructions
+exclude the first and last. The remaining case makes the matched target
+unique, contradicting two matches.
+
+This yields at least (p-1)/2 new distances for any noncentral, nonvertex
+point and #132 for a regular prime p-gon plus up to p-3 arbitrary added
+points. For p=101 this permits 98 added points, versus 20 from the uniform
+odd-order bound. The composite-order h<=2 conjecture remains unresolved.
+
+`verify_prime132.py` checked exact norm products and rational-square
+obstructions for 23 primes through 101, and the cubic factorization in
+the real inequality. These support the written proof, not a formal
+verification. The new argument is outside the scope of the prior Claude
+review; novelty and external validation remain unestablished.
