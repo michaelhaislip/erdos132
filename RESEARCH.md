@@ -180,3 +180,28 @@ example, 17-point sets containing a regular 13-gon, but not arbitrary
 in this project. A bounded novelty search found no directly matching
 two-new-distance result; priority is unestablished and outside review
 has not occurred.
+
+## Fifth pass: uniform overlap argument
+
+`GENERAL_POLYGON_NOTES.md` gives a working analytical proof of the bound
+ceil((m+1)/10) on new distances from a noncentral, nonvertex point to a
+regular odd m-gon. Equal distances force an axis; the ordered squared
+distance lists are affinely related. Three consecutive common entries
+force signed radius +/-1 by the chord recurrence. The +1 case is an
+existing vertex; -1 has no common chord values for odd m. Counting the
+remaining runs bounds the overlap and gives the uniform result.
+
+This handles every m>=21 analytically. The prior exact small-order checks
+complete the three-new-distance statement for every odd m>=7. It also
+gives #132 for a regular m-gon plus up to
+2*max(3,ceil((m+1)/10))-2 arbitrary added points. For m>=21 the analytical
+bound needs no finite check. A regular 101-gon plus any 20 additional
+points is a concrete example. The counting inequality further gives a
+linear number of qualifying distances in this subclass when the ratio
+of added points to polygon vertices stays below 1/5 by a fixed amount.
+
+The new verifier checked 6,127 deletion patterns and 24 recurrence
+algebra controls. These supplement a hand-written general proof; they
+do not formally verify it. No external review or priority determination
+has been performed. The obstacle of arbitrary nonregular planar sets
+remains untouched.

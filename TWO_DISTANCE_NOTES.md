@@ -132,3 +132,8 @@ bound holds for every odd m>=7. Seven computed orders do not establish
 that. A useful exact-arithmetic target is to explain why the composite
 orders 9 and 15 admit extra two-match radii, yet none passes the final
 distance-count test.
+
+Update: `GENERAL_POLYGON_NOTES.md` supplies an analytical bound for every
+odd order. It establishes the three-new-distance statement for m>=21;
+the finite checks in this file cover the remaining orders. The general
+problem for planar sets without a regular-polygon core remains unresolved.

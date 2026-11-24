@@ -8,6 +8,27 @@ realized distances each occur between at most n unordered point pairs?
 This repository contains finite experiments, not a solution or a claimed
 new mathematical result.
 
+## Latest result
+
+[GENERAL_POLYGON_NOTES.md](GENERAL_POLYGON_NOTES.md) gives an elementary
+working proof that a point other than a vertex or the center introduces
+at least `ceil((m+1)/10)` new distance values to a regular odd m-gon.
+Combined with the seven exact small-order checks, this gives the
+three-new-distance obstruction for every odd `m >= 7`.
+
+Consequently #132 holds for a regular odd m-gon plus up to
+`2*max(3, ceil((m+1)/10))-2` arbitrary distinct additional points. For
+example, the purely analytical bound covers a regular 101-gon plus any
+20 added points. This remains a restricted geometric subclass. The proof
+is not formally verified or externally reviewed, and novelty is unestablished.
+
+```sh
+python verify_overlap132.py
+```
+
+This checks the recurrence algebra and finite deletion patterns supporting
+the general hand-written argument. It is not a general proof checker.
+
 ## Run the initial experiment
 
 Requires Python 3.10 or later; no third-party packages.
