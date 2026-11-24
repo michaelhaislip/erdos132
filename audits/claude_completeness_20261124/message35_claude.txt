@@ -1,0 +1,108 @@
+# Claude research contribution, discussion 13: global square-class route for target 3
+
+**Summary.** The global route works. Lemma A below, which I have proved, shows that being abelian is equivalent to A being a square in the real cyclotomic field. Lemma B then turns "A is a square" into an equation for roots of unity on a fixed plane curve. That gives a route to a uniform result that never needs a primitive Lehmer norm to be nonsquare. One finite computation remains, described in section 3.
+
+I could only read files in this session and ran no computations, so everything below is by hand. I edited no files.
+
+**Notation.** e > 1 is odd, ζ = ζ_e, F = Q(ζ)^+, C = ζ + ζ⁻¹, A = C² + 8, δ = ζ − ζ⁻¹ (so δ² = C² − 4), L = F(√A), and β = (C + √A)/2.
+
+## 1. Proved lemmas
+
+**Lemma 0 (local facts).**
+- **(a) C is a unit.** C = ζ⁻¹(1 − ζ⁴)/(1 − ζ²), and ζ², ζ⁴ are primitive e-th roots of unity because e is odd.
+- **(b) A is a local square at every prime above 2.** F is unramified at 2 and A = C²(1 + 8C⁻²). An element 1 + 8x with x integral is a square in any unramified extension of Q₂ by Hensel's lemma: for f(y) = y² − u at y = 1, v(f(1)) ≥ 3 > 2·v(f′(1)) = 2. So L/F is split at 2.
+- **(c) A is a unit at 3 when 3 ∤ e.** A = (C − 1)(C + 1) + 9, with C + 1 = ζ⁻¹(1 − ζ³)/(1 − ζ) and C − 1 = ζ⁻¹(1 + ζ³)/(1 + ζ). Both are units when 3 ∤ e. Consequently A ≡ δ² mod 3, because A = δ² + 12.
+- **(d) A is totally positive,** so L is totally real.
+
+**Lemma A (abelian ⟺ square).** For every odd e ≥ 3, √A lies in some cyclotomic field if and only if A ∈ F². In that case √A ∈ F.
+
+Proof:
+1. Suppose L/Q is abelian. Let q be an odd prime with q ≠ 3.
+   - L/Q is Galois and F/Q is Galois, so the ramification index of L/F is the same at every prime 𝔮 of F above q.
+   - Since q is odd, that index is 2 exactly when v_𝔮(A) is odd. So the parity of v_𝔮(A) does not depend on which 𝔮 | q we pick.
+   - Suppose v_𝔮(A) were odd. Then σ₂𝔮 divides σ₂(A) to an odd power, and also divides A to an odd power by the constant parity.
+   - But σ₂(A) = A(C² − 12) + 108, so σ₂𝔮 would divide 108, forcing q ∈ {2, 3}. Contradiction.
+2. So L/F is unramified at every finite prime not dividing e:
+   - at q ≥ 5 by step 1;
+   - at 2 by Lemma 0(b);
+   - at 3 when 3 ∤ e by Lemma 0(c). When 3 | e, 3 divides e anyway.
+
+   Hence L/Q is ramified only at primes dividing e, and by Kronecker–Weber L ⊂ Q(ζ_N) for some N with the same prime support as e and e | N.
+3. Let P be the kernel of (Z/N)* → (Z/e)*. It has order N/e, which is odd. Put H = Gal(Q(ζ_N)/L) and H₀ = Gal(Q(ζ_N)/F). Then [H₀ : H] = 2 and P ⊂ H₀. The image of P in H₀/H has odd order inside a group of order 2, so it is trivial and P ⊂ H.
+4. Therefore L ⊂ Q(ζ_e). Since L is totally real, L ⊂ F, so A ∈ F². ∎
+
+Consequences:
+- There is no hidden abelian square class: no rational twist A·d, and no cyclic degree-2n extension.
+- N_e must be a perfect square including its factors of 3. That removes the "outside 3" weakening of condition (1) in `COMPOSITE_TARGET3_NOTES.md`.
+- e = 3 survives: A = 9.
+
+**Corollary (3-adic certificate).** If 3 ∤ e and −1 ∈ ⟨3⟩ ⊂ (Z/e)*, then √A is not cyclotomic.
+
+Proof:
+- Because −1 ∈ ⟨3⟩, each prime of F above 3 is inert in Q(ζ)/F.
+- Complex conjugation acts as the nontrivial residue automorphism and sends δ to −δ ≢ δ. So δ does not lie in the residue field k of F.
+- If A = s² with s ∈ F, then s ≡ ±δ, which puts δ in k. Contradiction.
+
+Condition: −1 ∈ ⟨3 mod e⟩ holds exactly when every p | e has ord_p(3) even and all the 2-adic valuations v₂(ord_p 3) are equal.
+- This is strictly stronger than the norm-mod-3 test. Example: p = 37, where 3⁹ ≡ −1 mod 37 but N ≡ +1 mod 3.
+- It also covers e = 145 = 5·29 (3¹⁴ ≡ −1 mod 145), a mixed order with N_e ≡ 1 mod 3.
+- It misses e = 35 (v₂ values 2 and 1) and every e with 3 | e.
+
+**Lemma B (rigidity).** Let e > 3 be odd and suppose A ∈ F², so β ∈ F. Put π = β − ζ. Then ππ̄ = β² − Cβ + 1 = 3.
+- **Choice of a.** Take a ∈ (Z/e)* in the decomposition group of 3 with a ≢ ±1:
+  - a = 3 if 3 ∤ e;
+  - if e = 3^k·f with 3 ∤ f, take a ≡ 1 mod f and a ≡ 1 + 3^(k−1) mod 3^k. Then ζ^a = ωζ with ω a primitive cube root of unity. This needs f > 1 or k ≥ 2.
+  - For e = 3 no such a exists.
+- **σ_a(π) = επ with ε a root of unity.** σ_a fixes every prime above 3 (the group is abelian), so σ_a(π)/π is a unit. Since complex conjugation commutes with every embedding, all conjugates of π have absolute value √3, so that unit has absolute value 1 in every embedding. By Kronecker it is a root of unity, so ε ∈ μ_{2e}.
+- **ε is not ±1.** ε = ±1 would force ζ^a − ζ^(−a) = ±(ζ − ζ⁻¹). For roots of unity, x − x⁻¹ = y − y⁻¹ implies x = y or xy = −1. For odd order this gives a ≡ ±1. Contradiction.
+- **The curve equation.** Conjugate σ_a(β) − ζ^a = ε(β − ζ) and subtract. Writing δ_a = ζ^a − ζ^(−a) and t = ε + ε⁻¹:
+
+      (ε − ε̄)β = ζ^(−a) − ζ^a + εζ − ε̄ζ⁻¹
+      β − ζ = δ(ε̄ − R)/(ε − ε̄),   where R = δ_a/δ
+
+  Substituting into ππ̄ = 3 gives
+
+      δ_a² − t·δ_a·δ + δ² = 3(t² − 4),   with ε = ±ζ^j.        (★)
+
+  For a = 3, R = C² − 1, and with u = C², (★) becomes
+
+      u³ − (6 + t)u² + (10 + 5t)u + 4 − 4t − 3t² = 0.
+
+So (★) says that (x, y) = (ζ, ζ^j) is a torsion point on an explicit plane curve Γ:
+- 3 ∤ e: two curves over Q, one for each sign s;
+- 3 | e: replace x^a by ωx, giving curves over Q(ω).
+
+**No component of Γ is a torsion coset.** Substitute x = c₁z^p, y = c₂z^q and look at the top-degree coefficient in z:
+- The tied cases have leading coefficient 1 − r − 3r² with |r| = 1 for the 3 ∤ e curve, and −T(ωc₁² + 3T) for the 3 | e curve. Neither vanishes, by comparing absolute values.
+- In the 3 | e curve, the special constant case t = −1 reduces (★) to the constant 6 ≠ 0.
+
+## 2. Approaches that fail or stall
+
+- **The prime 2 never obstructs.** A ≡ C² mod 8 is a local square at 2 (Lemma 0(b)). It only helps the unramified step in Lemma A.
+- **Galois commutativity adds nothing beyond normality.** A central Z/2 extension of a cyclic group is abelian, so for prime-power e normal already means abelian. Lemma A also makes the general case moot.
+- **Uniform local nonresidue witnesses only work at 3.** Only q | 12 makes A ≡ δ² special. For other primes you would need a prime q ≡ 1 mod e with q ≪ e² plus a Weil-sum bound over μ_e, which is beyond Linnik even under GRH.
+- **Descending along relative norms N_{F_e/F_d} gives nothing new.** At 3 the relative norm is ≡ ν² with ν̄ = (−1)^m·ν, where m = [F_e : F_d], so it reproduces the same ⟨3⟩ test.
+- **Averaging the real form of (★) over Galois conjugates is too weak.** The real form is |sin 3θ − ε sin θ|² = 3 sin²φ. Averaging with Ramanujan sums gives −½ = μ(e)/φ(e) + (small terms) with bounds up to about 1.1, so there is no contradiction for small e.
+- **The norm/Lehmer route is now strictly stronger than needed.** By Lemma A, A ∉ F² is equivalent to the target.
+
+## 3. The single most promising missing lemma
+
+**Missing lemma.** The curves Γ have no torsion points (x, y) with x of odd order e > 3.
+
+Lang / Ihara–Serre–Tate gives finiteness immediately, since there is no torsion-coset component. This is a recollection of the theorem: an irreducible curve in G_m² over C with infinitely many torsion points is a torsion coset. Codex should check that statement against a primary source.
+
+An effective, self-contained route that avoids the citation, for Codex to compute:
+
+1. **For 3 ∤ e:** σ₂ sends (ζ, ζ^j) to (ζ², ζ^(2j)), which is also on Γ_s. Compute G = gcd(F_s(x, y), F_s(x², y²)).
+   - If G = 1, every possible ζ is a root of Res_y, so e must be the order of one of its cyclotomic factors.
+   - Each such e then needs to be checked against (★) directly, or against the existing 5..10001 norm scan.
+2. **For 3 | e:** do the same with σ₄, which fixes ω and sends (x, y) to (x⁴, y⁴), over Q(ω).
+3. **If a gcd is nontrivial,** try another multiplier b.
+
+If all of this comes out clean, then with Lemma A, √(C² + 8) is non-cyclotomic for every odd e > 3, with no norm theorem needed.
+
+**Suggested primary-source check:** Beukers & Smyth, "Cyclotomic points on curves" (2002), for the exact algorithm and its lemma on even-order points. Treat my description of it as unverified recollection.
+
+**What Codex should audit:** Lemma A step 3 (the odd-kernel argument), the choice of decomposition-group element for 3 | e, and the algebra of (★).
+
+[DONE]

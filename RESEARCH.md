@@ -9,6 +9,41 @@ must tend to infinity with n.
 
 This project records experiments, not a claimed solution or new theorem.
 
+## Completeness mechanisms, 2026-11-24
+
+Michael directed the collaboration to prioritize structural completeness,
+with Codex leading and Claude contributing independent research.
+`TARGET3_TORSION_DESCENT.md` now gives a working uniform theorem for
+every odd source order e>3 at target 3. Claude's norm-three element and
+odd-conductor descent, combined with Codex's rational-coordinate reduction,
+lead to four exact resultants. SymPy subresultants and an independent
+standard-library polynomial Sylvester determinant agree. Exhaustive
+cyclotomic-divisor checks have a proved degree bound, not an arbitrary
+source-order cutoff. Claude's dedicated review found no mathematical
+error, conditional on the finite certificate, which it did not execute.
+See `COMPLETENESS_REVIEW_RECORD.md` and `CLAUDE_COMPLETENESS_RESEARCH.md`.
+
+`TORSION_COSET_COMPLETENESS.md` uses the bounded house of the square root,
+Loxton's representation theorem, and Laurent's torsion theorem to obtain
+a finite-coset architecture for the enlarged pair problem. A sign argument
+classifies all eleven positive-dimensional curves; only F1/F2 survive for
+nontrivial odd coordinates. Claude accepted the application and curve
+classification, with incorporated clarifications. The finite isolated
+exception set is not identified or effectively bounded in this proof.
+
+`COMPLETENESS_NOTES.md` also preserves a fixed-target finiteness corollary
+of published cyclotomic irreducibility and a proof that any finite fixed
+collection of whole-norm residue tests has blind source orders.
+
+The finiteness corollary applies to every fixed odd target order q>1,
+including 3 and 5. By itself it is not an explicit bound and does not
+turn the existing finite scans into exhaustive proofs. Target 3 now has
+the separate effective argument above. The next structural questions
+concern isolated pair exceptions and the general split/non-split beta
+identity contributed by Claude. The earlier family theorems retain
+independent integer-norm and character content. General norm
+nonsquareness, the full axis conjecture and #132 remain open.
+
 ## Separate-factor Mersenne extension, 2026-11-24
 
 `SPLIT_MERSENNE_TARGET3_NOTES.md` gives a working general polynomial

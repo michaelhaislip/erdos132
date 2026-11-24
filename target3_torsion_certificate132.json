@@ -1,0 +1,43 @@
+{
+  "status": "Working exact elimination certificate; number-field proof reviewed separately",
+  "derivation": "SymPy 1.14.0; verified independently by polynomial Sylvester/Bareiss determinants",
+  "curves": [
+    {
+      "case": "prime_to_3", "sign": 1, "scalar": 144,
+      "factors": [
+        {"coefficients": [0,1], "multiplicity": 44},
+        {"coefficients": [-1,1], "multiplicity": 12},
+        {"coefficients": [1,1], "multiplicity": 12},
+        {"coefficients": [1,0,1], "multiplicity": 4},
+        {"coefficients": [4,0,10,0,20,0,39,0,72,0,132,0,228,0,319,0,380,0,400,0,380,0,319,0,228,0,132,0,72,0,39,0,20,0,10,0,4], "multiplicity": 2, "exclude_odd_roots": true}
+      ]
+    },
+    {
+      "case": "prime_to_3", "sign": -1, "scalar": 144,
+      "factors": [
+        {"coefficients": [0,1], "multiplicity": 40},
+        {"coefficients": [-1,1], "multiplicity": 12},
+        {"coefficients": [1,1], "multiplicity": 12},
+        {"coefficients": [1,0,1], "multiplicity": 4},
+        {"coefficients": [1,0,0,0,1], "multiplicity": 4},
+        {"coefficients": [1,0,4,0,16,0,44,0,82,0,128,0,176,0,200,0,210,0,200,0,176,0,128,0,82,0,44,0,16,0,4,0,1], "multiplicity": 2, "exclude_odd_roots": true}
+      ]
+    },
+    {
+      "case": "divisible_by_3", "sign": 1, "scalar": 1296,
+      "factors": [
+        {"coefficients": [0,1], "multiplicity": 6},
+        {"coefficients": [4,-10,0,63,24,0,24,63,0,-10,4], "multiplicity": 2, "exclude_odd_roots": true}
+      ]
+    },
+    {
+      "case": "divisible_by_3", "sign": -1, "scalar": 144,
+      "factors": [
+        {"coefficients": [0,1], "multiplicity": 4},
+        {"coefficients": [-1,1], "multiplicity": 12},
+        {"coefficients": [1,1], "multiplicity": 4},
+        {"coefficients": [1,4,1], "multiplicity": 4, "exclude_odd_roots": true}
+      ]
+    }
+  ]
+}

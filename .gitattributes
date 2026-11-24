@@ -10,3 +10,4 @@ audits/claude_mersenne_20261124/source/** -text
 audits/claude_literature_20261124/source/** -text
 audits/claude_two_factor_20261124/source/** -text
 audits/claude_split_mersenne_20261124/source/** -text
+audits/claude_completeness_20261124/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

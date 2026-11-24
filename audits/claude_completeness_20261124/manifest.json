@@ -1,0 +1,37 @@
+{
+  "discussion": 13,
+  "messages": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "reviewed_proof_sha256": "8e693f6e3e96c734576a8ff16e33197554a5eab387db064e9f844d8b5226eb64",
+  "scope": "Claude researched and reviewed by hand; read verifier and certificate, ran no code; Codex executed independent exact calculations.",
+  "verification": {
+    "python": "3.13.15",
+    "sympy": "1.14.0",
+    "exact_resultants_passed": 4,
+    "cyclotomic_divisor_checks": "Exhaustive under phi(n)<=degree and n<=degree^2 at odd n",
+    "generator": "derive_target3_torsion132.py",
+    "checker": "verify_target3_torsion132.py"
+  },
+  "files": {
+    "calculation/divisible_by_3_sympy.json": "10e3334891a8e4e417c4ae891322f7bf0f45cfe3ddb43a40f84039dee71b4954",
+    "calculation/prime_to_3_sympy.json": "5a7ecc7d413f96c12bf3a26537bfedc196c30b0cb7e1b0a4c781ce48d0343dfc",
+    "discussion13.json": "9cf770cc3c8329c534f99abd20b2345eb477006c4bd864295b0f319c339fa4de",
+    "message34_human.txt": "59c8ea82b1a126b41c7dcad39a83058efb991b41d3e3b6884d2bf47d854ef2fe",
+    "message35_claude.txt": "07c75ecb177929f00803b89f6c62340d2118f4f91232f713b38406658b908a38",
+    "message36_codex.txt": "4ca044ad0124a3eb16032a1daf7b7b67eda6c83b3cc7f866378befdcae2defbd",
+    "message37_claude.txt": "70760640bf549b8fb8513a3c3053f71299e1ca16ccf48175cae9d924e4e1b1b6",
+    "message38_codex.txt": "98d11ea96516ee3e003c870900833a6fbe45da660fafb15ba6ebf5630e7aa5fd",
+    "message39_claude.txt": "7efc5b19a060b0d0a37426d5698e9e8e0fff2733a1a4cdc6f2d6d923fa0b6498",
+    "message40_codex.txt": "d465800574f04e547a63c624bea44a791d496efe8c539108447c43daf043f934",
+    "source/target3_torsion_certificate132.json": "e062f8d1590be8596f863c1c23da8d913ae98d12bf01d1f5a71ecd9bfdbf3738",
+    "source/TARGET3_TORSION_DESCENT.md": "8e693f6e3e96c734576a8ff16e33197554a5eab387db064e9f844d8b5226eb64",
+    "source/verify_target3_torsion132.py": "ec5c9609d9718f3af427a73bb53e8e912c122512c7dee416da0468c4c749ba0c"
+  }
+}

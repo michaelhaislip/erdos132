@@ -20,6 +20,34 @@ Claude's source readings from the independently checked comparisons.
 
 ## Latest result
 
+[TARGET3_TORSION_DESCENT.md](TARGET3_TORSION_DESCENT.md) gives a working
+uniform theorem: for **every odd source order e>3**, the target-three
+discriminant `C_e^2+8` has no square root in any cyclotomic field.
+An odd-conductor descent and norm-three element reduce the problem
+to four rational plane-curve resultants. Their exact identities and
+all possible odd cyclotomic divisors are verified by two independent
+arithmetic paths. Claude's read-only assembled-proof review found no
+mathematical error, conditional on the computation, which it did not
+execute. See [the research/review record](COMPLETENESS_REVIEW_RECORD.md).
+
+```sh
+python verify_target3_torsion132.py
+```
+
+[TORSION_COSET_COMPLETENESS.md](TORSION_COSET_COMPLETENESS.md) separately
+gives a working finite-family architecture for the enlarged cyclotomic
+square problem and classifies its eleven infinite curves. For nontrivial
+odd-order coordinates, only the known F1/F2 curves remain, plus finitely
+many isolated exceptions whose orders and identities are still unknown.
+It applies established theorems of Loxton and Laurent; novelty is
+unassessed. [COMPLETENESS_NOTES.md](COMPLETENESS_NOTES.md) preserves the
+fixed-target finiteness corollary and the limitation of fixed whole-norm
+congruence lists. The full axis conjecture and #132 remain open.
+
+The earlier family results below retain their stronger independent
+integer-norm and character statements. The uniform root-exclusion
+theorem does not prove that every primitive integer norm is nonsquare.
+
 [SPLIT_MERSENNE_TARGET3_NOTES.md](SPLIT_MERSENNE_TARGET3_NOTES.md) extends
 the working argument to sources with three or more distinct prime factors.
 Examples include every `3^a*5^b*17^c`, `3^a*5^b*23^c` and
