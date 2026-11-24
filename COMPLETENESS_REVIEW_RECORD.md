@@ -4,6 +4,10 @@
 The raw requests, research responses, frozen target-3 proof and exact
 verification record are preserved in audits/claude_completeness_20261124/.
 
+Later checkpoint: ODD_AXIS_REVIEW_RECORD.md documents the completed
+working odd-pair classification and geometric axis theorem. The remaining
+scope at the end of this earlier record describes that earlier phase.
+
 ## Mathematical outcomes
 
 1. TARGET3_TORSION_DESCENT.md: a working uniform exclusion for every odd

@@ -1,0 +1,18 @@
+Potential completeness breakthrough: the remaining arithmetic classification appears CLOSED, pending this assembled-proof review. I used the published CMS small-trace theorem to restrict exceptional target orders to5 and7, then your inertia lemmas N1/N2 plus total positivity reduce source orders to3,7,21. Exact small certificates finish the source21 cases. Please try hard to break the complete chain.
+
+Read the FROZEN files in tmp/odd_pair_review_ready/:
+ ODD_PAIR_CLASSIFICATION.md SHA256 afbdd81a9f3e62f46e04825ad58ec1749f382a68fe4847873d2b09ced726addd
+ SMALL_TRACE_TARGET_REDUCTION.md SHA256 e8702c8efb2c0062220732308575d0bca224f6dfd55a83f52fd2d449d4932aec
+ SPLIT_REGIME_CLASSIFICATION.md SHA256 0958328a1b1806faa6a58b355ed5c120498bd085f52cff0819931ad94780e9ca
+ ODD_CONDUCTOR_NORMALIZATION.md SHA256 939cd486fbe7f7ae6fe7054c561538de7da378ef428b6f3d5edf7485ac400539
+ verify_odd_pair132.py SHA256 e99ff72b894e076f07eb26a46a5e223a9e066a0f1394670df4478df20ff83ab1
+
+Primary input checked directly by Codex: Calegari-Morrison-Snyder, Cyclotomic Integers, Fusion Categories, and Subfactors, https://math.uchicago.edu/~fcale/papers/cyclotomic.pdf , Theorem9.0.1 (PDFpp37-38). It applies to COMPLEX cyclotomic integers with mean squared conjugate modulus M<9/4, giving the four cases stated in SMALL_TRACE_TARGET_REDUCTION.md. This is not the real-only house theorem1.0.5. You may assume the supplied theorem statement for your application review; distinguish that from reading its original proof.
+
+Our pi has pi*pi_bar=2-z-z^-1 and M(pi)=2-2mu(q)/phi(q). Thus ALL higher prime-power targets and all prime targets>=11 fall under CMS. The two exceptional CMS cores have norm fields inside Q(zeta7) or Q(zeta15), incompatible with the target's ramification (wild for higher powers, new prime for primes>=11). A sum of two roots makes pi/(1-z) a root of unity, hence split. Non-prime-power targets were already split. Target3 was closed earlier. Only target5/7 remain.
+
+I independently checked your N1/N2 algebra and rewrote them only for p=5,7 in the assembly. Correction: the prime-to-p part of eta_tau can be -1, not necessarily trivial; h still lies in the p-field, so the argument survives. N1 gives source e=e0*p^j with j=0 or e0 in{1,3}. N2 gives e|p±1 when j=0. For p5 every survivor has normalized field3*5^a, whose D5 contains complex conjugation; all are split. For p7, j=0 leaves e3. When j>=2, embeddings fixing target trace 2cos(2pi/7) while varying 7-adic source lifts force A<0. Thus only e7,e21 remain. e7 non-F1/F2 fails positivity. e21 normalizes to x=zeta21, target indices3,6,9; exact F21 norms are27133,-15539,-20439. These fail integer-square norms. Independently computed by the standalone multiplication-matrix checker and SymPy resultants. For e3,q7, the explicit square is A=(1+2(z^2+z^-2))^2, the known S21 type.
+
+Please review completeness, not just local algebra: the CMS hypotheses/list, coefficient-field ramification exclusion, N1/N2's disjointness and phase arguments, the total-positivity embedding grid and its bound, exhaustiveness of the e21 conjugacy representatives, correct use of conductor normalization for a norm certificate, and the fixed-ambient F2 condition3|m. Do NOT assume unknown parts of your earlier plans. Inspect the small checker as code but state that you cannot execute it.
+
+Return a clear verdict, any corrections, exact dependencies, and any genuine gap. This is the full admissible-pair classification, not yet an audit of the separate geometric deduction about two old-distance matches, and not Erdos132. Novelty unassessed. End [DONE].

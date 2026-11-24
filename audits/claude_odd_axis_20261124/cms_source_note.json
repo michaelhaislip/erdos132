@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "Frank Calegari",
+    "Scott Morrison",
+    "Noah Snyder"
+  ],
+  "title": "Cyclotomic Integers, Fusion Categories, and Subfactors",
+  "doi": "10.1007/s00220-010-1136-2",
+  "url": "https://math.uchicago.edu/~fcale/papers/cyclotomic.pdf",
+  "theorem": "9.0.1",
+  "pdf_pages": [
+    37,
+    38
+  ],
+  "checked_by": "Codex, primary PDF statement via web tool",
+  "review_limitation": "Claude assumed the supplied statement; neither model re-proved this published theorem",
+  "scope": "Complex cyclotomic integers, normalized squared trace strictly below 9/4; not real-only Theorem1.0.5"
+}

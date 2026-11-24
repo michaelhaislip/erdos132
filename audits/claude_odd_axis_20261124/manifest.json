@@ -1,0 +1,46 @@
+{
+  "discussion": 14,
+  "messages": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "base_commit": "ebe962ed367df0d0c7b57f95d1d90801849bffbf",
+  "scope": "Four read-only Claude research/review responses; source statement and exact executions checked by Codex; no human or formal review.",
+  "frozen_proofs": {
+    "ODD_PAIR_CLASSIFICATION.md": "afbdd81a9f3e62f46e04825ad58ec1749f382a68fe4847873d2b09ced726addd",
+    "SMALL_TRACE_TARGET_REDUCTION.md": "e8702c8efb2c0062220732308575d0bca224f6dfd55a83f52fd2d449d4932aec",
+    "SPLIT_REGIME_CLASSIFICATION.md": "0958328a1b1806faa6a58b355ed5c120498bd085f52cff0819931ad94780e9ca",
+    "ODD_CONDUCTOR_NORMALIZATION.md": "939cd486fbe7f7ae6fe7054c561538de7da378ef428b6f3d5edf7485ac400539",
+    "verify_odd_pair132.py": "e99ff72b894e076f07eb26a46a5e223a9e066a0f1394670df4478df20ff83ab1",
+    "verify_split_regime132.py": "60e0e543234cca0a176d846b5395cd1a68214d2da41aaee56a23720ed4251e8b",
+    "ODD_AXIS_THEOREM.md": "e729135621f6039939d14c357f4214c83e0bda368f4ba58a1d78ec8aa8b36070"
+  },
+  "files": {
+    "cms_source_note.json": "43f26135e6e4b67cd43e951121c4742f01b0d664dfe90443630d80ee18d05f69",
+    "discussion14.json": "c34430e85891aefee1029076123112e3ec408aae5aa65b626af67ba700946a35",
+    "message41_human.txt": "6fce758cdb567b84912c2bd598864489035c578fd34ecc136a804e355daa4955",
+    "message42_claude.txt": "9d869a22d5165bc80d2b20d9b95971eca147b80df9d2bcc8a7f367e1e01da15e",
+    "message43_codex.txt": "964caf02d8d627e1b94f481148f06906c1f8dfbbe74e32df8efefcab3fbc7b0b",
+    "message44_claude.txt": "0ef181663d6dbd5380617ff6b8c88ed6590e3d5c4de58430eb6c4df838d7109f",
+    "message45_codex.txt": "0d0dee148e1b495e7fd4d2426100029aa59fb7d99fee13be747c5d75e36bdec4",
+    "message46_claude.txt": "52fef70ce5210e8fcc8f9b9d5257a593e82a4e4b3ab09993c2ae1097444d4dcf",
+    "message47_codex.txt": "622d9e1ba7757d2cb74a849997e66c79c7e34688574898a0eb5f18d74238ed4d",
+    "message48_claude.txt": "af4eba9186d606c905ffba20cc39d6a3c5052c594a381dda3b16929b6673e415",
+    "message49_codex.txt": "18bf04209540672d4ca2ef125507bab02e76bb3e910105a574fc5d572576ca0c",
+    "source/ODD_AXIS_THEOREM.md": "e729135621f6039939d14c357f4214c83e0bda368f4ba58a1d78ec8aa8b36070",
+    "source/ODD_CONDUCTOR_NORMALIZATION.md": "939cd486fbe7f7ae6fe7054c561538de7da378ef428b6f3d5edf7485ac400539",
+    "source/ODD_PAIR_CLASSIFICATION.md": "afbdd81a9f3e62f46e04825ad58ec1749f382a68fe4847873d2b09ced726addd",
+    "source/SMALL_TRACE_TARGET_REDUCTION.md": "e8702c8efb2c0062220732308575d0bca224f6dfd55a83f52fd2d449d4932aec",
+    "source/SPLIT_REGIME_CLASSIFICATION.md": "0958328a1b1806faa6a58b355ed5c120498bd085f52cff0819931ad94780e9ca",
+    "source/verify_odd_pair132.py": "e99ff72b894e076f07eb26a46a5e223a9e066a0f1394670df4478df20ff83ab1",
+    "source/verify_split_regime132.py": "60e0e543234cca0a176d846b5395cd1a68214d2da41aaee56a23720ed4251e8b",
+    "verification.json": "e2b6890f645eb5edbd1106bb891cc5f5b15d4edc5c73cea3b731b593ac1122b1"
+  }
+}

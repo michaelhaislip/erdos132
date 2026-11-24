@@ -6,6 +6,12 @@ COMPLETENESS_REVIEW_RECORD.md for integration and review. The
 previous family theorems remain in their own notes. Nothing below proves
 the full axis classification or Erdos #132. No novelty claim is made.
 
+Later checkpoint: ODD_PAIR_CLASSIFICATION.md completes the working odd
+admissible-pair classification, and ODD_AXIS_THEOREM.md deduces the
+sharp axis theorem. ODD_AXIS_REVIEW_RECORD.md documents their distinct
+assumptions, certificates and reviews. The results below are preserved
+as independent structural steps; #132 itself remains open here.
+
 The objective is a completeness mechanism, not a longer table of cases.
 Three distinct statements must not be conflated:
 

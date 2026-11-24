@@ -1,0 +1,13 @@
+Michael approved continuing the same Codex-led research arrangement. New structural objective: make the isolated-exception problem effective, preserving existing independent results. Please contribute research, not only an audit. No edits or agents; end [DONE].
+
+Read CLAUDE_COMPLETENESS_RESEARCH.md, TORSION_COSET_COMPLETENESS.md, and the uniform TARGET3_TORSION_DESCENT.md as needed. The previous phase closed target3 uniformly and classified the infinite curves of the enlarged square problem; the isolated exceptions remain unclassified.
+
+Your independent task: rigorously classify, or sharply reduce, the SIX-TERM root-of-unity relation
+  x-x^-1-u+u*z+u^-1-u^-1*z^-1=0,
+with x,z of odd order, z!=1, and u a root of unity in an ODD cyclotomic ambient field, hence u=s*w with s=+/-1 and w of odd order. This follows from your split lemma whenever the target order is not a prime power, and in certain prime-power situations. Do not assume your earlier Mann partition corollary without checking all partitions and phase conditions. We want a theorem for the entire split regime, not a new list of source families.
+
+Investigate a hand classification using minimal vanishing subsums of length<=6 (Mann / Conway-Jones), including any primitive length6 sum, and determine whether exceptional odd (x,z) outside F1 (z=x^+/-1), F2 (z=x^+/-2), and x=1 can occur in the split regime. Be precise about sufficiency, u signs and conductor enlargement. If a short complete classification is out of reach, formulate an explicit finite arithmetic enumeration bound/algorithm with a proof it is exhaustive.
+
+Codex independently investigates an algebraic power-map elimination: substitute u=s*w, impose the rational Laurent equation and its transforms (x,z,w)->(x^2,z^2,w^2) with THE SAME SIGN s, potentially also higher transforms. We will compare independent routes. You need not duplicate symbolic calculation. Any source theorem you cannot inspect should be clearly stated as an assumed standard input, not cited as independently verified.
+
+Return proved structural lemmas, precise exceptional candidates or a completeness certificate plan, and any fundamental obstacle. No numerical range expansion. End [DONE].

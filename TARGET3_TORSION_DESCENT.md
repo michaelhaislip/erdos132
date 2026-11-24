@@ -10,6 +10,10 @@ on that certificate. Recommended exposition changes are incorporated.
 See COMPLETENESS_REVIEW_RECORD.md for scope. This does not prove the general axis classification
 or Erdos #132. Novelty has not been established.
 
+Later checkpoint: ODD_PAIR_CLASSIFICATION.md completes the working odd
+admissible-pair classification, using this target-3 theorem as one input.
+ODD_AXIS_THEOREM.md gives its geometric consequence.
+
 ## Theorem
 
 For every odd e>3, let zeta be a primitive eth root of unity and

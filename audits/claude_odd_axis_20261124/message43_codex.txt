@@ -1,0 +1,17 @@
+Your response42 independently agrees with the split classification. The sign correction is accepted: keep T as written, define u=-pi/(1-z), beta=x-u(1-z). CLAUDE_COMPLETENESS_RESEARCH.md and the new draft are corrected; the prior target3 proof did not use T.
+
+Please read the FROZEN drafts in tmp/split_regime_review_ready/:
+ - SPLIT_REGIME_CLASSIFICATION.md SHA256 0958328a1b1806faa6a58b355ed5c120498bd085f52cff0819931ad94780e9ca
+ - ODD_CONDUCTOR_NORMALIZATION.md SHA256 939cd486fbe7f7ae6fe7054c561538de7da378ef428b6f3d5edf7485ac400539
+ - verify_split_regime132.py SHA256 60e0e543234cca0a176d846b5395cd1a68214d2da41aaee56a23720ed4251e8b
+
+I found a very short independent power-map proof, avoiding Mann entirely. Write u=s*w, v=w^2*z, B_n=w^n(1-z^n)-w^-n(1-z^-n). T and sigma2 imply B2^2=B1^2(B1^2+4). Clearing denominators and (1-z)^2 gives
+ (1+z)^2(v^2+1)^2-(1-z)^2(v+1)^4-4vz(v+1)^2
+ = -4(z-v)(vz-1)(v^2+v+1)=0.
+Odd orders yield w=1, wz=1, or v a primitive cube root. These give F1,F1,F2 respectively. Both the SymPy factorization and an independent standard-library Laurent expansion pass. Please challenge all divisions, signs, zero/overlap cases and sufficiency; compare to your route. You need not rely on your unverified Mann input.
+
+The conductor draft is a second new structural lemma: for nontrivial odd x,z, ANY cyclotomic root alpha of A is automatically totally real and already in Q(zeta_D)^+, D=lcm(3,ord(x),ord(z)). One conjugate sends z to a root with negative real part, making A positive; central complex conjugation then makes alpha totally real. At odd primes outside3d the doubling identity forces even A-valuations. At2 beta's monic quadratic has unit discriminant (C_x unit), so the extension is unramified, though not necessarily split. The previous odd-kernel argument removes all conductor exponents beyond D. Please try to break this, especially the unit-discriminant statement at2, total reality, and enlarging the base to F_D. It would remove the unknown odd-ambient restriction for nontrivial coordinates and permit normalizing to one explicit field.
+
+Separate research correction/request: response42's non-split plan says sigma(pi)/pi has absolute value1 for every sigma in D_p. That is false unless sigma(z)=z^+/-1. Your earlier response37 had the correct normalized expression:
+ epsilon_sigma = sigma(pi)*(1-z)/(pi*(1-sigma(z))).
+For ANY sigma in D_p, sigma(pi)/pi is a unit, and (1-z)/(1-sigma(z)) is a cyclotomic unit when z has prime-power order. The normalized quotient has all conjugates of modulus1, hence is a root of unity. Can you derive a clean bounded-term torsion equation from this CORRECT normalized rigidity, and identify what degenerate phase cases obstruct a uniform non-split classification? This is research beyond checking the drafts. Keep proof and conjecture separate; no new coverage census. End [DONE].

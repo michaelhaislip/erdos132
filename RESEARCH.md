@@ -1,4 +1,4 @@
-# Erdős problem 132: initial scouting
+# Erdős problem 132: research record
 
 ## Scope
 
@@ -7,9 +7,46 @@ multiplicity at most n (unordered pairs). The diameter already qualifies.
 The stronger question asks whether the number of qualifying distances
 must tend to infinity with n.
 
-This project records experiments, not a claimed solution or new theorem.
+This project records experiments and working partial proofs, not a
+solution of #132 or a claim to novelty.
 
-## Completeness mechanisms, 2026-11-24
+## Complete odd-axis working theorem, 2026-11-24
+
+`ODD_PAIR_CLASSIFICATION.md` completes the working admissibility
+classification for every odd ambient order: F1, F2 when 3 divides the
+ambient order, and S21. `ODD_AXIS_THEOREM.md` independently deduces
+at most two old-distance matches for every nonvertex axis point,
+at most one if 3 does not divide m, and classifies all exact-two
+points. The lower bounds for new distances are (m-3)/2 generally
+and (m-1)/2 when 3 does not divide m, excluding the center.
+
+The bridge to completeness is structural. The split regime collapses
+to F1/F2 by a single doubling identity. The published CMS small-trace
+theorem reduces other targets to 3,5,7. Target 3 was closed earlier;
+normalized inertia phases close target 5 and reduce target 7 sources
+to 3,7,21. Positivity and three exact norms finish the classification.
+The heptagon source-3/target-7 cases have an explicit square identity.
+
+Claude contributed independent six-term research and the phase/inertia
+mechanism, then reviewed both the assembled arithmetic and geometric
+proofs by hand without finding a gap. Codex checked the primary CMS
+statement, supplied the compact split proof, conductor normalization,
+target reduction, positivity, exact certificates and geometric collision
+arguments. The published theorem was assumed by Claude; it executed
+no code. Independent norm computations agree. See
+`ODD_AXIS_REVIEW_RECORD.md` for frozen sources, contributions and scope.
+
+Novelty remains unassessed. The next priority is a focused comparison
+with the literature on roots of unity and regular-polygon intersections.
+The earlier norm-character results remain separate; the stronger general
+integer-norm nonsquareness conjecture is not proved. General #132 and
+points off the odd-polygon axes remain open here.
+
+## Earlier completeness checkpoint, 2026-11-24
+
+This section records the first completeness phase. Its remaining
+odd-axis questions were subsequently closed by the checkpoint above;
+the independent results and contemporary scope statements are retained.
 
 Michael directed the collaboration to prioritize structural completeness,
 with Codex leading and Claude contributing independent research.

@@ -1,0 +1,95 @@
+I checked both drafts by hand and found no errors; I ran nothing and edited no files. Your correction stands: σ(π)/π has modulus 1 only when σ(z) = z^{±1}, so my claim in response 42 was wrong. Using the corrected normalized rigidity, I get a single torsion relation and two new lemmas that restrict the non-split case.
+
+## 1. Review of the drafts
+
+**`SPLIT_REGIME_CLASSIFICATION.md`: correct.**
+- **σ₂ step.** Writing u = s·w gives x − x⁻¹ = s·B₁. σ₂ fixes s, which needs m odd, and the doubling identity holds. B₁ = (1−z)(v+1)/(wz). B₂/B₁ = (1+z)(v²+1)/(wz(v+1)), using w²z² = vz.
+- **Clearing denominators.** This divides by B₁² ≠ 0 and multiplies by vz(v+1)², which is nonzero because v ≠ −1.
+- **Identity (3).** As a quadratic in z, both sides have z² and z⁰ coefficients equal to −4v(v²+v+1), and the left side vanishes at z = v and z = 1/v. Hence (3) is a polynomial identity.
+- **Branches.** w²=1 gives w=1, and (wz)²=1 gives wz=1. The step a − a⁻¹ = b − b⁻¹ ⇒ a = b is fine. In the ω branch, B₁ = −(r − r⁻¹) and z = r⁻². The overlap (w=1, z=ω) is harmless because each branch derives only necessary conditions.
+- **Signs.** s=−1 gives z = x⁻², and s=+1 gives z = x². This matches my Mann-based table, so the two routes agree completely. The proof needs only u ∈ ±μ_odd, not a particular field.
+- **Small suggestions.**
+  - Splitness is a property of the element, so test condition 2 in the smallest field Q(x, z, β), where the hypothesis is weakest.
+  - In Q(ζ_D), with D = pᵐ·D′ and p ∤ D′, condition 2 is equivalent to −1 ∈ ⟨p⟩ ⊂ (ℤ/D′)*.
+
+**`ODD_CONDUCTOR_NORMALIZATION.md`: correct.**
+- **§1.** Take Re z′ < 0. Then σ(A) ≥ 4 − 8·Re z′ > 4, and commuting σ with complex conjugation gives total reality. This needs only q > 1.
+- **Doubling identity (1).** Write c = C² and 4Z = c + 4 − A. Then 4B = 4(c−2)² + 48 − (c+4−A)² = −A² + 2(c+4)A + 3(c−4)². ✓
+- **Odd ℓ ∤ 3d.** A common prime forces x ≡ ±1. The case x ≡ −1 contradicts odd order because ℓ ≠ 2.
+- **Gap to fill: the square step.** The draft cites TARGET3 for "A·σ₂A is a square in F". State the proof inline: σ₂ ∈ Gal(F/Q) needs d odd. Any lift τ commutes with the generator ρ of Gal(L/F), so ρ(α·τα) = α·τα. Hence α·τα ∈ F, and its square is A·σ₂A.
+- **At 2.** C = x⁻¹(x²+1) is a unit. The reduced polynomial has derivative ≡ C, so it is étale. ✓
+- **§3.** φ(N)/φ(D) = N/D because N and D have the same prime support. ✓
+- **Example.** The factor 3 is genuinely needed: for z = x², A = −3(x − x⁻¹)².
+
+## 2. A symmetric normal form (proved)
+
+Let t = z^{(q+1)/2}, so t² = z and t has odd order. Define R = (x − x⁻¹)/(t − t⁻¹) and y = t·u, where u = −(β−x)/(1−z).
+
+The β-identity gives |u| = 1 at every embedding, so c(u) = u⁻¹, where c is complex conjugation. Multiplying "β is real" by u and substituting gives:
+- y² + R·y + 1 = 0,
+- α = (t − t⁻¹)(y − y⁻¹),
+- A = (x − x⁻¹)² − 4(t − t⁻¹)².
+
+So the pair is admissible exactly when y is cyclotomic. The split case is exactly "y is a root of unity". The six-term relation (T) is then x − x⁻¹ = (y + y⁻¹)(t⁻¹ − t). In this form, F1 is y = −t^{±1} and F2 is y = ω^{±1} (R = 1).
+
+## 3. Normalized rigidity in this form (proved)
+
+Let z have order pᵏ and let σ ∈ D_p. Gal is abelian, so σ fixes every prime above p, and (y) is supported above p. Hence η_σ := σ(y)/y is a unit with all absolute values 1, so it lies in ±μ_D. (In your notation, η_σ = ε_σ·σ(t)/t.) η is a cocycle: η_{στ} = σ(η_τ)·η_σ.
+
+Eliminating y from y + y⁻¹ = −R and η·y + η⁻¹·y⁻¹ = −σR, with h = η + η⁻¹:
+
+**(N)** R² + (σR)² − h·R·σR + h² − 4 = 0.
+
+After clearing (t − t⁻¹)²(σt − σt⁻¹)², this is a torsion relation of at most 77 terms in x, t, σx, σt, η. It holds identically in y, so it is always valid. When η = ±1 it carries no information beyond σR = ±R; that is the degenerate phase.
+
+## 4. Two new non-split lemmas (hand proofs; not cross-checked by anyone yet)
+
+Setup: x ≠ 1, z of order pᵏ with p odd, ord x = e = e₀·pʲ with p ∤ e₀, and x = x₀·x_p accordingly.
+
+**Lemma N1 (inertia involution).** Either e₀ ∈ {1, 3} or j = 0. This holds whether or not the pair is split.
+
+*Proof.*
+- Let τ ∈ inertia act as −1 on the p-part and trivially on the p′-part. Then τt = t⁻¹ and τx = x₀·x_p⁻¹.
+- τ² = 1 gives τ(η) = η⁻¹, which forces the p′-part of η to be trivial. So h ∈ Q(ζ_{pᵐ}).
+- Multiply (N) by (t − t⁻¹)². With P = x_p² + x_p⁻² and T = (t − t⁻¹)², it becomes:
+  x₀²(P + h) + x₀⁻²(P + h) + [−4 − hP + (h² − 4)T] = 0.
+- If e₀ ≥ 5, then 1, x₀², x₀⁻² are linearly independent over Q(ζ_{pᵐ}), by linear disjointness and because ζ_{e₀} has degree > 2.
+- So P = −h and (h² − 4)(1 + T) = 0. Since 1 + T = 0 would need t² to be a primitive 6th root of unity, h = ±2. Then h = 2 is impossible and h = −2 gives x_p = 1. ∎
+
+**Lemma N2 (p′-order source).** Suppose j = 0 and pᵏ ≠ 3. (Target 3 is closed separately.) Then the pair is non-split, τ(y) = −y, and p ≡ ±1 (mod e). Moreover, either p ≡ 1 (mod e), or all three of the following hold: 3 ∤ e, p ≡ 1 (mod 3), and α ∉ Q(ζ_d).
+
+*Proof.*
+- If the pair were split, F1/F2 would make ord z divide ord x, which is impossible. So it is non-split.
+- τR = −R, so τy ∈ {−y, −y⁻¹}. The case τy = −y⁻¹ makes y² a root of unity, hence split. So τy = −y.
+- Let φ ∈ D_p be a Frobenius lift with φ ≡ p on the p′-part and φ ≡ 1 on the p-part. φ commutes with τ, so the cocycle gives τ(η_φ) = η_φ, hence h ∈ Q(ζ_{D′}).
+- (N) becomes [X² + X_p² − h·X·X_p] + (h² − 4)·T = 0, with X = x − x⁻¹ and X_p = x^p − x^{−p}. Here T ∉ Q, so 1 and T are independent over Q(ζ_{D′}).
+- Hence h = ±2 and X_p = ±X, so x^p = x^{±1}.
+- If p ≡ −1 (mod e) and α ∈ Q(ζ_d), then complex conjugation lies in D_p, so the pair is split, a contradiction. ∎
+
+The known S21 family (e = 3, p = 7) satisfies both lemmas.
+
+## 5. What remains, and the obstacle
+
+Remaining non-split cases:
+- **(a)** x of order pʲ (j ≥ 1). Here p ≡ 1 (mod 3), and α = √−3·γ with γ ∈ Q(ζ_{pᵐ}).
+- **(b)** x of order 3pʲ (j ≥ 1), with p ≡ 1 (mod 3). Here N1 leaves one relation of at most 18 terms in p-power roots of unity: h²T − h(P + 1) − (4T + 4 + P) = 0.
+- **(c)** The N2 survivors.
+
+In (a) and (b), D_p acts on x, t and η through the same p-adic character, so there is no linear disjointness to use. This is the fundamental obstacle.
+
+**Plan for (a), not yet checked.** H¹((ℤ/pᵐ)*, μ_{6pᵐ}) ≅ Hom(G, μ₆), so up to roots of unity:
+
+y = ξ · (𝔭/𝔭̄-generator of Q(√−3))ⁿ · (g(χ)/ḡ(χ))ᵏ, where g(χ) is the cubic or sextic Gauss sum.
+
+Making β real then splits along the basis 1, √−3.
+
+**Plan for (b).** A vanishing sum in ℤ[μ_{pᵐ}] is a combination of rotated μ_p-cosets, so a non-trivial collapse needs p ≤ 18, i.e. p ∈ {7, 13}, plus finitely many exponent-coincidence patterns. This is effective but not yet carried out.
+
+**General fallback (per conductor, not uniform).** (y) has exponents n_i with |n_i| ≤ p^{m−k}, so for each D there are finitely many y up to roots of unity.
+
+## 6. What I suggest next
+
+- Codex checks N1 and N2 symbolically.
+- Then we attack (b) with the coset argument and (a) with the Gauss-sum parametrization.
+
+[DONE]

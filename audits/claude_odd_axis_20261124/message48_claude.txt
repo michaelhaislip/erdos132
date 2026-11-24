@@ -1,0 +1,62 @@
+## Verdict
+
+`ODD_AXIS_THEOREM.md` holds up. I assumed the arithmetic classification as stated in `ODD_PAIR_CLASSIFICATION.md`: A is a square in F_m exactly for F1, F2 when 3 | m, and S21, with no solutions at x = 1. On that basis I checked every step by hand, and both halves of "exactly two" follow: the conditions are necessary and they are sufficient. I found nothing that breaks it. I read the frozen file and the theorem lines of `ODD_PAIR_CLASSIFICATION.md`, ran nothing and edited nothing.
+
+## Your six weak points
+
+**(1) Two matches put r in F_m.**
+- Each match satisfies r² − C_x·r = 1 − C_z. On reflection classes, x ↦ C_x is one-to-one, so two matched classes have different C_x. Subtracting the two equations gives r ∈ F_m.
+- Then α = 2r − C_x is a real element of F_m, and α² = A. This is exactly the "A is a square in F_m" hypothesis, so the classification applies to every match at that point.
+- If there is only one match, every claim in the statement is trivially true.
+- One class cannot match two chord lengths, because one distance equals at most one chord length. So counting classes is the right count.
+
+**(2) Source x = 1 and vertex r = 1.**
+- When r ∈ F_m, the source x = 1 is excluded by the classification. Directly: A = 4|1−z|², and having that root in F_m would need √−1.
+- F1 factors as (r−1)(r+1−C_x). The factor r − 1 is exactly the excluded vertex.
+- For F2, −C_y = 1 exactly when ord y = 3. That case also contains the bad source ωy = 1 when y = ω².
+
+**(3) F2 radius forms.** I re-derived them.
+- With z = x², A = −3(x−x⁻¹)².
+- Taking α = (ω−ω²)(x−x⁻¹) gives C_x + α = −2(ω²x + ωx⁻¹), so r = −C_{ω²x}. The other sign gives −C_{ωx}.
+- For a fixed r = −C_y, the possible sources are x ∈ {ω²y, ωy}, together with their inverses.
+- These two classes coincide only when y² = 1, i.e. y = 1.
+- Sufficiency: r is a root of the match quadratic by construction, and z = x² ≠ 1.
+- r = −C_y is never 0 or −1, since that would need y of order 4 or 6. So every listed point is noncentral and not a vertex.
+
+**(4) F1/F2 collision.**
+- C_x + C_y = 1. Applying σ₂ is valid because m is odd, and C_{w²} = C_w² − 2, so C_x² + C_y² = 5.
+- Then C_x·C_y = −2, so {C_x, C_y} = {2, −1}.
+- C_x = 2 would put the F1 radius at r = 1, the excluded vertex. So r = −2 and y = 1, and the only F2 class there is {ω}, the same class as the F1 source.
+
+**(5) Heptagon isolation.**
+- S21 radii: with c_k = z^k + z^{−k}, c₂² + c₂ = c₃ + c₂ + 2 = 1 − c₁. So r = c₂ or r = −1 − c₂ = c₁ + c₃, with normalized traces −1/3 and −2/3.
+- If C_w ∈ F_7, then φ(e)/2 divides 3, so e ∈ {1, 3, 7, 9}. e = 9 is excluded: it would force Q(C_w) = F_7, whose conductor is 7, not 9.
+- F1 radii in F_7 have traces 1, −2, −4/3, and F2 radii have −2, 1, 1/3. None equals −1/3 or −2/3.
+- Normalized trace is independent of which field contains r, so the comparison is valid.
+- S21 has only the single source class {ω, ω²}.
+
+**(6) Exact count and the center.**
+- Exactly two matches forces two F2 classes, because F1 contributes at most one, S21 is isolated, and an F1/F2 coincidence is the same class. That means 3 | m, y ≠ 1 and ord y ≠ 3.
+- Counting: (m+1)/2 inversion classes, minus {1}, minus {ω, ω²}, leaves (m−3)/2 points. Different classes give different r.
+- For r ≠ 0, the squared distance r² − C_x·r + 1 is one-to-one in C_x, so the new-distance bounds follow.
+- At the center every distance is 1, and a chord of length 1 would need a sixth root of unity, so the center has no matches.
+- Spot check at m = 9, y = ζ₉: both sources give exact chord matches, with d² ≈ 0.468 and ≈ 3.879.
+
+## Corrections (none fatal)
+
+1. **§3:** say explicitly that y = ωx lies in μ_m because 3 | m, so σ₂ applies to y as well.
+2. **Statement:** add that for odd m every symmetry axis passes through a vertex, so fixing the axis through vertex 1 loses no generality. Also note that 3 | m together with m ≥ 5 means m ≥ 9 in the exact-two clause.
+3. **§4:** name the rule "Q(C_w) ⊆ F_7 forces Q(C_w) = F_7 or Q" before citing ramification.
+4. **§5:** the center's distances to all vertices are equal, giving exactly one new distance. Say that, rather than only "excluded".
+
+## Scope
+
+- **Covers:** one added point on a symmetry axis of a regular m-gon, m odd and m ≥ 5. It bounds old-distance matches and new distances.
+- **Depends on:** the arithmetic classification, which in turn rests on CMS Theorem 9.0.1 (supplied statement), the executed certificates, and the target-3 descent.
+- **Does not cover:** points off the axes, even m, several added points, or Erdős #132. Novelty has not been assessed.
+
+## Single most useful next step
+
+Do a targeted novelty check before writing anything up. Once r = −C_y, every two-match configuration is a short vanishing sum of roots of unity. That is the kind of trigonometric equation Poonen–Rubinstein classify (via Conway–Jones) for diagonal intersections in regular polygons. The S21 and F2 phenomena may already appear there or in the Erdős #132 references, and that would fix how the writeup is framed.
+
+[DONE]

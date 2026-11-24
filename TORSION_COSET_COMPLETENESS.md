@@ -5,8 +5,10 @@ theorems, not a claim to a new torsion or cyclotomic-integer theorem.
 Claude's read-only research response 37 accepts the application of the
 published inputs and the curve classification, subject to clarifications
 incorporated below. It did not check the source theorem statements or
-execute code. The isolated points have NOT been determined. Neither the odd-ambient axis conjecture nor
-Erdos #132 is proved.
+execute code. The later ODD_PAIR_CLASSIFICATION.md identifies all
+nontrivial odd-coordinate isolated exceptions as S21. The even-coordinate
+isolated set of this enlarged problem is not determined here. Erdos #132
+is not proved.
 
 ## Statement
 
@@ -217,14 +219,14 @@ these curves. This completes the working theorem.
 
 The positive-dimensional architecture is classified in the working
 proof. An indefinitely expanding collection of unrelated infinite
-families is impossible. The unresolved finite exceptional set could
-contain additional high-order points. The proof supplies no numerical
-bound for their orders and does not identify them.
+families is impossible. This argument by itself supplies no numerical
+bound or identification of its isolated exceptions.
 
-Thus the remaining classification problem is to identify ALL isolated
-torsion pairs, then impose the odd-ambient root condition. The conjecture
-predicts that the known order-21 type accounts for the nondegenerate
-odd exceptions. No claim to that final identification is made here.
+The subsequent odd-pair proof identifies the nontrivial odd exceptions
+as precisely S21; its conductor-normalization lemma also supplies an
+explicit odd ambient field. The present general architecture remains
+independent and also applies to even-order coordinates, whose isolated
+exceptions have not been classified in this project.
 
 Effectivity: no explicit usable B(4) has been extracted here. The
 Aliev--Smyth construction applies once the varieties V_b are specified,

@@ -5,8 +5,8 @@ Exploratory code and research notes for [Erdős problem #132](https://www.erdosp
 For any set of n >= 5 points in the plane, must at least two distinct
 realized distances each occur between at most n unordered point pairs?
 
-This repository contains finite experiments, not a solution or a claimed
-new mathematical result.
+This repository contains exploratory computations and working partial
+theorems. It is not a solution of #132 and makes no novelty claim.
 
 [LITERATURE_REVIEW132.md](LITERATURE_REVIEW132.md) records a focused
 first literature pass on the target-three results and Mersenne criterion.
@@ -19,6 +19,35 @@ The [follow-up record](LITERATURE_AUDIT_RESPONSE.md) distinguishes
 Claude's source readings from the independently checked comparisons.
 
 ## Latest result
+
+[ODD_AXIS_THEOREM.md](ODD_AXIS_THEOREM.md) gives a working theorem for
+**every odd m>=5**: a nonvertex point on a symmetry axis has at most
+two old-distance matches, and at most one when 3 does not divide m.
+It determines exactly where two occur: (m-3)/2 points per signed axis
+when 3 divides m. A noncentral point creates at least (m-3)/2 new
+distances, improving to (m-1)/2 when 3 does not divide m.
+
+The underlying [complete odd-pair classification](ODD_PAIR_CLASSIFICATION.md)
+has exactly F1, F2 with the required factor 3, and S21. The proof uses
+the published small-trace classification of Calegari--Morrison--Snyder,
+normalized conductor and inertia arguments, total positivity, and a
+small exact norm certificate. Claude's assembled arithmetic and geometric
+reviews found no error, assuming the stated published input and executed
+certificates. These are model reviews, not human peer review or formal
+verification. See [the full record](ODD_AXIS_REVIEW_RECORD.md).
+
+```sh
+python verify_split_regime132.py
+python verify_odd_pair132.py
+```
+
+The component results remain separate:
+[conductor normalization](ODD_CONDUCTOR_NORMALIZATION.md),
+[split classification](SPLIT_REGIME_CLASSIFICATION.md), and
+[small-trace target reduction](SMALL_TRACE_TARGET_REDUCTION.md).
+The next priority is a focused novelty check of the completed axis
+theorem. Points off the axes, even polygons, and general #132 remain
+outside this theorem.
 
 [TARGET3_TORSION_DESCENT.md](TARGET3_TORSION_DESCENT.md) gives a working
 uniform theorem: for **every odd source order e>3**, the target-three
@@ -38,11 +67,13 @@ python verify_target3_torsion132.py
 gives a working finite-family architecture for the enlarged cyclotomic
 square problem and classifies its eleven infinite curves. For nontrivial
 odd-order coordinates, only the known F1/F2 curves remain, plus finitely
-many isolated exceptions whose orders and identities are still unknown.
+many isolated exceptions. The subsequent classification above identifies
+those nontrivial odd exceptions as S21; the even-coordinate part of the
+enlarged square problem is not classified here.
 It applies established theorems of Loxton and Laurent; novelty is
 unassessed. [COMPLETENESS_NOTES.md](COMPLETENESS_NOTES.md) preserves the
 fixed-target finiteness corollary and the limitation of fixed whole-norm
-congruence lists. The full axis conjecture and #132 remain open.
+congruence lists. #132 remains open here.
 
 The earlier family results below retain their stronger independent
 integer-norm and character statements. The uniform root-exclusion
@@ -61,7 +92,8 @@ divisible by 3 through 10001. The smallest witness covers 194 of those
 orders uniformly. A [dedicated read-only Claude audit](SPLIT_MERSENNE_AUDIT_RESPONSE.md)
 found no mathematical error in the frozen proof, assuming the earlier
 norm and finite-field facts. It inspected no code and ran nothing.
-The general source-order claim and #132 remain unresolved.
+This criterion alone does not cover arbitrary source orders; the
+general integer-norm nonsquareness claim remains unresolved.
 
 ```sh
 python split_mersenne_target3_132.py
@@ -79,8 +111,8 @@ A [dedicated read-only Claude audit](TWO_FACTOR_TARGET3_AUDIT_RESPONSE.md)
 found no mathematical error in the frozen proof, taking the earlier
 norm condition as given. Separate polynomial and Pell implementations
 agree for 67 multiplier indices and all 428 applicable source orders
-through 10001; nine field-norm determinants also agree. General
-source orders and #132 remain unresolved; novelty is undetermined.
+through 10001; nine field-norm determinants also agree. This standalone
+norm criterion has limited source scope; novelty is undetermined.
 
 ```sh
 python two_factor_target3_132.py
@@ -113,7 +145,7 @@ to six residue cases using primes 17 and 73. A separate small-integer
 checker verifies its complete cycle and witness data. A [dedicated
 read-only Claude audit](RESIDUE_TARGET3_AUDIT_RESPONSE.md) reports no
 mathematical error and verifies key arithmetic by hand; it could not
-execute the scripts. The general source-order claim is unproved.
+execute the scripts. The general integer-norm claim is unproved.
 
 ```sh
 python target3_residue_covers132.py
@@ -127,7 +159,8 @@ every cyclotomic ambient field. A [dedicated read-only Claude audit](COMPOSITE_T
 found no mathematical error; it inspected the script but did not run it.
 An exact norm scan also rejects every odd source order 5..10001 for
 target order 3, with separate determinant controls through 105. The
-general composite-source claim remains unproved.
+general integer-norm claim remains unproved; cyclotomic root exclusion
+now follows from the uniform proof above.
 
 ```sh
 python verify_composite_targets132.py
@@ -145,7 +178,8 @@ The same field descent rejects all 177 previously selected residual pairs
 by exact norms, including the 82 target-order-5 pairs. This is a finite
 recheck of exclusions already known from residue certificates, not a general
 proof for target order 5 or composite source orders.
-The general axis classification and #132 remain unresolved.
+These historical finite certificates are preserved; the current full
+odd-axis classification is linked above.
 
 ```sh
 python verify_small_targets132.py
@@ -157,7 +191,8 @@ doubling criterion: an exact identity restricts common prime-ideal factors,
 yielding a necessary norm filter. An explicit order-15 example proves that
 the norm filter is not sufficient. The notes also prove the sigma_2
 classification for primes where doubling generates the real Galois group.
-The general family classification remains open. The subsequent
+The general classification for the sigma_2 test ALONE remains open;
+the full cyclotomic admissibility problem is classified above. The subsequent
 [Claude audit and local response](SIGMA2_AUDIT_RESPONSE.md) report no
 mathematical error. We reproduced its 47,004-pair CRT audit and checked
 the 177 residual subfield degrees exactly, correcting the target-order
@@ -171,7 +206,8 @@ The expanded Claude research packet is reviewed in
 [CLAUDE_AXIS_REVIEW.md](CLAUDE_AXIS_REVIEW.md), with the source log and raw
 outputs preserved under `audits/claude_axis_20261124/`. Its conditional
 three-family reduction withstands review after two small proof repairs.
-The general admissibility classification is still unproved. The large
+The packet's conditional reduction is now superseded by the complete
+working classification above. The large
 computed range is supplied evidence with local spot checks, not a full
 locally repeated census. Run the new integer index controls with:
 

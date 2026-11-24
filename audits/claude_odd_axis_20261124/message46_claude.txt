@@ -1,0 +1,63 @@
+## Verdict
+
+I found no genuine gap in the assembled chain. Given its stated dependencies, `ODD_PAIR_CLASSIFICATION.md` correctly classifies all admissible odd pairs: F1, F2 when 3 divides m, and S21, with no solutions at x=1. I read the frozen files and the checker. I did not execute anything or edit any files.
+
+## Dependencies (stated precisely)
+
+1. **CMS Theorem 9.0.1.** I assumed the statement as you supplied it and did not read its proof. The application only needs the two exceptional cores to lie in Q(ζ₇) or Q(ζ₁₅). So it still works if CMS's "equivalent" also allows Galois conjugation, and it does not depend on the exact indices.
+2. **`TARGET3_TORSION_DESCENT.md`.** Taken from the earlier phase; I did not re-review it here.
+3. **`SPLIT_REGIME_CLASSIFICATION.md` and `ODD_CONDUCTOR_NORMALIZATION.md`.** I reviewed both in message 44. The square step still needs to be written out inline.
+4. **The three F₂₁ norms.** These depend on the checker. I couldn't run it, so I recomputed the six conjugates numerically by hand and got products ≈ 27132, −15539 and −20438. All three agree with the stated norms.
+
+## Steps I re-derived by hand
+
+**CMS application**
+- |σπ|² = σ(2−z−z⁻¹), because E is abelian, so M = 2 − 2μ(q)/φ(q). This gives 2.2 at p=11 and 2 when k≥2.
+- In the two-root case, b = π/(1−z^{±1}) lies in E, so the pair is split.
+- Ramification excludes the exceptional cores:
+  - p ≥ 11: p is unramified in Q(ζ₇) and Q(ζ₁₅).
+  - k ≥ 2: ramification index at p is divisible by p, against index 2 in Q(ζ₁₅) when p=3, and index 4 at 5 or 6 at 7.
+
+**Phase identity and lemma N1**
+- (2) follows by direct expansion: R² + σR² − h·R·σR = 4 − h².
+- (3) checks out: X² + (τX)² = (x₀² + x₀⁻²)P − 4, and X·τX = x₀² + x₀⁻² − P.
+- Your correction about η_τ is right. τ(η)η = 1 forces η_{p′}² = 1, so η_{p′} = 1, but the sign ±1 survives.
+- Independence of 1, x₀², x₀⁻² needs φ(e₀) ≥ 3, and this holds whenever e₀ ≥ 5.
+
+**Lemma N2**
+- φ = (1 mod pᵃ, p mod D′) lies in D_p.
+- Commutation together with τy = −y gives η_p = 1.
+- Then (X ∓ X_p)² = 0, so x^{p∓1} = 1, after discarding x^{p±1} = −1 (impossible at odd order).
+
+**Targets 5 and 7**
+- Target 5: since 5 ≡ −1 (mod 3), D₅ is all of (ℤ/3·5ᵃ)*, so every case is split.
+- Target 7, j ≥ 2: fix the residue mod 7. The lifts then move σ(x_p) over 7^{j−1} points evenly spaced 2π/7^{j−1} apart, rotated by x₀. One of them lies within π/7 of i, which gives A ≤ 6 − 5a < 0.
+- Source order 7, r = ±3: A = 7 − 5a − a² ≈ −0.79 < 0.
+- Source order 3: (1 + 2c₂)² = 9 + 4(c₂ + c₃) = 5 − 4c₁.
+
+**Source order 21**
+- Taking x = ζ₂₁ and u ∈ {3, 6, 9} covers every case, because Galois acts transitively and z and z⁻¹ give the same A.
+- Normalization puts any root α into F₂₁, which justifies the norm test.
+- 164² < 27133 < 165².
+
+**Section 7**
+- F2: A = −3(x − x⁻¹)², so a root exists exactly when √−3 is in Q(ζ_m), i.e. when 3 divides m.
+- x = 1: a root would put i into Q(ζ_m), which is impossible for odd m. This does not use normalization, which is correct, since normalization needs x ≠ 1.
+
+**Checker code**
+- The Chebyshev recursion, the Bareiss determinant and `check_real_polynomial` are all correct as written.
+- Only failure mode I see: a zero pivot with no nonzero entry below it would raise `StopIteration` instead of returning determinant 0. That cannot happen here because the norms are nonzero.
+
+## Corrections (none fatal)
+
+1. **§5, "a > 6/5":** the justification "increasing at a" is loose. Say instead that the roots are 2cos(2πk/7), only a is positive, and the cubic is −29/125 at 6/5, so 6/5 < a.
+2. **§3:** spell out the factorization. x^p − x^{−p} = ±(x − x⁻¹) gives (x^p ∓ x)(1 ± x^{−p−1}) = 0, and the second factor cannot vanish at odd order.
+3. **§2:** add one sentence explaining why (y) is supported only above p. π divides (1−z)(1−z⁻¹), which is supported above p.
+4. **`SMALL_TRACE_TARGET_REDUCTION.md`, "What remains":** this still says source orders are unbounded. It should point to `ODD_PAIR_CLASSIFICATION.md`, which now closes them.
+5. **Theorem statement:** add that the reductions work in F_{lcm(m,3)} ⊇ F_m. A square in F_m stays a square there, so the conditions derived are necessary, and §7 then restores the condition 3 | m.
+
+## Scope
+
+This is the arithmetic classification only. The geometric step from admissible pairs to old-distance matches, and Erdős #132 itself, are still unreviewed. Novelty has not been assessed.
+
+[DONE]

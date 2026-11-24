@@ -1,0 +1,57 @@
+{
+  "python": "3.13.15",
+  "symbolic_package": "SymPy 1.14.0",
+  "split_identity": "Passed symbolic factorization and independent integer Laurent expansion",
+  "Psi21_ascending": [
+    1,
+    -8,
+    8,
+    6,
+    -6,
+    -1,
+    1
+  ],
+  "source21_norms": [
+    {
+      "u": 3,
+      "A_ascending": [
+        4,
+        12,
+        1,
+        -4
+      ],
+      "norm": 27133
+    },
+    {
+      "u": 6,
+      "A_ascending": [
+        16,
+        -32,
+        -3,
+        24,
+        0,
+        -4
+      ],
+      "norm": -15539
+    },
+    {
+      "u": 9,
+      "A_ascending": [
+        -4,
+        20,
+        5,
+        -20,
+        0,
+        4
+      ],
+      "norm": -20439
+    }
+  ],
+  "norm_methods": [
+    "Integer 6x6 multiplication-matrix determinants",
+    "Independent SymPy resultants"
+  ],
+  "real_cyclotomic_identities": "Orders 7 and 21 passed exact Laurent/cyclotomic checks",
+  "S21_square_identity": "Passed exact reduction modulo Psi7",
+  "source_cutoff": "Sources 3,7,21 derived structurally for target7; not a numerical cutoff"
+}

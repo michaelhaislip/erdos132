@@ -68,16 +68,24 @@ The quotient is a unit in either of these circumstances:
    in Q(z). Equation (S), and conjugation fixing each such prime,
    give 2*v(pi)=2m. Thus (pi)=(1-z).
 
-Kronecker's theorem then makes pi/(1-z) a root of unity u. Equating
-beta=x+u*(1-z) to its complex conjugate gives the six-term relation
+Kronecker's theorem then makes pi/(1-z) a root of unity. Define
+u=-pi/(1-z), so beta=x-u*(1-z). Equating beta to its complex
+conjugate gives the six-term relation
 
     x-x^-1-u+u*z+u^-1-u^-1*z^-1=0.                          (T)
 
+Sign correction, board response 42: the original research record used
+u=pi/(1-z) with (T), missing a minus sign. Replacing that auxiliary
+root by its negative gives the convention above. The unit/split lemma
+is unaffected, and no proof in the previous target-3 theorem used (T).
+
 This reduction removes the unspecified Loxton representation length in
-the split situation. It suggests an effective torsion-coset problem in
-three variables, with only six terms. A complete solution of (T) and
-the necessary treatment of the non-split situation have not been
-integrated here. No statement that all axis targets are split is made.
+the split situation. The subsequent working solution of (T) is in
+SPLIT_REGIME_CLASSIFICATION.md. The later ODD_PAIR_CLASSIFICATION.md
+completes the non-split odd case using the normalized phase/inertia
+mechanism supplied by Claude in response 44. See ODD_AXIS_REVIEW_RECORD.md
+for that separate research and review cycle.
+No statement that all axis targets are split is made.
 
 ## Corrections and scope
 
