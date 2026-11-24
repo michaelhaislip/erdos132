@@ -116,9 +116,12 @@ after this audit. Claude's favorable review and the independent finite
 checks must not be described as a review of its Galois/norm argument.
 
 - No formal verification or human mathematical review.
-- The subsequent `COMPOSITE_TARGET3_NOTES.md` proofs and 10001 source-order
-  norm scan postdate the small-target audit. Their two infinite families
-  and strengthened coprimality statement need fresh independent review.
+- The subsequent `COMPOSITE_TARGET3_NOTES.md` proofs postdate the small-
+  target audit and received a separate read-only Claude review of 0483ce9.
+  It found no mathematical error in the two infinite families or
+  strengthened coprimality lemma. It inspected the scan code and JSON
+  but could not execute them. `COMPOSITE_TARGET3_AUDIT_RESPONSE.md` records
+  the review and a correction to one proposed cosmetic simplification.
 - No established literature novelty.
 - The independent checker shares the mathematical candidate reduction,
   despite using different arithmetic code and field representation.

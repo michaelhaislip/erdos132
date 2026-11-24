@@ -13,7 +13,8 @@ new mathematical result.
 [COMPOSITE_TARGET3_NOTES.md](COMPOSITE_TARGET3_NOTES.md) adds elementary
 working proofs excluding target-order-3 pairs with source order `3^a`
 (`a >= 2`), or `p^a` for primes `p = 5 or 7 mod 12`. These extend to
-every cyclotomic ambient field. The new proofs need independent review.
+every cyclotomic ambient field. A [dedicated read-only Claude audit](COMPOSITE_TARGET3_AUDIT_RESPONSE.md)
+found no mathematical error; it inspected the script but did not run it.
 An exact norm scan also rejects every odd source order 5..10001 for
 target order 3, with separate determinant controls through 105. The
 general composite-source claim remains unproved.

@@ -1,9 +1,11 @@
 # Composite-source target-three exclusions
 
-Working proof notes, developed after Claude's audit of ba43b71. The new
-arguments in this file have not received that review. They prove two
-infinite composite families and give an exact finite norm check through
-source order 10001. The general composite norm claim is NOT proved.
+Working proof notes. Claude's dedicated read-only audit of revision
+0483ce9 found no mathematical error in the two infinite families or the
+strengthened coprimality lemma. It did not execute the finite scan. See
+`COMPOSITE_TARGET3_AUDIT_RESPONSE.md` for scope and the correction to one
+suggested simplification. The exact finite norm check covers source orders
+through 10001. The general composite norm claim is NOT proved.
 
 ## Setup and a norm condition for every odd source order
 
@@ -59,7 +61,9 @@ In particular N_(p^a)=U_(p^a)/U_(p^(a-1)) for odd prime powers.
 
 For every a>=2, sqrt(C_(3^a)^2+8) belongs to no cyclotomic field.
 
-Proof. The identity (x+x^(-1))^3-3*(x+x^(-1))=x^3+x^(-3) gives
+Proof. Take x=lambda^m for odd m. The Pell relation gives
+x^(-1)=sqrt(3)*U_m-sqrt(2)*W_m, so x+x^(-1)=2*sqrt(3)*U_m.
+The identity (x+x^(-1))^3-3*(x+x^(-1))=x^3+x^(-3) then gives
 
     U_(3m)=3*U_m*(4*U_m^2-1),    m odd.
 
@@ -140,7 +144,9 @@ positive control and is the only survivor when that control is included.
 
 These tests concern a single source order per norm, not all pairs at
 each polygon order. They exclude every target-3 pair of any of those
-source orders at every ambient multiple of lcm(3,e). They do not classify
+source orders at every odd ambient polygon multiple of lcm(3,e). The
+algebraic nonsquareness statement applies to all cyclotomic fields.
+These tests do not classify
 other target orders, prove a general norm theorem, or settle the axis
 conjecture. This extends the recorded target-3 norm check beyond the
 previous 177 selected pairs, without claiming a general pair census.
@@ -185,6 +191,8 @@ This limited literature check establishes neither novelty nor the absence
 of some other applicable theorem. The full nonsquareness claim remains
 unproved in this project. Unbounded families still missing include mixed
 prime factors and prime powers p^a, a>=2, with p=1 or 11 modulo 12.
-The strengthened coprimality lemma and the two new infinite-family
-proofs need fresh independent review. Target order 5 and the general
+The strengthened coprimality lemma and the two infinite-family proofs
+received a dedicated read-only model audit, with no mathematical error
+reported. The audit did not rerun the script, and is neither formal
+verification nor human peer review. Target order 5 and the general
 planar Erdos problem also remain unresolved here.

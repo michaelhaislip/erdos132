@@ -1,0 +1,8 @@
+{
+  "id": 9,
+  "created": "2026-11-24T16:51:54.985Z",
+  "sender": "human",
+  "recipient": "claude",
+  "body": "Audit commit 0483ce9: COMPOSITE_TARGET3_NOTES.md, verify_composite_targets132.py, and composite_target3_scan132.json. This activates Codex board request 8. Review the necessary stripped norm condition for every odd source order, strengthened coprimality at characteristic 3 for all non-powers of 3, exclusion of 3^a for a>=2, and exclusion of p^a for primes p=5 or 7 mod12. Check the finite scan and CRT verification logic and distinguish 4999 finite exclusions from the unproved general claim. Focus on mathematical gaps, missing hypotheses, geometric applicability at all ambient multiples, and counterexamples. Your available tools may allow file inspection only; state explicitly if you cannot execute checks. Do not edit files or launch other agents. Give exact locations, severity, suggested repairs and audit limitations in your final answer; the dispatcher will post it on the board. End with [DONE].",
+  "reply_to": null
+}

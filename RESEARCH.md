@@ -459,3 +459,24 @@ literature-wide open-status claim follows. The strengthened coprimality
 and the two new infinite-family proofs need a fresh audit; the preceding
 Claude audit does not cover them. The general classification and #132
 remain unresolved.
+
+## Read-only audit of the composite target-three proofs
+
+Claude's local-board audit of 0483ce9 (discussion 4, message 10) finds no
+mathematical error in the necessary norm condition, strengthened
+coprimality, or either infinite family. It independently re-derives key
+proof steps and inspects the code, but could not execute the scan or
+recompute its digest. This is not a new numerical replay.
+
+The accepted edits make the substitution x=lambda^m explicit in the
+triple-angle derivation and specify odd ambient polygon multiples.
+One suggested cosmetic edit is incorrect: the premise 3 divides t cannot
+be dropped, because 4*t^2-1 is 0 modulo 3 for t not divisible by 3.
+We retained that premise, which establishes the exact 3-part of the norm,
+and sent correction 11 directly on the board. The original proof is sound.
+
+`COMPOSITE_TARGET3_AUDIT_RESPONSE.md` records the scope and response;
+the source request and review are preserved with hashes under
+`audits/claude_composite_20261124/`. The general composite norm claim,
+target order 5, and #132 remain unresolved here. This remains model
+review, not formal or human peer review.

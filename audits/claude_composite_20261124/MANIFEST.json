@@ -1,0 +1,21 @@
+{
+  "source": "Local message board, discussion 4, messages 9 and 10",
+  "audited_commit": "0483ce9",
+  "files": [
+    {
+      "path": "source/BOARD_MESSAGE_9.json",
+      "bytes": 1043,
+      "sha256": "ab75fd107727ac3c37df0de7e88c77795568169bb7e3701ad65add0a4a594cb5"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_10.json",
+      "bytes": 5452,
+      "sha256": "056441c24959de09027ba5105b0c597e8f3b341664819ceaf41b5a86acb8bba4"
+    },
+    {
+      "path": "source/AUDIT_COMPOSITE_TARGET3.md",
+      "bytes": 5266,
+      "sha256": "a8413dd0d0e197aebdb6b4a34f4f3b2d12346228e44567f35e86aef91b65d817"
+    }
+  ]
+}
