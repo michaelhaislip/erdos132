@@ -15,8 +15,11 @@ doubling criterion: an exact identity restricts common prime-ideal factors,
 yielding a necessary norm filter. An explicit order-15 example proves that
 the norm filter is not sufficient. The notes also prove the sigma_2
 classification for primes where doubling generates the real Galois group.
-The general family classification remains open; this new argument has
-not received independent review.
+The general family classification remains open. The subsequent
+[Claude audit and local response](SIGMA2_AUDIT_RESPONSE.md) report no
+mathematical error. We reproduced its 47,004-pair CRT audit and checked
+the 177 residual subfield degrees exactly, correcting the target-order
+counts to 95 of order 3 and 82 of order 5.
 
 ```sh
 python verify_sigma2_structure132.py

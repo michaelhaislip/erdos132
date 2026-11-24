@@ -1,3 +1,4 @@
 # Preserve the user-supplied independent audit byte-for-byte across platforms.
 audits/claude_indep.py -text
 audits/claude_axis_20261124/conj/** -text
+audits/claude_sigma2_20261124/sigma2_audit_for_codex/** -text

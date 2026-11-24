@@ -46,7 +46,10 @@ The elementary cyclotomic evaluation is
 Consequently A and B cannot share an odd prime-ideal divisor except
 above 3, or above p when d is a prime power. The statement descends to
 prime ideals of K: a common divisor there would extend to one in the
-full field.
+full field: choose a prime above a proposed common divisor in K; both
+elements still reduce to zero there, contradicting the full-field result.
+The implication used above is explicit from
+C_i^2-4=(zeta_d^i-zeta_d^(-i))^2, which forces zeta_d^(2i)=1.
 
 At residue characteristic 2 and i>0, A reduces to C_i^2, which is nonzero.
 Indeed d is odd, so X^d-1 is squarefree modulo 2; its distinct cyclotomic
@@ -57,8 +60,10 @@ even valuation instead. In either case there is no odd valuation at 2.
 
 ## Necessary norm filter
 
-If AB is a square, then at every nonexceptional prime ideal dividing A,
-B is a unit. Its valuation in A must therefore be even. Thus the square
+If AB is a square, then at every prime ideal dividing A of residue
+characteristic outside S and {2}, B is a unit. Its valuation in A must
+therefore be even. The valuations above 2 are even by the preceding
+paragraph, not by a claim that B is a unit there. Thus the square
 class of the IDEAL (A) is supported only at primes above
 
     S={3}, or S={3,p} if d=p^a.
@@ -161,3 +166,19 @@ Galois information. No larger census or general proof is claimed here.
 `python verify_sigma2_structure132.py` checks (1) symbolically, both
 order-15 examples by exact arithmetic, and known-family controls. These
 checks support the written arguments, not a formal proof of them.
+
+## Subsequent independent model audit
+
+The user supplied Claude's audit of commit 31494c6. It found no
+mathematical error and prompted the characteristic-2 wording correction
+above. See `SIGMA2_AUDIT_RESPONSE.md` for reproduction and limitations.
+
+The audit identifies a general obstruction to improving a norm-only
+strategy: if A belongs to a subfield F of K with [K:F] even, then
+
+    Norm_(K/Q)(A)=Norm_(F/Q)(A)^[K:F]
+
+is automatically an integer square. Stripping any exceptional primes
+still leaves a square, so the filter cannot reject such A at all.
+This explains the order-15 example structurally rather than as a fluke.
+It does not imply that every norm survivor has that structure.

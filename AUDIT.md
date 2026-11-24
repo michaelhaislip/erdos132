@@ -91,9 +91,11 @@ The established working bound remains e>=ceil((m+1)/10).
 
 ## Remaining limitations
 
-Scope update: `SIGMA2_NOTES.md` and its norm/gcd argument were developed
-after the supplied reviews. They are new working arguments requiring
-independent audit; the earlier favorable reviews do not certify them.
+Scope update: the initial reviews did not cover `SIGMA2_NOTES.md`.
+The user subsequently supplied a dedicated audit of revision 31494c6;
+`SIGMA2_AUDIT_RESPONSE.md` records the wording fix, full small-order CRT
+replay, exact residual-degree checks, and corrections to two audit claims.
+This is model review, not formal or human peer review.
 
 Expanded-packet update: `CLAUDE_AXIS_REVIEW.md` reviews the subsequently
 supplied research log, short prime valuation proof, conditional family

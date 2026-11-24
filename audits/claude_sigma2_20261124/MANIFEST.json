@@ -1,0 +1,19 @@
+{
+  "archive_sha256": "94d38ae378c94b4bee0eba7728996f5859af3c94866b4fa10a346c50df35dbe5",
+  "members": {
+    "sigma2_audit_for_codex/fixed_sigma.py": "0683381cfcb6c00a84cf6a8d8698343d11ee80a734900dc0b9394a16d57c9b8d",
+    "sigma2_audit_for_codex/filter_survivors_out.txt": "8260a94c8364eeb31da6b2dcb445d1a6e75b59a07d21d5866b527b138aad19cc",
+    "sigma2_audit_for_codex/sigma2_audit.py": "ae0c812568ed34e8caafa8f33a1559c97483b21a18de7ebd8018b57f414de504",
+    "sigma2_audit_for_codex/sigma2_sweep.jsonl": "1a6181caebc28f536dbd822be6cac6ca78ca2363741a51d862de639cdb7ceed2",
+    "sigma2_audit_for_codex/AUDIT_SIGMA2.md": "93c4e03d5b1e75ed6cc0965d5509d632e5ec4b4f14d89d1bebe822d239b24531",
+    "sigma2_audit_for_codex/README.md": "89b9abaaff0ebf95519d3abceb92e15a5f1f9114ca891933a535f51cf32f6aeb",
+    "sigma2_audit_for_codex/prime_hypothesis_out.txt": "6a984fcffcd537693c5ca6c2182e1221a72bf99ccafd35b7816e6417b66359e1",
+    "sigma2_audit_for_codex/filter_survivors.py": "ae320fa92c8b6fbdb6a20ca114081710e871c7936bcf79e79ef834d0cab07c99",
+    "sigma2_audit_for_codex/combined_filter.py": "5b5d1ec053641d995a89b6361c9891af5ef73bc41e9bda081c6309afdda7ecf3",
+    "sigma2_audit_for_codex/sieve.py": "29e17551d6826266ce984dbc25b1c8c0f9ec262d5b8cb36c74dd811516868163",
+    "sigma2_audit_for_codex/prime_hypothesis.py": "022c720d33dc16a9ae7b654ac1e93db471e0b0592e068ef693b98e11610e014e",
+    "sigma2_audit_for_codex/galois_sieve.py": "ba41105fa6a22455e6f869840073a9f2dd4cf184c88a247963e63888123b2c85",
+    "sigma2_audit_for_codex/fixed_sigma2_7_301_out.txt": "24db8d085c643a67be6f98e91cccc1fce76439f0dcf2024a6041304038d88e7b",
+    "sigma2_audit_for_codex/combined_filter_out.txt": "f90bfc2f006b94dc7eb3fbeb9baf0b7803cbf2f79b95d63eeb7ea58f7d1e94db"
+  }
+}

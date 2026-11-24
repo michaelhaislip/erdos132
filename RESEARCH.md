@@ -320,3 +320,27 @@ norms and residue witnesses for both order-15 examples, and 17 known-
 family controls. These support a working proof, not formal verification.
 No larger census was run. The general admissibility classification and
 the general planar problem remain unresolved.
+
+## Dedicated sigma_2 audit
+
+The user supplied Claude's audit of revision 31494c6. It found no
+mathematical error; we fixed the overly broad 'B is a unit' wording
+at residue characteristic 2. The original result and bounds are unchanged.
+We reproduced all 50 independent CRT rows through order 105: 47,004
+pairs, 43,626 non-family pairs, 43,120 norm rejections, 506 non-family
+norm survivors, and no proposed soundness or structural violations.
+All 878 distinct used primes were trial-divided, 1,488 generator plans
+checked, and CRT reconstruction bounds verified.
+
+The supplied numerical sign selection leaves 177 pairs. We verified
+their discriminant degrees and even subfield indices exactly, removing
+the audit's dependence on rounded conjugates for that classification.
+All targets have order 3 or 5, which proves positivity analytically.
+Their correct target-order split is 95/82, not 97/80: the source grouped
+by min(source_order,target_order), mislabeling two order-15 pairs.
+The audit also overlooked existing negative controls in our test.
+
+The general even-index-subfield mechanism explains why norms cannot
+finish the proof. Target orders 3 and 5 are the next focused lead, but
+the concentration is not proved beyond this finite range. Details and
+reproduction commands are in `SIGMA2_AUDIT_RESPONSE.md`.

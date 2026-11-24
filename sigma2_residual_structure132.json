@@ -1,0 +1,1425 @@
+{
+  "scope": "Exact degrees for the 177 source norm/sign survivors; sign selection inherited from the supplied floating scan. Target orders 3 and 5 imply total positivity analytically.",
+  "results": [
+    {
+      "d": 15,
+      "i": 3,
+      "u": 5,
+      "exact_degree_of_discriminant": 2,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 15,
+      "i": 5,
+      "u": 3,
+      "exact_degree_of_discriminant": 2,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 15,
+      "i": 5,
+      "u": 6,
+      "exact_degree_of_discriminant": 2,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 15,
+      "i": 6,
+      "u": 5,
+      "exact_degree_of_discriminant": 2,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 21,
+      "i": 3,
+      "u": 7,
+      "exact_degree_of_discriminant": 3,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 21,
+      "i": 6,
+      "u": 7,
+      "exact_degree_of_discriminant": 3,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 21,
+      "i": 9,
+      "u": 7,
+      "exact_degree_of_discriminant": 3,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 33,
+      "i": 3,
+      "u": 11,
+      "exact_degree_of_discriminant": 5,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 33,
+      "i": 6,
+      "u": 11,
+      "exact_degree_of_discriminant": 5,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 33,
+      "i": 9,
+      "u": 11,
+      "exact_degree_of_discriminant": 5,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 33,
+      "i": 12,
+      "u": 11,
+      "exact_degree_of_discriminant": 5,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 33,
+      "i": 15,
+      "u": 11,
+      "exact_degree_of_discriminant": 5,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 35,
+      "i": 5,
+      "u": 7,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 35,
+      "i": 5,
+      "u": 14,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 35,
+      "i": 10,
+      "u": 7,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 35,
+      "i": 10,
+      "u": 14,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 35,
+      "i": 15,
+      "u": 7,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 35,
+      "i": 15,
+      "u": 14,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 39,
+      "i": 3,
+      "u": 13,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 39,
+      "i": 6,
+      "u": 13,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 39,
+      "i": 9,
+      "u": 13,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 39,
+      "i": 12,
+      "u": 13,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 39,
+      "i": 15,
+      "u": 13,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 39,
+      "i": 18,
+      "u": 13,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 45,
+      "i": 5,
+      "u": 9,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 45,
+      "i": 5,
+      "u": 18,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 45,
+      "i": 10,
+      "u": 9,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 45,
+      "i": 10,
+      "u": 18,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 45,
+      "i": 20,
+      "u": 9,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 45,
+      "i": 20,
+      "u": 18,
+      "exact_degree_of_discriminant": 6,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 51,
+      "i": 3,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 6,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 9,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 12,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 15,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 18,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 21,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 51,
+      "i": 24,
+      "u": 17,
+      "exact_degree_of_discriminant": 8,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 55,
+      "i": 5,
+      "u": 11,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 5,
+      "u": 22,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 10,
+      "u": 11,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 10,
+      "u": 22,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 15,
+      "u": 11,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 15,
+      "u": 22,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 20,
+      "u": 11,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 20,
+      "u": 22,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 25,
+      "u": 11,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 55,
+      "i": 25,
+      "u": 22,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 57,
+      "i": 3,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 6,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 9,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 12,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 15,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 18,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 21,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 24,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 57,
+      "i": 27,
+      "u": 19,
+      "exact_degree_of_discriminant": 9,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 65,
+      "i": 5,
+      "u": 13,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 5,
+      "u": 26,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 10,
+      "u": 13,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 10,
+      "u": 26,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 15,
+      "u": 13,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 15,
+      "u": 26,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 20,
+      "u": 13,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 20,
+      "u": 26,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 25,
+      "u": 13,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 25,
+      "u": 26,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 30,
+      "u": 13,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 65,
+      "i": 30,
+      "u": 26,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 69,
+      "i": 3,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 6,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 9,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 12,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 15,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 18,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 21,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 24,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 27,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 30,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 69,
+      "i": 33,
+      "u": 23,
+      "exact_degree_of_discriminant": 11,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 3,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 6,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 9,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 12,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 18,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 21,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 24,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 27,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 33,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 75,
+      "i": 36,
+      "u": 25,
+      "exact_degree_of_discriminant": 10,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 85,
+      "i": 5,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 5,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 10,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 10,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 15,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 15,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 20,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 20,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 25,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 25,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 30,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 30,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 35,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 35,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 40,
+      "u": 17,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 85,
+      "i": 40,
+      "u": 34,
+      "exact_degree_of_discriminant": 16,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 87,
+      "i": 3,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 6,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 9,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 12,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 15,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 18,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 21,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 24,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 27,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 30,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 33,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 36,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 39,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 87,
+      "i": 42,
+      "u": 29,
+      "exact_degree_of_discriminant": 14,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 3,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 6,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 9,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 12,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 15,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 18,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 21,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 24,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 27,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 30,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 33,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 36,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 39,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 42,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 93,
+      "i": 45,
+      "u": 31,
+      "exact_degree_of_discriminant": 15,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 95,
+      "i": 5,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 5,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 10,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 10,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 15,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 15,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 20,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 20,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 25,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 25,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 30,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 30,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 35,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 35,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 40,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 40,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 45,
+      "u": 19,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 95,
+      "i": 45,
+      "u": 38,
+      "exact_degree_of_discriminant": 18,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 3,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 5,
+      "u": 21,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 5,
+      "u": 42,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 6,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 9,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 10,
+      "u": 21,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 10,
+      "u": 42,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 12,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 18,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 20,
+      "u": 21,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 20,
+      "u": 42,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 24,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 25,
+      "u": 21,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 25,
+      "u": 42,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 27,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 33,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 36,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 39,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 40,
+      "u": 21,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 40,
+      "u": 42,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 48,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    },
+    {
+      "d": 105,
+      "i": 50,
+      "u": 21,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 50,
+      "u": 42,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 5
+    },
+    {
+      "d": 105,
+      "i": 51,
+      "u": 35,
+      "exact_degree_of_discriminant": 12,
+      "exact_subfield_index": 2,
+      "target_order": 3
+    }
+  ],
+  "target_order_counts": {
+    "3": 95,
+    "5": 82
+  }
+}
