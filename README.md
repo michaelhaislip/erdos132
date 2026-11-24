@@ -10,6 +10,18 @@ new mathematical result.
 
 ## Latest result
 
+[COMPOSITE_TARGET3_NOTES.md](COMPOSITE_TARGET3_NOTES.md) adds elementary
+working proofs excluding target-order-3 pairs with source order `3^a`
+(`a >= 2`), or `p^a` for primes `p = 5 or 7 mod 12`. These extend to
+every cyclotomic ambient field. The new proofs need independent review.
+An exact norm scan also rejects every odd source order 5..10001 for
+target order 3, with separate determinant controls through 105. The
+general composite-source claim remains unproved.
+
+```sh
+python verify_composite_targets132.py
+```
+
 [SMALL_TARGET_NOTES.md](SMALL_TARGET_NOTES.md) gives a new working proof:
 a pair with target order 3 and prime source order `p >= 5` is inadmissible
 in every cyclotomic ambient field. The argument descends the square-class

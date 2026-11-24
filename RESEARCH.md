@@ -412,3 +412,50 @@ for reproduction and limitations. Both supplied packets are preserved
 with manifests, including the corrected sigma_2 export. This remains
 model review and computational cross-verification, not formal or human
 peer review. The general classification and #132 remain unresolved.
+
+## Composite target-three continuation
+
+`COMPOSITE_TARGET3_NOTES.md` proves two additional working infinite
+families by elementary arguments. For source e=3^a, a>=2, the norm is
+3*(4*U_(3^(a-1))^2-1); it has exactly one factor of 3, and stripping it
+leaves a number strictly between consecutive squares. For source e=p^a
+with p=5 or 7 modulo 12, the primitive norm is -1 modulo 3. Both violate
+the necessary coefficient-field norm condition for a cyclotomic square
+root, excluding these target-3 pairs at every ambient multiple.
+
+The coprimality argument strengthens as well. At characteristic 3 the
+residue of a primitive eth root retains exact order equal to e with its
+3-power factor removed. A can vanish there only when e is a pure power
+of 3. Thus A and sigma_2(A) are coprime for every other odd source order,
+including mixed orders divisible by 3. The norm condition only needs
+factors of 3 removed, uniformly in e.
+
+`verify_composite_targets132.py` checks every odd source order 5..10001:
+4999 exact stripped norms, all nonsquare, covering 1227 prime and 3772
+composite orders for target order 3. It agrees with exact multiplication-
+matrix determinants for all 52 odd source orders 3..105 and with an
+alternate divisibility reconstruction of primitive parts through 301.
+Separate split-prime CRT products agree exactly for source orders
+121,143,169,245,1001,5005,10001, using 839 trial-divided prime/generator
+plans and explicit reconstruction bounds. This path uses neither the
+Pell norm identity nor the real-cyclotomic polynomial implementation.
+Source order 3 remains the positive control. The saved summary has a
+digest of the complete exact norm and floor-square-root stream.
+
+The new prime-power family covers the ten source-order-25 rows in the
+earlier residual list. Together with the prime-source theorem, 83 of
+the 95 target-3 rows now have infinite-family explanations; the twelve
+source-order-35 rows remain finite exact exclusions. This does not add
+new exclusions to that old list. The source-order sweep is separately
+broader than that selected list, but is not a general pair census.
+
+The full composite nonsquareness claim remains unproved. The modulo-3
+character argument gives 1 for mixed-prime orders coprime to 6 and for
+prime powers with base 1 or 11 modulo 12; those classes need a different
+argument. A limited primary-source literature check found that the
+inspected Lucas odd-multiplicity primitive-divisor theorem has hypotheses
+that do not apply directly to this sequence. No impossibility or
+literature-wide open-status claim follows. The strengthened coprimality
+and the two new infinite-family proofs need a fresh audit; the preceding
+Claude audit does not cover them. The general classification and #132
+remain unresolved.

@@ -143,8 +143,11 @@ integers are saved in `small_target_descent132.json`.
 
 The unbounded prime-source theorem covers 73 of the 95 target-order-3
 rows. The other 22 have source orders 25 (10 rows) or 35 (12 rows).
-Those 22, and the 82 target-order-5 rows, are rejected here by finite
-exact norm calculation only. No larger census is claimed.
+At revision ba43b71 those 22, and the 82 target-order-5 rows, were handled
+by finite exact norm calculation only. The subsequent elementary
+prime-power theorem in `COMPOSITE_TARGET3_NOTES.md` also covers the ten
+source-order-25 rows. The remaining twelve source-order-35 rows and the
+82 target-order-5 rows still have finite certificates in this analysis.
 
 All 177 pairs were already excluded by exact ambient sigma_2 non-residue
 tests in the earlier sweep. By Lemma G, those rejections already imply
@@ -188,6 +191,13 @@ exclusion to all source orders coprime to 6. Bumby's theorem controls
 squares of U_n themselves, not squares of these quotients. It therefore
 does not settle this proposed extension. The audit checks 18 composite
 examples up to 245, not all orders or a general nonsquareness proof.
+
+Subsequent progress is recorded in `COMPOSITE_TARGET3_NOTES.md`: elementary
+working proofs cover powers of 3 above 3, and prime powers p^a with
+p=5 or 7 modulo 12. Coprimality also extends to every odd source order
+that is not a power of 3. An exact norm scan covers every odd source
+order 5..10001 for target order 3. These new arguments postdate the
+dedicated audit; the general composite claim is still unproved.
 
 ## Target five: an explicit norm reduction, not yet a general proof
 
