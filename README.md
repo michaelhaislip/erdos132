@@ -31,3 +31,17 @@ python analyze132.py
 
 This produces `analysis132.json`. The research notes also record a counting
 reduction and existing small-case work to avoid duplicating known results.
+
+## Proof exploration
+
+[PROOF_NOTES.md](PROOF_NOTES.md) records a working proof for sets formed
+from a regular odd polygon (at least seven vertices) by adding one or two
+points. It includes attribution to prior work on the same subclass and
+does not claim novelty or a general solution. Run the supporting exact
+algebra checks with:
+
+```sh
+python verify_moments132.py
+```
+
+The checks verify rational identities, not the geometric proof itself.

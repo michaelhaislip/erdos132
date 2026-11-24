@@ -135,3 +135,25 @@ The next mathematical task is to assess whether the counting reduction,
 few-distance classifications, and deletion bounds yield anything beyond
 existing small-case work. High effort is now recommended before that
 proof-oriented phase. No new theorem or general solution is claimed.
+
+## Third pass: proof exploration and additional prior work
+
+See `PROOF_NOTES.md` for a complete working proof of the regular odd
+polygon extension obstruction and its one-/two-added-point corollary.
+The proof uses circle intersections, ordering of chord lengths, and exact
+second/fourth moments. The companion `verify_moments132.py` passed 5,981
+exact rational/algebra checks. This is not a Lean verification.
+
+The novelty search located existing work on the same polygon subclass,
+including September 2026 public posts and Tomasz Tarlowski's November 22
+moment-obstruction project. No novelty is claimed. The sources and the
+extent of our inspection are recorded in the proof notes.
+
+The small-case audit also found Marchetto's manuscript covering 7 through
+13 (11 and 12 with stated classification qualifications), and separate
+conditional work for 14. We have not fully verified those claims and
+should not present these cases as fresh targets without auditing them.
+
+The general case remains unresolved by this project. A precise next
+question is whether a two-new-distance extension can be excluded, or a
+nonregular core handled, without a full few-distance classification.
