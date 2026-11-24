@@ -182,3 +182,10 @@ is automatically an integer square. Stripping any exceptional primes
 still leaves a square, so the filter cannot reject such A at all.
 This explains the order-15 example structurally rather than as a fluke.
 It does not imply that every norm survivor has that structure.
+
+The subsequent `SMALL_TARGET_NOTES.md` applies Lemma G in Q(A) itself.
+This gives a stronger necessary norm filter for actual cyclotomic
+admissibility, as opposed to the sigma_2-only condition in K_d. It rejects
+all 177 selected finite residuals and, using a classical Pell-equation
+theorem, excludes target order 3 with prime source order at all ambient
+orders. These new arguments are outside the audit's scope.

@@ -10,6 +10,21 @@ new mathematical result.
 
 ## Latest result
 
+[SMALL_TARGET_NOTES.md](SMALL_TARGET_NOTES.md) gives a new working proof:
+a pair with target order 3 and prime source order `p >= 5` is inadmissible
+in every cyclotomic ambient field. The argument descends the square-class
+condition to a smaller abelian field and uses Bumby's published theorem
+on `3x^4-2y^2=1`. It has not yet received an independent audit.
+
+The same field descent rejects all 177 previously selected residual pairs
+by exact norms, including the 82 target-order-5 pairs. This is a finite
+recheck, not a general proof for target order 5 or composite source orders.
+The general axis classification and #132 remain unresolved.
+
+```sh
+python verify_small_targets132.py
+```
+
 [SIGMA2_NOTES.md](SIGMA2_NOTES.md) records a focused proof attempt on the
 doubling criterion: an exact identity restricts common prime-ideal factors,
 yielding a necessary norm filter. An explicit order-15 example proves that

@@ -344,3 +344,36 @@ The general even-index-subfield mechanism explains why norms cannot
 finish the proof. Target orders 3 and 5 are the next focused lead, but
 the concentration is not proved beyond this finite range. Details and
 reproduction commands are in `SIGMA2_AUDIT_RESPONSE.md`.
+
+## Smaller-field descent and the prime-source target-three case
+
+`SMALL_TARGET_NOTES.md` generalizes Lemma G to every abelian coefficient
+field E: if sqrt(A) is cyclotomic, then A*tau(A) is a square in E for
+each automorphism tau. Applying this in E=Q(A) avoids the automatic
+squaring of ambient norms at even subfield index. The common-prime
+restriction descends, giving the same exceptional-prime norm filter
+in E. This necessary test concerns actual admissibility, not merely
+the sigma_2 square condition in the larger ambient field.
+
+For target order 3 and prime source order p>=5, A=C_p^2+8 and
+sigma_2(A)=A^2-20A+108 have coprime ideals. Cyclotomic admissibility
+would force Norm_(K_p/Q)(A) to be square. This norm equals U_p in
+the Pell sequence 3U_n^2-2W_n^2=1. A square U_p=X^2 contradicts
+Bumby's published theorem that 3X^4-2Y^2=1 has only the positive
+solutions (1,1) and (3,11). This gives an unbounded working exclusion
+for these pairs, at every ambient multiple, rather than a finite scan.
+It does not exclude source order 3 / target order 7 in the heptagon family.
+
+`verify_small_targets132.py` checks the exact norm/Pell identity for all
+24 primes 5..101, the source-order-3 exception, and target-order-5 norm
+reductions for source orders 3,7,11. It also rechecks the 177 residuals
+using norms in their exact degree-2-index coefficient fields. All are
+rejected: 95 target-order-3 and 82 target-order-5 pairs. Of the 95,
+73 fall under the unbounded theorem; 22 have composite source order
+25 or 35 and are handled only by these finite checks.
+
+For target order 5 and source order e coprime to 5, the relative norm
+from K_e*K_5 to K_e is C_e^4+12*C_e^2+16. A general nonsquareness
+argument remains missing. The new notes need fresh independent review;
+the earlier favorable Claude audit does not cover them. No general
+axis classification, general solution to #132, or novelty claim follows.

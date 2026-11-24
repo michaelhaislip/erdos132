@@ -97,6 +97,13 @@ The user subsequently supplied a dedicated audit of revision 31494c6;
 replay, exact residual-degree checks, and corrections to two audit claims.
 This is model review, not formal or human peer review.
 
+Scope update: `SMALL_TARGET_NOTES.md` and the smaller-field norm/Pell
+argument were developed after the dedicated sigma_2 audit. Neither the
+unbounded prime-source target-order-3 exclusion nor the new 177-pair
+descent check is covered by that favorable review. The written proof uses
+Bumby's published theorem; the local script checks supporting identities
+and finite cases, not that theorem or the general field-theoretic argument.
+
 Expanded-packet update: `CLAUDE_AXIS_REVIEW.md` reviews the subsequently
 supplied research log, short prime valuation proof, conditional family
 classification reduction, and Lemma G. It records two repairable proof
