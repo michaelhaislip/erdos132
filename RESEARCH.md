@@ -546,3 +546,52 @@ the audit-status and validation metadata are updated. Execution remains
 Codex's local verification, not Claude's. See
 `RESIDUE_TARGET3_AUDIT_RESPONSE.md`. The general classification and #132
 remain unproved here; no formal or human peer review is claimed.
+
+## Mersenne weights and source orders with more prime factors
+
+`MERSENNE_WEIGHT_TARGET3_NOTES.md` proves a working general criterion:
+define w(p)=2^(v2(p^2-1)-3) for each distinct odd source prime. If their
+weights sum to D=2^(t-2), with ell=2^t-1 a Mersenne prime and odd t>=3,
+then (N_e/ell)=-1 for every positive exponent choice. This extends the
+old modulo-7 rule beyond two source primes. It includes all powers of
+97, all 17^a*47^b, and all 7^a*17^b*23^c. Weight partitions also give
+families with four through eight distinct primes at ell=31, 32 at
+ell=127, and 2048 at ell=8191.
+
+The proof realizes lambda=sqrt(3)+sqrt(2) in a quadratic finite field,
+where it has exact order 2^(t+1). Every odd-index U_n is a unit, and the
+logarithmic quadratic character f has f(k+D)=f(k)+1. Over F_2 this is
+Delta^D f=1. Each source prime contributes an operator divisible by
+Delta^w(p), with remaining factor taking the value one on constants.
+The Moebius norm character is their product applied to f, hence the
+constant one when the weights sum to D. This proves the non-residue
+claim without enumerating arbitrary source exponents or divisors.
+
+Claude's board audit, discussion 6 response 16, finds no mathematical
+error in a frozen uncommitted draft with SHA-256 recorded in the audit
+manifest. It checks the new finite-field, weight and operator steps by
+hand, treating earlier norm/descent/coprimality lemmas as dependencies.
+The unchanged draft and source messages are preserved. The accepted
+clarifications spell out the reduction map and clearing of denominators.
+They also state the stronger limitation: weights above D, or a zero
+shift, give character +1 at this modulus. A lower-bound hypothesis
+cannot replace the exact equality.
+
+`mersenne_weight132.py` and `verify_mersenne_weight132.py` agree for
+ell=7,31,127,8191. The first uses quadratic finite-field powering; the
+standalone checker reconstructs the data from the integer recurrence,
+without imports from the generator, norms or earlier audit arithmetic.
+Both check the half-period and integer-weight correspondences, 4176
+shift factorizations, and eleven source-family examples including 32
+distinct primes. Four selected full integer norms agree with their
+modular projections; the larger source-prime examples use operator
+calculations rather than full enormous norms or divisor enumerations.
+The square source-order-3 control and two rejection controls also pass.
+These are Codex executions: Claude neither executes nor audits the new
+verification code. The general theorem relies on its written argument,
+not a finite computation over the four parameter examples.
+
+See `MERSENNE_WEIGHT_AUDIT_RESPONSE.md` and `mersenne_weight132.json`.
+The criterion does not cover every source radical or prime power.
+Target order 5, the general axis classification and #132 remain unproved;
+novelty and formal or human peer review remain unestablished.

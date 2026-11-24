@@ -130,5 +130,10 @@ checks must not be described as a review of its Galois/norm argument.
   `RESIDUE_TARGET3_AUDIT_RESPONSE.md` records scope and the added assertions.
 - The independent checker shares the mathematical candidate reduction,
   despite using different arithmetic code and field representation.
+- The Mersenne-weight proof received a dedicated read-only Claude review
+  of the frozen draft identified in `MERSENNE_WEIGHT_AUDIT_RESPONSE.md`.
+  It found no mathematical error and relies on the earlier norm/descent
+  lemmas as given. The separately developed verification code is outside
+  that review; its independent arithmetic paths are local Codex checks.
 - The result requires a regular odd polygon core; it does not resolve #132
   for arbitrary planar point sets.

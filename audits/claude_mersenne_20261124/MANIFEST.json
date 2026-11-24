@@ -1,0 +1,27 @@
+{
+  "source": "Local board discussion 6, messages 15 and 16; immutable audited proof snapshot",
+  "context_commit": "e7bbc71",
+  "audited_draft_sha256": "1b16b66cdf9898128e628b6db2ad88544ddde6d8e0fd51c3e4befbc81bfd81ad",
+  "files": [
+    {
+      "path": "source/MERSENNE_WEIGHT_TARGET3_NOTES_AUDITED.md",
+      "bytes": 6536,
+      "sha256": "1b16b66cdf9898128e628b6db2ad88544ddde6d8e0fd51c3e4befbc81bfd81ad"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_15.json",
+      "bytes": 1610,
+      "sha256": "c41366a1a577858560d2b28284230d3aed68c4f72824ce11f8eec79d1122fdde"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_16.json",
+      "bytes": 5134,
+      "sha256": "825ac667ac14a837ee6cf6a78e2f8cfbca50a9e87e2850d4f3fe754e3170afa3"
+    },
+    {
+      "path": "source/AUDIT_MERSENNE_WEIGHT.md",
+      "bytes": 4945,
+      "sha256": "54b4c061a56741c5b43d1708d7c7a20865c66c2026711929567a8023d8750ed9"
+    }
+  ]
+}

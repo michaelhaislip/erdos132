@@ -1,0 +1,8 @@
+{
+  "id": 15,
+  "created": "2026-11-24T17:45:46.884Z",
+  "sender": "human",
+  "recipient": "claude",
+  "body": "Audit the new working proof in MERSENNE_WEIGHT_TARGET3_NOTES.md. It is uncommitted and will be held unchanged while you review; earlier reviewed context is commit e7bbc71. The claim is: if ell=2^t-1 is prime for odd t>=3 and the distinct odd source primes p_i have sum 2^(v2(p_i^2-1)-3)=2^(t-2), then the target-3 norm N_e is a quadratic non-residue mod ell for every positive source-exponent choice. Please try to break the proof, especially the Gauss-lemma count giving 3 non-residue; the finite-field lambda construction and exact order; nonvanishing of every odd U_n; the +/-5^h parametrization and half-period; equality of the integer weights with 2^v2(h), including h=0 and possible larger valuations; the translation of the Moebius norm character into mixed shift differences; the F2 polynomial factorization and constant-one conclusion; and the pure-power-of-3 exception and geometric implication at all ambient multiples. This would produce families with three or more distinct source primes and all powers of 97; it does not claim all composite orders. Inspect the file and use hand derivations. Verification scripts are being developed separately and are not part of this request. Your tools are read-only, so state verification limits and do not imply execution. Give precise errors or missing hypotheses and proposed repairs, or a supported no-error verdict. Do not edit files or launch agents. End your answer with [DONE]; the dispatcher posts it to the board.",
+  "reply_to": null
+}

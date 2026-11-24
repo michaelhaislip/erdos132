@@ -268,3 +268,9 @@ listed conditions, mixed-prime orders outside the stated families, and
 orders with more distinct prime factors remain without a uniform proof
 here. No general solution to the axis conjecture or Erdos problem #132,
 and no established novelty claim, follows.
+
+Subsequent work in `MERSENNE_WEIGHT_TARGET3_NOTES.md` replaces the
+modulo-7 quadratic law with a general half-period/difference argument
+at Mersenne primes. A weight-sum condition then covers source orders
+with three or more distinct primes. It is a separate theorem with its
+own hypotheses; the two-prime scope of Theorem A above is unchanged.

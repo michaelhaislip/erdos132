@@ -10,6 +10,24 @@ new mathematical result.
 
 ## Latest result
 
+[MERSENNE_WEIGHT_TARGET3_NOTES.md](MERSENNE_WEIGHT_TARGET3_NOTES.md) gives
+a working criterion for target order 3 with more distinct source primes.
+Define `w(p)=2^(v2(p^2-1)-3)`. If the distinct source-prime weights sum
+to `2^(t-2)` for a Mersenne prime `2^t-1 >= 7`, the norm is a quadratic
+non-residue at that prime for every positive exponent choice. Examples
+include all `97^a` and all `7^a * 17^b * 23^c`. The criterion also gives
+families with 8, 32 or 2048 distinct source primes.
+
+A [dedicated read-only Claude audit](MERSENNE_WEIGHT_AUDIT_RESPONSE.md)
+found no mathematical error in the frozen proof. Finite-field powering
+and a separate recurrence-based checker agree for parameters 7,31,127,
+8191. The general norm claim and #132 remain unproved.
+
+```sh
+python mersenne_weight132.py
+python verify_mersenne_weight132.py
+```
+
 [RESIDUE_COVER_TARGET3_NOTES.md](RESIDUE_COVER_TARGET3_NOTES.md) gives new
 working elementary proofs for every source order `5^a * 7^b`, every
 power of 11 or 13, and two-prime orders `p^a * q^b` with distinct primes
