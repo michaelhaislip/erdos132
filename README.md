@@ -20,14 +20,17 @@ Consequently #132 holds for a regular odd m-gon plus up to
 `2*max(3, ceil((m+1)/10))-2` arbitrary distinct additional points. For
 example, the purely analytical bound covers a regular 101-gon plus any
 20 added points. This remains a restricted geometric subclass. The proof
-is not formally verified or externally reviewed, and novelty is unestablished.
+has received a second-model audit reporting no mathematical error, but
+is not formally verified or human-peer-reviewed; novelty is unestablished.
+See [AUDIT.md](AUDIT.md) for the audit's scope and the revisions it prompted.
 
 ```sh
 python verify_overlap132.py
 ```
 
-This checks the recurrence algebra and finite deletion patterns supporting
-the general hand-written argument. It is not a general proof checker.
+This checks 24 recurrence algebra controls and all abstract deletion
+patterns with e=1 or 2 for k=3 through 14. It does not check arbitrary e
+or geometric realizability and is not a general proof checker.
 
 ## Run the initial experiment
 

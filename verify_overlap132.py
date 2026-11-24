@@ -1,6 +1,8 @@
-"""Check the finite deletion patterns behind the overlap-run lemma.
+"""Check all e=1,2 deletion patterns for k=3..14, plus recurrence algebra.
 
-This is a combinatorial cross-check; the general argument is in the notes.
+These are abstract patterns, not necessarily realizable polygon distances.
+This checks only the e<=2 specialization, not arbitrary overlap deficits.
+The general argument is in the notes.
 """
 from itertools import combinations
 from fractions import Fraction as F
@@ -50,7 +52,8 @@ def run():
                         worst, witness = length, (deleted_b, deleted_q)
                     checked += 1
         print(f'k={k}: minimum longest run={worst}, deletion witness={witness}')
-    print(f'{checked} deletion patterns checked; the general proof is separate.')
+    print(f'{checked} abstract e=1,2 deletion patterns checked for k=3..14; '
+          '24 recurrence controls passed; the general proof is separate.')
 
 
 if __name__ == '__main__':

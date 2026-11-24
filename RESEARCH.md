@@ -205,3 +205,14 @@ algebra controls. These supplement a hand-written general proof; they
 do not formally verify it. No external review or priority determination
 has been performed. The obstacle of arbitrary nonregular planar sets
 remains untouched.
+
+## Second-model audit of commit 99e9f63
+
+The user supplied a Claude review reporting no mathematical error. We
+addressed its exposition points, narrowed the deletion-test scope to
+e=1,2 explicitly, and removed the unnecessary Hopf-Pannwitz dependency
+from the latest counting corollaries. See `AUDIT.md` for the full response.
+The reviewer reports an independent checker and a stronger empirical
+overlap bound through order 63, but its code was not attached. Those
+claims are not treated as verification reproduced in this repository,
+nor as a proof of the stronger bound. The mathematical result is unchanged.

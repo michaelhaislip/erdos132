@@ -3,7 +3,9 @@
 Working result: an elementary hand-checked argument for every odd polygon
 order, together with a computer-assisted improvement at seven small orders.
 No general solution of Erdős #132 or literature priority is claimed.
-This argument has not had outside review or formal proof verification.
+The user supplied a second-model audit reporting no mathematical error;
+see `AUDIT.md` for its scope and our responses. There has been no human
+peer review or formal proof verification.
 
 ## Uniform theorem
 
@@ -24,10 +26,11 @@ These q_j are strictly increasing for 0<=j<=k.
 If all m distances from p to the vertices differ, at most k of them are
 old, so at least k+1 are new, more than the required bound.
 
-Otherwise p is equidistant from two vertices a,b. Their perpendicular
-bisector is a polygon symmetry axis: in complex coordinates reflection
-maps vertex j to a+b-j modulo m. Since m is odd, that axis contains exactly
-one vertex (2j=a+b modulo m has one solution). Rotate that vertex to (1,0).
+Otherwise p is equidistant from two vertices v_a,v_b, where v_j=z^j
+and z=exp(2*pi*i/m). Their perpendicular bisector is a polygon symmetry
+axis: reflection sends z^j to z^(a+b-j), with exponents modulo m.
+Since m is odd, that axis contains exactly one vertex (2j=a+b modulo m
+has one solution). Rotate that vertex to (1,0).
 Then p=(r,0) for a signed real r, with r!=0,1.
 
 The k+1 distinct squared distance values from p are
@@ -36,7 +39,8 @@ The k+1 distinct squared distance values from p are
 
 For r>0 this sequence is increasing; for r<0, reverse it to make it
 increasing. Let B be that sorted list, let h=|B intersect Q|, and let
-e=k+1-h be the number of new distance values.
+e=k+1-h be the number of new distance values. In particular e>=1 because
+B has k+1 entries and Q has only k.
 
 ### 2. Three consecutive matches force r=1 or r=-1
 
@@ -66,9 +70,17 @@ For every remaining r, a common run can have at most two entries.
 
 ### 3. Count the breaks
 
-The common values, in increasing order, split into runs where consecutive
-matches are adjacent in both B and Q. A break requires skipping at least
-one noncommon entry of one of the lists.
+Because both lists are strictly increasing, their common values are
+matched in the same order: the first common value in B is the first in Q,
+and so on. Split these matches into runs where successive matches are
+adjacent entries in both lists.
+
+Between two successive common values, every intervening entry in either
+list is noncommon; otherwise it would be a common value between them.
+Each intervening entry lies in only one such gap. A break therefore
+consumes at least one noncommon entry, and different breaks consume
+disjoint entries. Entries before the first or after the last match do
+not create breaks, so counting all noncommon entries is an upper bound.
 
 There are e noncommon entries in B and e-1 in Q, because the list sizes
 are k+1 and k. Consequently there are at most 2e-1 breaks, or at most
@@ -90,8 +102,9 @@ exact cyclotomic calculation and division-free cross-check documented in
 
 for every odd m>=7 and every added point other than a vertex or the center.
 
-The uniform ceil((m+1)/10) bound itself uses no finite computation; only
-the improvement to three for m<21 depends on it.
+The uniform ceil((m+1)/10) bound itself uses no finite computation. Only
+the improvement to three for m<21 depends on the seven exact small-order
+computations in `TWO_DISTANCE_NOTES.md`.
 
 ## Consequence for #132: a growing number of arbitrary added points
 
@@ -108,8 +121,13 @@ k+L(m) values. On the other hand,
 
     floor(n/2)=k+floor((t+1)/2) <= k+L(m)-1.
 
-A counterexample to #132 can realize at most floor(n/2) distances by the
-pair-counting reduction and the Hopf-Pannwitz diameter bound. Contradiction.
+A set with M distinct distances and at most one qualifying distance has
+
+    choose(n,2) >= (M-1)*(n+1)+1,
+
+whether it has one qualifying distance or none. Rearranging gives
+M<=floor(n/2), a contradiction. This implication uses pair counting
+alone; it does not require identifying the diameter as qualifying.
 For t=1 the same argument applies to a noncentral point. If the added
 point is the center, every chord length and the radius occurs m<=n times.
 
@@ -138,11 +156,14 @@ range. The bound is not claimed sharp.
 
 ## Checks, limitations, and prior work
 
-`python verify_overlap132.py` exhaustively checked 6,127 deletion patterns
-for k=3 through 14 and the recurrence algebra at selected rational inputs.
-At k=9 a longest-run size of two is possible; at k>=10 the tested patterns
-all force a run of three. This corroborates the general run argument,
-but the proof for arbitrary sizes is the counting argument above.
+`python verify_overlap132.py` exhaustively checked the 6,127 abstract
+deletion patterns with k=3 through 14 and h in {k-1,k}, equivalently
+e in {1,2}, plus 24 recurrence algebra controls. It does not enumerate
+patterns for arbitrary e or check that a deletion pattern can arise from
+actual polygon distances. At k=9 an abstract longest-run size of two is
+possible; at k>=10 the tested patterns all force a run of three. These
+checks corroborate the e<=2 specialization. The general inequality for
+arbitrary e is proved by the gap-counting argument above.
 
 Related one-new-distance work and attribution appear in `PROOF_NOTES.md`.
 A bounded search for the three-new-distance statement and consecutive-

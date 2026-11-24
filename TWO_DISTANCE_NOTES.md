@@ -1,6 +1,8 @@
 # Two-new-distance extensions: exact finite result
 
-Working status: computer-assisted partial result, pending outside review.
+Working status: computer-assisted partial result. A user-supplied second-
+model audit reports no mathematical error; see `AUDIT.md`. Human peer
+review and formal verification remain outstanding.
 This is not a general solution of Erdős #132. We have not established
 literature novelty or checked this argument in a formal proof assistant.
 
@@ -110,8 +112,8 @@ of #132, subject to the correctness of the finite computation above.
 If t>=2, at least one added point is not the center. By the classification,
 the whole set has at least k+3 distinct distances. But n=m+t<=2k+5, so
 floor(n/2)<=k+2. A counterexample to #132 has at most floor(n/2) distinct
-distances by the pair-counting lemma (using the Hopf-Pannwitz diameter
-bound). This is a contradiction. For t=1, the same argument applies to
+distances by pair counting alone: at most one qualifying distance implies
+choose(n,2)>=(M-1)*(n+1)+1. This is a contradiction. For t=1, the same argument applies to
 a noncentral point; if the added point is the center, all old chord
 lengths and the radius have multiplicity m<=n, so the assertion holds.
 
