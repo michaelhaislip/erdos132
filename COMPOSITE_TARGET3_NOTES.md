@@ -196,3 +196,14 @@ received a dedicated read-only model audit, with no mathematical error
 reported. The audit did not rerun the script, and is neither formal
 verification nor human peer review. Target order 5 and the general
 planar Erdos problem also remain unresolved here.
+
+## Subsequent residue proofs
+
+`RESIDUE_COVER_TARGET3_NOTES.md` gives later elementary arguments for
+all powers of 11 and 13, all source orders 5^a*7^b with a,b>=1, and a
+broader two-prime family from a modulo-7 character identity. The 5/7
+proof needs only two primes and six residue cases. These later proofs
+are outside the scope of the audit discussed above. They supply uniform
+family explanations for the twelve source-order-35 rows previously
+handled here by finite norms. The general composite claim is still
+unproved; additional source prime factors are not automatically covered.

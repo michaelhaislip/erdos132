@@ -10,6 +10,19 @@ new mathematical result.
 
 ## Latest result
 
+[RESIDUE_COVER_TARGET3_NOTES.md](RESIDUE_COVER_TARGET3_NOTES.md) gives new
+working elementary proofs for every source order `5^a * 7^b`, every
+power of 11 or 13, and two-prime orders `p^a * q^b` with distinct primes
+`p,q = 3 or 5 mod 8`, all for target order 3. The 5/7 argument reduces
+to six residue cases using primes 17 and 73. A separate small-integer
+checker verifies its complete cycle and witness data. These new proofs
+postdate the previous audit; the general source-order claim is unproved.
+
+```sh
+python target3_residue_covers132.py
+python verify_target3_cover132.py
+```
+
 [COMPOSITE_TARGET3_NOTES.md](COMPOSITE_TARGET3_NOTES.md) adds elementary
 working proofs excluding target-order-3 pairs with source order `3^a`
 (`a >= 2`), or `p^a` for primes `p = 5 or 7 mod 12`. These extend to

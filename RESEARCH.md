@@ -480,3 +480,44 @@ the source request and review are preserved with hashes under
 `audits/claude_composite_20261124/`. The general composite norm claim,
 target order 5, and #132 remain unresolved here. This remains model
 review, not formal or human peer review.
+
+## Periodic residue proofs for the remaining small target-three families
+
+`RESIDUE_COVER_TARGET3_NOTES.md` introduces a quadratic character law
+for H(n)=(U_n/7), determined by an eight-entry odd-index cycle. It yields
+(N_(p^a*q^b)/7)=-1 whenever p,q are distinct primes both 3 or 5 modulo
+8. This covers all positive a,b, including mixed orders divisible by 3,
+using the already reviewed strengthened coprimality lemma. It requires
+exactly two distinct source primes; extra source factors are not covered.
+The full character rule agrees with every exact norm through order 10001,
+including 970 source orders satisfying this two-prime criterion.
+
+Complementary modulo-13 and modulo-17 cycles exclude every power of 11;
+a modulo-29 cycle excludes every power of 13. The same arguments cover
+the larger prime congruence classes explicitly listed in the notes.
+These are complete exponent-period arguments, not finite exponent scans.
+
+For source order 5^a*7^b, the norm modulo 17 and modulo 73 depends only
+on a-b modulo 6. Each of the six cases has a non-residue witness in one
+of those two fields. Thus all positive exponent pairs are excluded by a
+short elementary table. The hand proof for balanced powers 35^a uses
+prime 17 alone. All 95 target-3 rows in the old 177-row list consequently
+have uniform family explanations; those fixed finite exclusions were
+already known. The target-5 claim is unchanged.
+
+`target3_residue_covers132.py` generates full closed recurrence cycles,
+the prime-power tables, and a complete 6-by-6 witness grid. It checks the
+modulo-7 rule against exact norms through 10001, and uses binary powering
+in Z[sqrt(6)] for nine additional selected exact norm controls, including
+35^3=42875. These are selected controls, not a larger exhaustive census.
+`verify_target3_cover132.py` imports only json, math and pathlib and
+checks every cycle transition, required period, small prime, denominator,
+and witness, as well as both columns of the six-case table. It shares
+no Pell, norm, cyclotomic-polynomial, or generator implementation.
+Negative controls reject a corrupted cycle and an invalid residue witness;
+the unchanged certificate passes.
+
+The new proofs have not received the earlier Claude audit. The general
+norm nonsquareness claim, arbitrary composite source orders, target
+order 5, the axis conjecture, and #132 remain unresolved here. No novelty
+or formal-verification claim is made.

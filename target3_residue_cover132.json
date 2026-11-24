@@ -1,0 +1,552 @@
+{
+  "scope": "Exact periodic modular certificate; infinite-family conclusions require the written norm/descent lemmas.",
+  "cycles": {
+    "7": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "13": [
+      [
+        1,
+        1
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        1,
+        12
+      ]
+    ],
+    "17": [
+      [
+        1,
+        1
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        16,
+        16
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        1,
+        16
+      ]
+    ],
+    "29": [
+      [
+        1,
+        1
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        2,
+        22
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        21,
+        9
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        26,
+        19
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        4,
+        26
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        18,
+        6
+      ],
+      [
+        27,
+        22
+      ],
+      [
+        20,
+        11
+      ],
+      [
+        28,
+        1
+      ],
+      [
+        28,
+        28
+      ],
+      [
+        20,
+        18
+      ],
+      [
+        27,
+        7
+      ],
+      [
+        18,
+        23
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        26,
+        10
+      ],
+      [
+        25,
+        3
+      ],
+      [
+        21,
+        20
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        9,
+        18
+      ],
+      [
+        1,
+        28
+      ]
+    ],
+    "73": [
+      [
+        1,
+        1
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        5,
+        57
+      ],
+      [
+        34,
+        23
+      ],
+      [
+        43,
+        27
+      ],
+      [
+        31,
+        28
+      ],
+      [
+        48,
+        34
+      ],
+      [
+        11,
+        20
+      ],
+      [
+        62,
+        20
+      ],
+      [
+        25,
+        34
+      ],
+      [
+        42,
+        28
+      ],
+      [
+        30,
+        27
+      ],
+      [
+        39,
+        23
+      ],
+      [
+        68,
+        57
+      ],
+      [
+        57,
+        36
+      ],
+      [
+        64,
+        11
+      ],
+      [
+        72,
+        1
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        64,
+        62
+      ],
+      [
+        57,
+        37
+      ],
+      [
+        68,
+        16
+      ],
+      [
+        39,
+        50
+      ],
+      [
+        30,
+        46
+      ],
+      [
+        42,
+        45
+      ],
+      [
+        25,
+        39
+      ],
+      [
+        62,
+        53
+      ],
+      [
+        11,
+        53
+      ],
+      [
+        48,
+        39
+      ],
+      [
+        31,
+        45
+      ],
+      [
+        43,
+        46
+      ],
+      [
+        34,
+        50
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        16,
+        37
+      ],
+      [
+        9,
+        62
+      ],
+      [
+        1,
+        72
+      ]
+    ]
+  },
+  "eleven_power_norm_residues_by_a_mod3_1_2_0": [
+    {
+      "13": 9,
+      "17": 3
+    },
+    {
+      "13": 7,
+      "17": 10
+    },
+    {
+      "13": 6,
+      "17": 4
+    }
+  ],
+  "cover": {
+    "source_family": "5^a * 7^b, a>=1, b>=1",
+    "exponent_period": 6,
+    "row_exponents": "1..6 in order",
+    "column_exponents": "1..6 in order",
+    "legend": {
+      "A": 17,
+      "B": 73
+    },
+    "witness_grid": [
+      "ABAABA",
+      "AABAAB",
+      "BAABAA",
+      "ABAABA",
+      "AABAAB",
+      "BAABAA"
+    ],
+    "norm_residues_by_a_minus_b_mod6": {
+      "17": [
+        7,
+        11,
+        2,
+        7,
+        11,
+        2
+      ],
+      "73": [
+        52,
+        28,
+        43,
+        64,
+        48,
+        51
+      ]
+    },
+    "witness_counts": {
+      "17": 24,
+      "73": 12
+    }
+  },
+  "validation": {
+    "mod7_exact_norm_comparison_limit": 10001,
+    "two_prime_source_orders_rejected_mod7_in_range": 970,
+    "fast_pell_matches_recurrence_through": 1001,
+    "selected_large_exact_controls": [
+      {
+        "source_order": 121,
+        "norm_bit_length": 182,
+        "norm_hex_sha256": "d919ccb3f8cc8f4b396ecee08c51ca22c91fd8a65e44eb73480e77fa5ddc0f87",
+        "nonresidue_moduli": [
+          13,
+          17,
+          29
+        ]
+      },
+      {
+        "source_order": 1331,
+        "norm_bit_length": 2001,
+        "norm_hex_sha256": "9b07f0db74e8dac4961d37328709d3a6969bac1ee768dcef8f7b61d424f35375",
+        "nonresidue_moduli": [
+          7,
+          13,
+          73
+        ]
+      },
+      {
+        "source_order": 169,
+        "norm_bit_length": 258,
+        "norm_hex_sha256": "f3dc4356d14d6b1c8336a45ae3dc9f89262921203ed77bfa4961d74335a6ecdb",
+        "nonresidue_moduli": [
+          7,
+          17,
+          29
+        ]
+      },
+      {
+        "source_order": 2197,
+        "norm_bit_length": 3354,
+        "norm_hex_sha256": "4ebf7cf485dcd8f6b64a1aebea6f54c1ddbd5c63797203aff6a96eef3f7116f1",
+        "nonresidue_moduli": [
+          17,
+          29,
+          73
+        ]
+      },
+      {
+        "source_order": 55,
+        "norm_bit_length": 67,
+        "norm_hex_sha256": "e4199a48d09300d578426dd3d89ffb4e65440586d7807ac35951ba560330183d",
+        "nonresidue_moduli": [
+          7,
+          13,
+          17,
+          29
+        ]
+      },
+      {
+        "source_order": 117,
+        "norm_bit_length": 120,
+        "norm_hex_sha256": "fbe63b3de44d33664ac0e699b3fe8f644200e61ca1053f0ade7edc60e746ac03",
+        "nonresidue_moduli": [
+          7
+        ]
+      },
+      {
+        "source_order": 1225,
+        "norm_bit_length": 1390,
+        "norm_hex_sha256": "3d79e71757923b4da93b8e4d13206b38bc923e18b1b946d538cee26124bb307d",
+        "nonresidue_moduli": [
+          17,
+          73
+        ]
+      },
+      {
+        "source_order": 20449,
+        "norm_bit_length": 28377,
+        "norm_hex_sha256": "40482b1f9eedd4c37756f7598e0fb053cd42d9c0b53cc44b291c6bee5d12bd37",
+        "nonresidue_moduli": [
+          7,
+          17
+        ]
+      },
+      {
+        "source_order": 42875,
+        "norm_bit_length": 48618,
+        "norm_hex_sha256": "664b58936e7bcf10a89e0e36882c8c351ce1d4691165e480f15208ca75a5acff",
+        "nonresidue_moduli": [
+          17,
+          73
+        ]
+      }
+    ],
+    "all_previous_95_target3_rows_have_uniform_family_explanations": true
+  },
+  "audit_status": "New working arguments; not covered by the earlier Claude audit."
+}

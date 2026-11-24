@@ -146,8 +146,11 @@ rows. The other 22 have source orders 25 (10 rows) or 35 (12 rows).
 At revision ba43b71 those 22, and the 82 target-order-5 rows, were handled
 by finite exact norm calculation only. The subsequent elementary
 prime-power theorem in `COMPOSITE_TARGET3_NOTES.md` also covers the ten
-source-order-25 rows. The remaining twelve source-order-35 rows and the
-82 target-order-5 rows still have finite certificates in this analysis.
+source-order-25 rows. The later proof in `RESIDUE_COVER_TARGET3_NOTES.md`
+also covers every power of 35, and indeed every 5^a*7^b with a,b>=1.
+All 95 target-3 rows now have uniform family explanations. The 82
+target-order-5 rows retain their finite certificates here; no general
+target-5 theorem follows.
 
 All 177 pairs were already excluded by exact ambient sigma_2 non-residue
 tests in the earlier sweep. By Lemma G, those rejections already imply
