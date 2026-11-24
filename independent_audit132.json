@@ -1,0 +1,2544 @@
+{
+  "source": "User-supplied Claude audit; preserved unchanged in audits/claude_indep.py.",
+  "source_sha256": "70bcb0d5449889fd4b0a5a44120adff8d7444283b4d324edbdc1cc9f03188b93",
+  "requested_orders": [
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47,
+    49,
+    51,
+    53,
+    55,
+    57,
+    59,
+    61,
+    63
+  ],
+  "completed": true,
+  "scope": "Finite checks of axis points matching at least two old squared chord lengths; not a proof for untested orders.",
+  "arithmetic": "Independent integer arithmetic in the real cyclotomic field; floating diagnostics can abort but do not decide equality or distance counts.",
+  "results": [
+    {
+      "m": 7,
+      "field_degree": 3,
+      "assignments_checked": 36,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 9,
+      "field_degree": 3,
+      "assignments_checked": 120,
+      "radii_including_existing_vertex": 4,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [
+        {
+          "r": 1.8793852415718164,
+          "vertex": false,
+          "h": 2,
+          "e": 3,
+          "run": 1,
+          "witness": [
+            1,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "r": -0.3472963553338607,
+          "vertex": false,
+          "h": 2,
+          "e": 3,
+          "run": 1,
+          "witness": [
+            1,
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "r": -1.5320888862379562,
+          "vertex": false,
+          "h": 2,
+          "e": 3,
+          "run": 1,
+          "witness": [
+            2,
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 11,
+      "field_degree": 5,
+      "assignments_checked": 300,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 13,
+      "field_degree": 6,
+      "assignments_checked": 630,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 15,
+      "field_degree": 4,
+      "assignments_checked": 1176,
+      "radii_including_existing_vertex": 7,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [
+        {
+          "r": 1.6180339887498938,
+          "vertex": false,
+          "h": 2,
+          "e": 6,
+          "run": 1,
+          "witness": [
+            1,
+            4,
+            2,
+            7
+          ]
+        },
+        {
+          "r": 0.2090569265353071,
+          "vertex": false,
+          "h": 2,
+          "e": 6,
+          "run": 1,
+          "witness": [
+            1,
+            6,
+            2,
+            3
+          ]
+        },
+        {
+          "r": 1.9562952014676094,
+          "vertex": false,
+          "h": 2,
+          "e": 6,
+          "run": 1,
+          "witness": [
+            2,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "r": -0.6180339887498952,
+          "vertex": false,
+          "h": 2,
+          "e": 6,
+          "run": 1,
+          "witness": [
+            2,
+            7,
+            4,
+            1
+          ]
+        },
+        {
+          "r": -1.3382612127177171,
+          "vertex": false,
+          "h": 2,
+          "e": 6,
+          "run": 1,
+          "witness": [
+            3,
+            7,
+            6,
+            1
+          ]
+        },
+        {
+          "r": -1.827090915285201,
+          "vertex": false,
+          "h": 2,
+          "e": 6,
+          "run": 1,
+          "witness": [
+            4,
+            6,
+            7,
+            3
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 17,
+      "field_degree": 8,
+      "assignments_checked": 2016,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 19,
+      "field_degree": 9,
+      "assignments_checked": 3240,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": true,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 21,
+      "field_degree": 6,
+      "assignments_checked": 4950,
+      "radii_including_existing_vertex": 10,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.4661037436596545,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            1,
+            6,
+            2,
+            9
+          ]
+        },
+        {
+          "r": 0.4450418679126278,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            1,
+            8,
+            2,
+            5
+          ]
+        },
+        {
+          "r": 1.8019377358048385,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            2,
+            5,
+            4,
+            10
+          ]
+        },
+        {
+          "r": -0.1494601871728486,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            2,
+            9,
+            4,
+            3
+          ]
+        },
+        {
+          "r": 1.9776616524502688,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        {
+          "r": -0.7306820487327904,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            3,
+            10,
+            6,
+            1
+          ]
+        },
+        {
+          "r": -1.2469796037174699,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            4,
+            10,
+            8,
+            1
+          ]
+        },
+        {
+          "r": -1.6524775486319838,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            5,
+            9,
+            10,
+            3
+          ]
+        },
+        {
+          "r": -1.9111456115722727,
+          "vertex": false,
+          "h": 2,
+          "e": 9,
+          "run": 1,
+          "witness": [
+            6,
+            8,
+            9,
+            5
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 23,
+      "field_degree": 11,
+      "assignments_checked": 7260,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 25,
+      "field_degree": 10,
+      "assignments_checked": 10296,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 27,
+      "field_degree": 9,
+      "assignments_checked": 14196,
+      "radii_including_existing_vertex": 13,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.3724832757374583,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            1,
+            8,
+            2,
+            11
+          ]
+        },
+        {
+          "r": 0.5736064654221869,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            1,
+            10,
+            2,
+            7
+          ]
+        },
+        {
+          "r": 1.6709756228258545,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            2,
+            7,
+            4,
+            13
+          ]
+        },
+        {
+          "r": 0.11628965782095162,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            2,
+            11,
+            4,
+            5
+          ]
+        },
+        {
+          "r": 1.8793852415718384,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            3,
+            6,
+            6,
+            12
+          ]
+        },
+        {
+          "r": -0.34729635533385805,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            3,
+            12,
+            6,
+            3
+          ]
+        },
+        {
+          "r": 1.9864767154838985,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            4,
+            5,
+            8,
+            10
+          ]
+        },
+        {
+          "r": -0.7921595320783137,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            4,
+            13,
+            8,
+            1
+          ]
+        },
+        {
+          "r": -1.194317183405571,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            5,
+            13,
+            10,
+            1
+          ]
+        },
+        {
+          "r": -1.53208888623795,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            6,
+            12,
+            12,
+            3
+          ]
+        },
+        {
+          "r": -1.7872652806468756,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            7,
+            11,
+            13,
+            5
+          ]
+        },
+        {
+          "r": -1.9460897411595948,
+          "vertex": false,
+          "h": 2,
+          "e": 12,
+          "run": 1,
+          "witness": [
+            8,
+            10,
+            11,
+            7
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 29,
+      "field_degree": 14,
+      "assignments_checked": 19110,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 31,
+      "field_degree": 15,
+      "assignments_checked": 25200,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 33,
+      "field_degree": 10,
+      "assignments_checked": 32640,
+      "radii_including_existing_vertex": 16,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.3097214678906126,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            1,
+            10,
+            2,
+            13
+          ]
+        },
+        {
+          "r": 0.6541359266348086,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            1,
+            12,
+            2,
+            9
+          ]
+        },
+        {
+          "r": 1.57210618948565,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            2,
+            9,
+            4,
+            15
+          ]
+        },
+        {
+          "r": 0.28462967654656735,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            2,
+            13,
+            4,
+            7
+          ]
+        },
+        {
+          "r": 1.7776708973098565,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            3,
+            8,
+            6,
+            16
+          ]
+        },
+        {
+          "r": -0.09516383164748733,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            3,
+            14,
+            6,
+            5
+          ]
+        },
+        {
+          "r": 1.9189859472289752,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            4,
+            7,
+            8,
+            14
+          ]
+        },
+        {
+          "r": -0.4715178710188535,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            4,
+            15,
+            8,
+            3
+          ]
+        },
+        {
+          "r": 1.9909438451460995,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            5,
+            6,
+            10,
+            12
+          ]
+        },
+        {
+          "r": -0.8308300260037729,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            5,
+            16,
+            10,
+            1
+          ]
+        },
+        {
+          "r": -1.1601138191423985,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            6,
+            16,
+            12,
+            1
+          ]
+        },
+        {
+          "r": -1.4474680762101713,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            7,
+            15,
+            14,
+            3
+          ]
+        },
+        {
+          "r": -1.6825070656623422,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            8,
+            14,
+            16,
+            5
+          ]
+        },
+        {
+          "r": -1.8567358660317796,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            9,
+            13,
+            15,
+            7
+          ]
+        },
+        {
+          "r": -1.9638573945257702,
+          "vertex": false,
+          "h": 2,
+          "e": 15,
+          "run": 1,
+          "witness": [
+            10,
+            12,
+            13,
+            9
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 35,
+      "field_degree": 12,
+      "assignments_checked": 41616,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 37,
+      "field_degree": 18,
+      "assignments_checked": 52326,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 39,
+      "field_degree": 12,
+      "assignments_checked": 64980,
+      "radii_including_existing_vertex": 19,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.2648907511910852,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            1,
+            12,
+            2,
+            15
+          ]
+        },
+        {
+          "r": 0.7092097740849812,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            1,
+            14,
+            2,
+            11
+          ]
+        },
+        {
+          "r": 1.4970214963418746,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            2,
+            11,
+            4,
+            17
+          ]
+        },
+        {
+          "r": 0.4000513875521581,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            2,
+            15,
+            4,
+            9
+          ]
+        },
+        {
+          "r": 1.6903801710878508,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            3,
+            10,
+            6,
+            19
+          ]
+        },
+        {
+          "r": 0.0805318802188256,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            3,
+            16,
+            6,
+            7
+          ]
+        },
+        {
+          "r": 1.8399588873175698,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            4,
+            9,
+            8,
+            18
+          ]
+        },
+        {
+          "r": -0.24107336051065037,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            4,
+            17,
+            8,
+            5
+          ]
+        },
+        {
+          "r": 1.9418836348528197,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            5,
+            8,
+            10,
+            16
+          ]
+        },
+        {
+          "r": -0.5564349278328181,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            5,
+            18,
+            10,
+            3
+          ]
+        },
+        {
+          "r": 1.9935146162761028,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            6,
+            7,
+            12,
+            14
+          ]
+        },
+        {
+          "r": -0.8573851228057713,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            6,
+            19,
+            12,
+            1
+          ]
+        },
+        {
+          "r": -1.1361294934627026,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            7,
+            19,
+            14,
+            1
+          ]
+        },
+        {
+          "r": -1.385448707019332,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            8,
+            18,
+            16,
+            3
+          ]
+        },
+        {
+          "r": -1.598885526807062,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            9,
+            17,
+            18,
+            5
+          ]
+        },
+        {
+          "r": -1.7709120513057386,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            10,
+            16,
+            19,
+            7
+          ]
+        },
+        {
+          "r": -1.8970728838958462,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            11,
+            15,
+            17,
+            9
+          ]
+        },
+        {
+          "r": -1.974100525266458,
+          "vertex": false,
+          "h": 2,
+          "e": 18,
+          "run": 1,
+          "witness": [
+            12,
+            14,
+            15,
+            11
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 41,
+      "field_degree": 20,
+      "assignments_checked": 79800,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 43,
+      "field_degree": 21,
+      "assignments_checked": 97020,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 45,
+      "field_degree": 12,
+      "assignments_checked": 116886,
+      "radii_including_existing_vertex": 22,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.2313229506511878,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            1,
+            14,
+            2,
+            17
+          ]
+        },
+        {
+          "r": 0.7492131868318626,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            1,
+            16,
+            2,
+            13
+          ]
+        },
+        {
+          "r": 1.4386796006773965,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            2,
+            13,
+            4,
+            19
+          ]
+        },
+        {
+          "r": 0.4838437911993356,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            2,
+            17,
+            4,
+            11
+          ]
+        },
+        {
+          "r": 1.6180339887498707,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            3,
+            12,
+            6,
+            21
+          ]
+        },
+        {
+          "r": 0.20905692653531438,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            3,
+            18,
+            6,
+            9
+          ]
+        },
+        {
+          "r": 1.7658951857177048,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            4,
+            11,
+            8,
+            22
+          ]
+        },
+        {
+          "r": -0.06979899340501819,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            4,
+            19,
+            8,
+            7
+          ]
+        },
+        {
+          "r": 1.879385241572349,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            5,
+            10,
+            10,
+            20
+          ]
+        },
+        {
+          "r": -0.3472963553337965,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            5,
+            20,
+            10,
+            5
+          ]
+        },
+        {
+          "r": 1.956295201467496,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            6,
+            9,
+            12,
+            18
+          ]
+        },
+        {
+          "r": -0.6180339887499041,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            6,
+            21,
+            12,
+            3
+          ]
+        },
+        {
+          "r": 1.9951281005152572,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            7,
+            8,
+            14,
+            16
+          ]
+        },
+        {
+          "r": -0.8767422935783057,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            7,
+            22,
+            14,
+            1
+          ]
+        },
+        {
+          "r": -1.118385806941342,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            8,
+            22,
+            16,
+            1
+          ]
+        },
+        {
+          "r": -1.3382612127177278,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            9,
+            21,
+            18,
+            3
+          ]
+        },
+        {
+          "r": -1.5320888862378055,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            10,
+            20,
+            20,
+            5
+          ]
+        },
+        {
+          "r": -1.6960961923130673,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            11,
+            19,
+            22,
+            7
+          ]
+        },
+        {
+          "r": -1.827090915285229,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            12,
+            18,
+            21,
+            9
+          ]
+        },
+        {
+          "r": -1.9225233918754483,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            13,
+            17,
+            19,
+            11
+          ]
+        },
+        {
+          "r": -1.9805361374880828,
+          "vertex": false,
+          "h": 2,
+          "e": 21,
+          "run": 1,
+          "witness": [
+            14,
+            16,
+            17,
+            13
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 47,
+      "field_degree": 23,
+      "assignments_checked": 139656,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 49,
+      "field_degree": 21,
+      "assignments_checked": 165600,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 51,
+      "field_degree": 16,
+      "assignments_checked": 195000,
+      "radii_including_existing_vertex": 25,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.2052692727615661,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            1,
+            16,
+            2,
+            19
+          ]
+        },
+        {
+          "r": 0.7795717465827581,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            1,
+            18,
+            2,
+            15
+          ]
+        },
+        {
+          "r": 1.3922678919286458,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            2,
+            15,
+            4,
+            21
+          ]
+        },
+        {
+          "r": 0.5473259801441168,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            2,
+            19,
+            4,
+            13
+          ]
+        },
+        {
+          "r": 1.5581611490561476,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            3,
+            14,
+            6,
+            23
+          ]
+        },
+        {
+          "r": 0.3067833097567533,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            3,
+            20,
+            6,
+            11
+          ]
+        },
+        {
+          "r": 1.7004342714552312,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            4,
+            13,
+            8,
+            25
+          ]
+        },
+        {
+          "r": 0.061590117112458515,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            4,
+            21,
+            8,
+            9
+          ]
+        },
+        {
+          "r": 1.8169305436372787,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            5,
+            12,
+            10,
+            24
+          ]
+        },
+        {
+          "r": -0.1845367189266665,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            5,
+            22,
+            10,
+            7
+          ]
+        },
+        {
+          "r": 1.905884000851628,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            6,
+            11,
+            12,
+            22
+          ]
+        },
+        {
+          "r": -0.4278661664134247,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            6,
+            23,
+            12,
+            5
+          ]
+        },
+        {
+          "r": 1.9659461993889402,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            7,
+            10,
+            14,
+            20
+          ]
+        },
+        {
+          "r": -0.6647095989572653,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            7,
+            24,
+            14,
+            3
+          ]
+        },
+        {
+          "r": 1.996206657475903,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            8,
+            9,
+            16,
+            18
+          ]
+        },
+        {
+          "r": -0.8914767115529932,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            8,
+            25,
+            16,
+            1
+          ]
+        },
+        {
+          "r": -1.1047299459212223,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            9,
+            25,
+            18,
+            1
+          ]
+        },
+        {
+          "r": -1.3012366004109632,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            10,
+            24,
+            20,
+            3
+          ]
+        },
+        {
+          "r": -1.4780178344406167,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            11,
+            23,
+            22,
+            5
+          ]
+        },
+        {
+          "r": -1.6323938247148766,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            12,
+            22,
+            24,
+            7
+          ]
+        },
+        {
+          "r": -1.762024388580524,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            13,
+            21,
+            25,
+            9
+          ]
+        },
+        {
+          "r": -1.8649444587889141,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            14,
+            20,
+            23,
+            11
+          ]
+        },
+        {
+          "r": -1.9395938720231374,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            15,
+            19,
+            21,
+            13
+          ]
+        },
+        {
+          "r": -1.9848410193784198,
+          "vertex": false,
+          "h": 2,
+          "e": 24,
+          "run": 1,
+          "witness": [
+            16,
+            18,
+            19,
+            15
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 53,
+      "field_degree": 26,
+      "assignments_checked": 228150,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 55,
+      "field_degree": 20,
+      "assignments_checked": 265356,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 57,
+      "field_degree": 18,
+      "assignments_checked": 306936,
+      "radii_including_existing_vertex": 28,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.184470505398862,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            1,
+            18,
+            2,
+            21
+          ]
+        },
+        {
+          "r": 0.8033908492523942,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            1,
+            20,
+            2,
+            17
+          ]
+        },
+        {
+          "r": 1.35456314330878,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            2,
+            17,
+            4,
+            23
+          ]
+        },
+        {
+          "r": 0.5970296219872915,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            2,
+            21,
+            4,
+            15
+          ]
+        },
+        {
+          "r": 1.5082132195388496,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            3,
+            16,
+            6,
+            25
+          ]
+        },
+        {
+          "r": 0.3834212638499363,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            3,
+            22,
+            6,
+            13
+          ]
+        },
+        {
+          "r": 1.643555630433747,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            4,
+            15,
+            8,
+            27
+          ]
+        },
+        {
+          "r": 0.16515869094570237,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            4,
+            23,
+            8,
+            11
+          ]
+        },
+        {
+          "r": 1.758947502408007,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            5,
+            14,
+            10,
+            28
+          ]
+        },
+        {
+          "r": -0.05510868473634195,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            5,
+            24,
+            10,
+            9
+          ]
+        },
+        {
+          "r": 1.8529881344296877,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            6,
+            13,
+            12,
+            26
+          ]
+        },
+        {
+          "r": -0.27470711563687294,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            6,
+            25,
+            12,
+            7
+          ]
+        },
+        {
+          "r": 1.924536000607601,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            7,
+            12,
+            14,
+            24
+          ]
+        },
+        {
+          "r": -0.490970974283087,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            7,
+            26,
+            14,
+            5
+          ]
+        },
+        {
+          "r": 1.9727226067245607,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            8,
+            11,
+            16,
+            22
+          ]
+        },
+        {
+          "r": -0.7012751103925938,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            8,
+            27,
+            16,
+            3
+          ]
+        },
+        {
+          "r": 1.996963033486537,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            9,
+            10,
+            18,
+            20
+          ]
+        },
+        {
+          "r": -0.903066716602667,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            9,
+            28,
+            18,
+            1
+          ]
+        },
+        {
+          "r": -1.0938963162650448,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            10,
+            28,
+            20,
+            1
+          ]
+        },
+        {
+          "r": -1.2714474964117057,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            11,
+            27,
+            22,
+            3
+          ]
+        },
+        {
+          "r": -1.4335650263352318,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            12,
+            26,
+            24,
+            5
+          ]
+        },
+        {
+          "r": -1.5782810187921235,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            13,
+            25,
+            26,
+            7
+          ]
+        },
+        {
+          "r": -1.7038388176858617,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            14,
+            24,
+            28,
+            9
+          ]
+        },
+        {
+          "r": -1.8087143214434902,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            15,
+            23,
+            27,
+            11
+          ]
+        },
+        {
+          "r": -1.8916344834784922,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            16,
+            22,
+            25,
+            13
+          ]
+        },
+        {
+          "r": -1.9515927645710442,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            17,
+            21,
+            23,
+            15
+          ]
+        },
+        {
+          "r": -1.9878613546639277,
+          "vertex": false,
+          "h": 2,
+          "e": 27,
+          "run": 1,
+          "witness": [
+            18,
+            20,
+            21,
+            17
+          ]
+        }
+      ],
+      "root_diagnostic": "original floating summation"
+    },
+    {
+      "m": 59,
+      "field_degree": 29,
+      "root_diagnostic": "80-digit Decimal Horner",
+      "assignments_checked": 353220,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": []
+    },
+    {
+      "m": 61,
+      "field_degree": 30,
+      "root_diagnostic": "80-digit Decimal Horner",
+      "assignments_checked": 404550,
+      "radii_including_existing_vertex": 1,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 0,
+      "max_simultaneously_adjacent_match_run": 0,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": []
+    },
+    {
+      "m": 63,
+      "field_degree": 18,
+      "root_diagnostic": "80-digit Decimal Horner",
+      "assignments_checked": 461280,
+      "radii_including_existing_vertex": 31,
+      "surviving_nonvertex_extensions_with_at_most_two_new_values": 0,
+      "max_old_matches_among_nonvertex_candidates": 2,
+      "max_simultaneously_adjacent_match_run": 1,
+      "agrees_with_original_seven_order_census": null,
+      "nonvertex_candidates": [
+        {
+          "r": 1.1674873444219036,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            1,
+            20,
+            2,
+            23
+          ]
+        },
+        {
+          "r": 0.8225742062968491,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            1,
+            22,
+            2,
+            19
+          ]
+        },
+        {
+          "r": 1.3233716751757112,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            2,
+            19,
+            4,
+            25
+          ]
+        },
+        {
+          "r": 0.6369733005048647,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            2,
+            23,
+            4,
+            17
+          ]
+        },
+        {
+          "r": 1.4661037436658737,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            3,
+            18,
+            6,
+            27
+          ]
+        },
+        {
+          "r": 0.44504186790938227,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            3,
+            24,
+            6,
+            15
+          ]
+        },
+        {
+          "r": 1.594265014472888,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            4,
+            17,
+            8,
+            29
+          ]
+        },
+        {
+          "r": 0.24868740929178584,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            4,
+            25,
+            8,
+            13
+          ]
+        },
+        {
+          "r": 1.706581763260463,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            5,
+            16,
+            10,
+            31
+          ]
+        },
+        {
+          "r": 0.04986138347622361,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            5,
+            26,
+            10,
+            11
+          ]
+        },
+        {
+          "r": 1.8019377358183521,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            6,
+            15,
+            12,
+            30
+          ]
+        },
+        {
+          "r": -0.14946018717197582,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            6,
+            27,
+            12,
+            9
+          ]
+        },
+        {
+          "r": 1.8793852415550782,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            7,
+            14,
+            14,
+            28
+          ]
+        },
+        {
+          "r": -0.3472963553358796,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            7,
+            28,
+            14,
+            7
+          ]
+        },
+        {
+          "r": 1.9381545724547073,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            8,
+            13,
+            16,
+            26
+          ]
+        },
+        {
+          "r": -0.5416809362867802,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            8,
+            29,
+            16,
+            5
+          ]
+        },
+        {
+          "r": 1.9776616524704242,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            9,
+            12,
+            18,
+            24
+          ]
+        },
+        {
+          "r": -0.7306820487312538,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            9,
+            30,
+            18,
+            3
+          ]
+        },
+        {
+          "r": 1.997513841711657,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            10,
+            11,
+            20,
+            22
+          ]
+        },
+        {
+          "r": -0.9124213147267269,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            10,
+            31,
+            20,
+            1
+          ]
+        },
+        {
+          "r": -1.0850925277101362,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            11,
+            31,
+            22,
+            1
+          ]
+        },
+        {
+          "r": -1.2469796037172118,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            12,
+            30,
+            24,
+            3
+          ]
+        },
+        {
+          "r": -1.3964736361677705,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            13,
+            29,
+            26,
+            5
+          ]
+        },
+        {
+          "r": -1.5320888862426951,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            14,
+            28,
+            28,
+            7
+          ]
+        },
+        {
+          "r": -1.6524775486170795,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            15,
+            27,
+            30,
+            9
+          ]
+        },
+        {
+          "r": -1.7564431467485144,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            16,
+            26,
+            31,
+            11
+          ]
+        },
+        {
+          "r": -1.8429524236515615,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            17,
+            25,
+            29,
+            13
+          ]
+        },
+        {
+          "r": -1.9111456115771046,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            18,
+            24,
+            27,
+            15
+          ]
+        },
+        {
+          "r": -1.9603449761442924,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            19,
+            23,
+            25,
+            17
+          ]
+        },
+        {
+          "r": -1.9900615510998032,
+          "vertex": false,
+          "h": 2,
+          "e": 30,
+          "run": 1,
+          "witness": [
+            20,
+            22,
+            23,
+            19
+          ]
+        }
+      ]
+    }
+  ],
+  "diagnostic_adaptation": "Optional 80-digit Decimal Horner evaluation replaces only the original floating root-residual assertion; exact classifier arithmetic is unchanged."
+}

@@ -88,3 +88,19 @@ python verify_polygon_extensions132.py
 Both use exact rational polynomial arithmetic and Python's standard
 library. The verifier uses a division-free formulation but shares the
 generator's polynomial arithmetic; neither is a formal proof checker.
+
+## Independent checker
+
+The user supplied Claude's separate implementation, preserved unchanged
+in [audits/claude_indep.py](audits/claude_indep.py). It uses its own integer
+polynomial arithmetic in the real cyclotomic field and reproduces the
+original seven-order census. Run the wrapper to check all odd orders from
+7 through 63 and write `independent_audit132.json`:
+
+```sh
+python audit_independent132.py --stable-root-diagnostic
+```
+
+See [audits/README.md](audits/README.md) for the source hash, diagnostics,
+and exact scope. This is computational cross-verification, not a formal
+proof or human peer review.

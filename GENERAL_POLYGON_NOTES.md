@@ -165,6 +165,13 @@ possible; at k>=10 the tested patterns all force a run of three. These
 checks corroborate the e<=2 specialization. The general inequality for
 arbitrary e is proved by the gap-counting argument above.
 
+An additional, user-supplied independent checker is now preserved in
+`audits/claude_indep.py`. It reproduces the seven original finite cases
+using separate integer arithmetic in the real cyclotomic field. See
+`AUDIT.md` and `independent_audit132.json` for the completed run's scope;
+the wrapper marks completion explicitly. These computations do not
+replace the uniform analytical argument.
+
 Related one-new-distance work and attribution appear in `PROOF_NOTES.md`.
 A bounded search for the three-new-distance statement and consecutive-
 match argument found no directly matching result. This does not establish

@@ -216,3 +216,28 @@ The reviewer reports an independent checker and a stronger empirical
 overlap bound through order 63, but its code was not attached. Those
 claims are not treated as verification reproduced in this repository,
 nor as a proof of the stronger bound. The mathematical result is unchanged.
+
+## Independent checker supplied
+
+The user exported Claude's `indep.py`. We inspected it and preserved it
+unchanged in `audits/claude_indep.py`, with a source hash and newline
+preservation. It contains no imports from our earlier arithmetic code.
+The new wrapper `audit_independent132.py` adds positive controls,
+compares the original seven cases, and records structured results.
+All original assignment counts, candidate counts, and zero-survivor
+results were reproduced. The larger requested range and completion status
+are recorded in `independent_audit132.json`.
+
+This removes the original shared-arithmetic limitation as the only
+computational cross-check, but is not formal verification. The supplied
+script's floating-point root assertion can abort a run; its equality
+and distance-count decisions themselves use integer arithmetic. The
+original exported source is not modified to hide that diagnostic.
+
+The full local run finished all 29 odd orders from 7 through 63, checking
+3,093,546 assignments with zero surviving extensions. The unchanged
+original stopped on a floating root diagnostic at 59; the explicit stable
+diagnostic mode resumed 59,61,63 without changing the exact candidate
+calculations. These modes are recorded per order. The observed old-match
+bound h<=2 was reproduced throughout that finite range and remains a
+conjecture beyond it.

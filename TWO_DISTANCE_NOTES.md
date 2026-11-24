@@ -74,6 +74,13 @@ tests. It deduplicates radii by cross multiplication. It shares polynomial
 arithmetic with the generator; this is a second algebraic formulation,
 not an independently implemented proof kernel.
 
+Subsequently the user supplied Claude's independent implementation. It
+is preserved unchanged in `audits/claude_indep.py` and imports no
+arithmetic from either original script. The wrapper
+`audit_independent132.py` reproduced the seven original results using
+integer polynomials in the real cyclotomic field. Details and limitations
+appear in `AUDIT.md` and `audits/README.md`.
+
 | m | Degree of Phi_m | Assignments | Distinct radii matching at least two old values | Eligible noncentral, nonvertex extensions |
 | ---: | ---: | ---: | ---: | ---: |
 | 7 | 6 | 36 | 1 | 0 |

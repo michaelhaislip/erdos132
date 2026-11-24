@@ -1,0 +1,2 @@
+# Preserve the user-supplied independent audit byte-for-byte across platforms.
+audits/claude_indep.py -text

@@ -28,32 +28,72 @@ not human peer review, formal proof verification, or a novelty assessment.
 These revisions clarify and simplify the proof; they do not change the
 theorem, its numerical bounds, or the recorded finite results.
 
-## Reported independent computation: not yet reproduced here
+## Independent computation: supplied and reproduced
 
 Claude reports a separately implemented checker using the real cyclotomic
 field, integer arithmetic, and Chebyshev-type chord polynomials. The review
 says it reproduced the seven small-order results, reran the repository
 scripts, and found no counterexample for odd orders through 63.
 
-The checker itself was not supplied with the review. The path quoted in
-the review belongs to Claude's separate workspace and is not a file in
-this repository. We have not inspected, run, or incorporated that checker.
-Accordingly those computations remain reviewer-reported evidence. Our
-two existing finite-check scripts still share polynomial arithmetic.
+The user subsequently supplied the exported `indep.py`. We inspected it,
+preserved it unchanged as `audits/claude_indep.py`, and ran it locally.
+Its seven original-order results agree with the original census in
+assignment counts, candidate counts, and zero surviving extensions.
+The wrapper `audit_independent132.py` records the source hash and each
+completed order in `independent_audit132.json`; `completed: true` marks a
+finished run. See `audits/README.md` for provenance and reproduction.
+
+The new checker imports no arithmetic from our earlier scripts. It is an
+independent implementation of the same finite candidate reduction, not
+an independent formal proof. Our two original scripts still share
+arithmetic with each other, but that is no longer the only cross-check.
+The unchanged independent script has floating-point diagnostics that
+can abort a run; equality and distance-count decisions use integer
+polynomial arithmetic. We do not treat an aborted run as verification.
+
+### Diagnostic issue found during reproduction
+
+The unchanged checker completed odd orders through 57, then stopped at
+m=59 on its floating root-residual assertion. Its computed residual was
+1.1521266074510095e-6 against a 1e-6 threshold. Evaluating the same integer
+polynomial at the same floating root approximation with 80-digit Decimal
+Horner arithmetic gives about 1.97874e-13. No exact candidate test failed.
+
+The wrapper's explicit `--stable-root-diagnostic` mode replaces only that
+diagnostic evaluation in a separately compiled copy of `classify`. It
+does not modify the exported original, exact arithmetic helpers, or
+candidate equations. Orders in the output record whether they used the
+original summation or stable diagnostic. This adaptation is disclosed
+rather than representing an aborted original run as a successful one.
+
+### Completed local run
+
+The locally completed run covers all 29 odd orders from 7 through 63:
+3,093,546 candidate assignments, zero surviving nonvertex extensions
+with at most two new distance values. The original seven orders agree
+with the previous census. Orders 7 through 57 used the supplied original
+diagnostic; 59, 61, and 63 used the explicitly stabilized diagnostic.
+The completed JSON records the source hash and per-order diagnostic mode.
+
+For every checked order, nonvertex candidates had at most two old-distance
+matches and no run longer than one in both lists. This reproduces the
+reviewer's finite observation; it still does not prove h<=2 for all orders.
 
 ## Stronger observation remains a conjecture
 
 The reviewer reports at most two old-distance matches for noncentral,
 nonvertex axis points in the checked range, with no adjacent matches in
-both lists. This suggests a much stronger overlap bound h<=2. It is not
-proved here, and without the independent checker its empirical support
-has not been reproduced here beyond our existing small-order data.
+both lists. The supplied checker reproduces these observations for its
+completed orders; the structured output records them separately from
+the two-new-distance assertion. This suggests a much stronger overlap
+bound h<=2, but finite evidence does not prove it for arbitrary orders.
 The established working bound remains e>=ceil((m+1)/10).
 
 ## Remaining limitations
 
 - No formal verification or human mathematical review.
 - No established literature novelty.
-- Shared arithmetic dependencies in the repository's finite cross-check.
+- The independent checker shares the mathematical candidate reduction,
+  despite using different arithmetic code and field representation.
 - The result requires a regular odd polygon core; it does not resolve #132
   for arbitrary planar point sets.
