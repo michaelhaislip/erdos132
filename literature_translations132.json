@@ -1,0 +1,232 @@
+{
+  "scope": "Finite notation/index controls, not a proof or novelty check",
+  "odd_terms_checked": 53,
+  "homogeneous_cyclotomic_orders_checked": 52,
+  "first_lehmer_parameters": {
+    "R": 8,
+    "Q": -1
+  },
+  "associated_lehmer_parameters": {
+    "R": 12,
+    "Q": 1
+  },
+  "first_odd_terms": [
+    "1",
+    "9",
+    "89",
+    "881",
+    "8721",
+    "86329"
+  ],
+  "norm_controls": [
+    {
+      "source_order": 3,
+      "norm": "9"
+    },
+    {
+      "source_order": 5,
+      "norm": "89"
+    },
+    {
+      "source_order": 7,
+      "norm": "881"
+    },
+    {
+      "source_order": 9,
+      "norm": "969"
+    },
+    {
+      "source_order": 11,
+      "norm": "86329"
+    },
+    {
+      "source_order": 13,
+      "norm": "854569"
+    },
+    {
+      "source_order": 15,
+      "norm": "10561"
+    },
+    {
+      "source_order": 17,
+      "norm": "83739041"
+    },
+    {
+      "source_order": 19,
+      "norm": "828931049"
+    },
+    {
+      "source_order": 21,
+      "norm": "1034881"
+    },
+    {
+      "source_order": 23,
+      "norm": "81226783441"
+    },
+    {
+      "source_order": 25,
+      "norm": "9034407449"
+    },
+    {
+      "source_order": 27,
+      "norm": "912670089"
+    },
+    {
+      "source_order": 29,
+      "norm": "78789896198729"
+    },
+    {
+      "source_order": 31,
+      "norm": "779939566141121"
+    },
+    {
+      "source_order": 33,
+      "norm": "9936928321"
+    },
+    {
+      "source_order": 35,
+      "norm": "974711041921"
+    },
+    {
+      "source_order": 37,
+      "norm": "756540575094624409"
+    },
+    {
+      "source_order": 39,
+      "norm": "973717567681"
+    },
+    {
+      "source_order": 41,
+      "norm": "74133255753507979601"
+    },
+    {
+      "source_order": 43,
+      "norm": "733843577902219535609"
+    },
+    {
+      "source_order": 45,
+      "norm": "886201715521"
+    },
+    {
+      "source_order": 47,
+      "norm": "71909181654784654229281"
+    },
+    {
+      "source_order": 49,
+      "norm": "807976746906444784241"
+    },
+    {
+      "source_order": 51,
+      "norm": "9349635983466241"
+    },
+    {
+      "source_order": 53,
+      "norm": "69751832071885361094422969"
+    },
+    {
+      "source_order": 55,
+      "norm": "89866810124510950081"
+    },
+    {
+      "source_order": 57,
+      "norm": "916168911994987201"
+    },
+    {
+      "source_order": 59,
+      "norm": "67659205200547145476936050649"
+    },
+    {
+      "source_order": 61,
+      "norm": "669757084289940713959961971849"
+    },
+    {
+      "source_order": 63,
+      "norm": "833825421729336961"
+    },
+    {
+      "source_order": 65,
+      "norm": "862901101465927994733121"
+    },
+    {
+      "source_order": 67,
+      "norm": "649663681289287732278546063397769"
+    },
+    {
+      "source_order": 69,
+      "norm": "8797053797561482400641"
+    },
+    {
+      "source_order": 71,
+      "norm": "63660410854712498903303391529313521"
+    },
+    {
+      "source_order": 73,
+      "norm": "630173101093524810369475721533864081"
+    },
+    {
+      "source_order": 75,
+      "norm": "81623094115830484801"
+    },
+    {
+      "source_order": 77,
+      "norm": "811910375225866339846460231041"
+    },
+    {
+      "source_order": 79,
+      "norm": "611267258397037776770659171341784760801"
+    },
+    {
+      "source_order": 81,
+      "norm": "760223786832147978143718729"
+    },
+    {
+      "source_order": 83,
+      "norm": "59897953252309621587919807337671097231209"
+    },
+    {
+      "source_order": 85,
+      "norm": "79558102639207486648202426645761"
+    },
+    {
+      "source_order": 87,
+      "norm": "8277130324008654031814953921"
+    },
+    {
+      "source_order": 89,
+      "norm": "58100952904207433228450975572478447754863921"
+    },
+    {
+      "source_order": 91,
+      "norm": "763924848236859034971820393038380161"
+    },
+    {
+      "source_order": 93,
+      "norm": "811074302443200078675849515521"
+    },
+    {
+      "source_order": 95,
+      "norm": "763916893256094009371808945308020801"
+    },
+    {
+      "source_order": 97,
+      "norm": "557885343735277722788920330977891404440915170241"
+    },
+    {
+      "source_order": 99,
+      "norm": "738176512468510207952335333441"
+    },
+    {
+      "source_order": 101,
+      "norm": "54667070385601214976883354182956281473139394132249"
+    },
+    {
+      "source_order": 103,
+      "norm": "541148208283078500498866314378169397443635910392241"
+    },
+    {
+      "source_order": 105,
+      "norm": "712568930808430743505921"
+    }
+  ],
+  "completed": true
+}

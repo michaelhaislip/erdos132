@@ -7,6 +7,12 @@ general proof. See `MERSENNE_WEIGHT_AUDIT_RESPONSE.md` for the audited
 snapshot, dependencies and verification limits. The general odd-source
 norm claim and target order 5 remain unproved.
 
+See `LITERATURE_REVIEW132.md` for the bounded priority review. At odd
+indices our U is the first Lehmer sequence with parameters (8,-1),
+and the associated Lehmer sequence with parameters (12,1). The finite
+difference method has standard precedents; priority of this particular
+criterion and its geometric application remains undetermined.
+
 ## Statement
 
 For an odd prime p, define

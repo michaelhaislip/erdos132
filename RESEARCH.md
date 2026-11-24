@@ -9,6 +9,24 @@ must tend to infinity with n.
 
 This project records experiments, not a claimed solution or new theorem.
 
+## Focused literature checkpoint, 2026-11-24
+
+`LITERATURE_REVIEW132.md` compares the target-three norm and recent
+Mersenne-weight criterion with ten identified sources. It translates
+our odd Pell terms into first Lehmer parameters (8,-1) and associated
+parameters (12,1), and identifies the norm as a primitive homogeneous
+cyclotomic factor. A standalone checker verifies 53 term translations
+and 52 factor identities through source order 105.
+
+Bumby's Diophantine theorem is an established input. The inspected
+square-sequence and primitive-factor theorems do not directly imply
+the recent criterion under their displayed hypotheses. Finite differences
+are an established method. No matching exact criterion was found among
+the inspected theorems; priority remains undetermined. Original
+Rotkiewicz sources from 1983 and 1986 and later citations remain to be
+checked. The report and selected source ledger distinguish those gaps
+from verified comparisons; this is not an exhaustive priority review.
+
 ## Sources checked on 2026-11-23
 
 - Catalog: https://www.erdosproblems.com/132 (indexed text; direct access was restricted).

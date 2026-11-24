@@ -8,6 +8,13 @@ realized distances each occur between at most n unordered point pairs?
 This repository contains finite experiments, not a solution or a claimed
 new mathematical result.
 
+[LITERATURE_REVIEW132.md](LITERATURE_REVIEW132.md) records a focused
+first literature pass on the target-three results and Mersenne criterion.
+It identifies the standard Lehmer-sequence parameters and checks the
+hypotheses of nearby published results. No directly matching criterion
+was found among the inspected theorems, but relevant older sources
+remain unchecked and priority is undetermined.
+
 ## Latest result
 
 [MERSENNE_WEIGHT_TARGET3_NOTES.md](MERSENNE_WEIGHT_TARGET3_NOTES.md) gives

@@ -1,0 +1,122 @@
+{
+  "review_date": "2026-11-24",
+  "baseline_commit": "00e39ba",
+  "scope": "Bounded first pass: target-order-three norms, Mersenne-weight criterion, and direct geometric context",
+  "priority_assessment": "undetermined",
+  "ledger_scope": "Selected substantive queries and sources; not an exhaustive search history",
+  "selected_queries": [
+    "Rotkiewicz 1983 Lehmer 163 187 pdf",
+    "Square Lehmer numbers McDaniel pdf",
+    "Lehmer Mersenne quadratic symbol cyclotomic",
+    "Lehmer Mersenne finite differences",
+    "cyclotomic v_2 square Mersenne",
+    "Lehmer 8,-1",
+    "Lehmer 8, -1",
+    "89 881 8721 square",
+    "functional degree augmentation ideal finite abelian groups Aichinger Moosbauer",
+    "Multiplicities of interpoint distances in finite planar sets pdf",
+    "regular polygon new distances point",
+    "regular polygon distinct distances added point Erdos",
+    "regular polygon at most two distances symmetry axis"
+  ],
+  "sources": [
+    {
+      "id": "bumby1967",
+      "title": "The Diophantine Equation 3x^4-2y^2=1",
+      "doi": "10.7146/math.scand.a-10854",
+      "url": "https://journals.msp.org/mscand/article/view/2474",
+      "pdf_url": "https://journals.msp.org/mscand/article/download/2474/2473/2505",
+      "inspected": "Original theorem statement, existing repository's Pell substitution; publisher metadata",
+      "assessment": "Known theorem used explicitly; prime-source nonsquareness is an application",
+      "limit": "No inference about all composite primitive factors"
+    },
+    {
+      "id": "mcdaniel1993",
+      "title": "Square Lehmer numbers",
+      "doi": "10.4064/cm-66-1-85-93",
+      "url": "https://www.impan.pl/shop/publication/transaction/download/product/107984",
+      "inspected": "Definitions and recurrences pp.85-87; Section 3 standing hypothesis on p.87; rendered p.87",
+      "assessment": "Odd R standing hypothesis excludes R=8 and R=12 from later square results",
+      "limit": "No verification of every proof; no conclusion about other papers"
+    },
+    {
+      "id": "luca_walsh2001",
+      "title": "Squares in Lehmer sequences and some Diophantine applications",
+      "url": "https://www.impan.pl/shop/publication/transaction/download/product/83508",
+      "inspected": "Definitions p.47; Theorems R1,R2,1 on p.48; relevant displayed Jacobi formulas and references; rendered p.48",
+      "assessment": "Main square theorem requires (L,M)=(2,1) mod 4; ours is (0,3)",
+      "limit": "Quoted R1 is a different equation; original Rotkiewicz source remains unread"
+    },
+    {
+      "id": "yuan_li2009",
+      "title": "Squares in Lehmer sequences and the Diophantine equation Ax^4-By^2=2",
+      "doi": "10.4064/aa139-3-6",
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/83333",
+      "inspected": "Introduction, definitions, Theorems 1.1 and 1.2 pp.275-276; rendered p.276",
+      "assessment": "Main square results require (L,M)=(2,3) mod 4; ours is (0,3)",
+      "limit": "Not a full-paper proof audit; quotations of older Jacobi conditions differ from Luca-Walsh"
+    },
+    {
+      "id": "granville2012",
+      "title": "Primitive prime factors in second-order linear recurrence sequences",
+      "doi": "10.4064/aa155-4-7",
+      "url": "https://dms.umontreal.ca/~andrew/PDF/PrimitivePrimeFactors.pdf",
+      "alternate_url": "https://arxiv.org/html/1212.6306",
+      "inspected": "Main theorem hypotheses; Sections 6 and 7; references; rendered p.18 of author PDF",
+      "assessment": "Main theorem's coprimality and c=2 mod 4 hypotheses do not permit our substitutions; no matching Mersenne-weight statement established",
+      "limit": "Broader odd-valuation assertion in Section 7 is a conjecture, not a usable theorem"
+    },
+    {
+      "id": "gross_mersenne",
+      "title": "An elliptic curve test for Mersenne primes",
+      "url": "https://people.math.harvard.edu/~gross/preprints/Mersenne.pdf",
+      "inspected": "Section 1, Proposition 1.2 and its proof",
+      "assessment": "Precedent for norm-one finite-field mechanism in Lucas-Lehmer; different generator",
+      "limit": "No matching norm-character criterion identified"
+    },
+    {
+      "id": "clark_schauz2022",
+      "title": "Functional Degrees and Arithmetic Applications I: The Set of Functional Degrees",
+      "url": "https://arxiv.org/html/2201.02763",
+      "inspected": "Sections 2 and 3: finite difference definitions, Lemma 2.2, functional degree, group-ring action",
+      "assessment": "Established framework for our operator argument",
+      "limit": "Does not establish priority of the particular quadratic-character application"
+    },
+    {
+      "id": "clemen_dumitrescu_liu",
+      "title": "On multiplicities of interpoint distances",
+      "url": "https://arxiv.org/html/2505.04283v5",
+      "version_date": "2026-02-03",
+      "journal_pdf_url": "https://publikationen.bibliothek.kit.edu/1000188330/170672891",
+      "inspected": "Theorems 1.2 and 1.3 and convex-layer definitions; reinspection of a paper already in RESEARCH.md",
+      "assessment": "Displayed convex and convex-layer sufficient conditions do not automatically cover our whole geometric class",
+      "limit": "Does not clear other special-case work or establish geometric novelty"
+    },
+    {
+      "id": "rotkiewicz1983",
+      "title": "Applications of Jacobi's symbol to Lehmer's numbers",
+      "doi": "10.4064/aa-42-2-163-187",
+      "url": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/42/22/103738/applications-of-jacobi-s-symbol-to-lehmer-s-numbers",
+      "archive_pdf_url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa42/aa4224.pdf",
+      "inspected": "Publisher metadata and later primary papers' quotations only",
+      "assessment": "Unresolved high-priority lead",
+      "limit": "Original full text not inspected; access reached archive bot challenge"
+    },
+    {
+      "id": "rotkiewicz1986",
+      "title": "Problems on Fibonacci numbers and their generalizations",
+      "bibliography": "Fibonacci numbers and their applications (Patras, 1984), Math. Appl. 28 (1986), 241-255",
+      "located_via": "Granville reference 6",
+      "inspected": "Bibliographic citation only",
+      "assessment": "Unresolved lead",
+      "limit": "No full-text inspection or theorem applicability claim"
+    }
+  ],
+  "search_limits": [
+    "No MathSciNet or zbMATH search claimed",
+    "Backward and forward citation coverage incomplete",
+    "Automated mathematical summaries and informal public posts not treated as theorem authority",
+    "Negative search results do not establish priority",
+    "No external messages to authors or public novelty announcements"
+  ]
+}
