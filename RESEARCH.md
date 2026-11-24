@@ -9,6 +9,25 @@ must tend to infinity with n.
 
 This project records experiments, not a claimed solution or new theorem.
 
+## Separate-factor Mersenne extension, 2026-11-24
+
+`SPLIT_MERSENNE_TARGET3_NOTES.md` gives a working general polynomial
+factorization and a modified Mersenne character criterion for the two
+coprime factors of a mixed target-three norm. It adds all-exponent
+families with three and four distinct source primes, including
+3^a*5^b*17^c, 3^a*5^b*23^c and 3^a*5^b*11^c*13^d.
+The smallest witness uses prime classes modulo 48; a general witness
+2^t-1 uses a modified weight sum 2^(t-1)-1 on primes other than 3.
+
+Independent implementations agree on 26 polynomial factors, complete
+character data for witnesses 7,31,127,8191, and all 1659 mixed source
+orders divisible by 3 through 10001 (194 eligible at witness 7).
+The key signed operators are checked in their original two-channel
+form as well as after collapsing to modified logarithmic shifts.
+These are finite controls for the written proof, not a model audit.
+`SPLIT_MERSENNE_VERIFICATION.md` records the current review status.
+The general norm claim, axis conjecture and #132 remain open.
+
 ## Two-factor target-three proof, 2026-11-24
 
 `TWO_FACTOR_TARGET3_NOTES.md` gives a working proof for every source

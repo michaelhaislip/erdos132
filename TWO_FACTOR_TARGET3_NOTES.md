@@ -170,7 +170,10 @@ modulo 12.
 When chi(p)=+1, the same two factors are each 1 modulo 3, so this
 particular obstruction gives no conclusion. With additional distinct
 source primes, (7) becomes a further Moebius product and its two-factor
-argument cannot simply be reused. Those cases remain open here.
+argument cannot simply be reused. The later working extension in
+SPLIT_MERSENNE_TARGET3_NOTES.md constructs primitive signed factors
+and covers some such source patterns, including three and four
+distinct primes. Arbitrary further primes remain outside these results.
 
 The integer factorization is motivated by Schinzel, On primitive prime
 factors of Lehmer numbers I (1963), pp. 215-218, especially Lemma 2.

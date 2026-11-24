@@ -226,6 +226,12 @@ gives no nonsquare obstruction then. The case W<D is undetermined by
 this argument. Local controls check both above-threshold and zero-shift
 examples, as well as rejection of corrupted data and a failed weight sum.
 
+SPLIT_MERSENNE_TARGET3_NOTES.md subsequently applies a different
+character calculation to the separate coprime factors of mixed source
+norms divisible by 3. Its modified weights and threshold are not the
+whole-U weights and degree used here. That extension is a separate
+working proof and is not covered by this note's Claude audit.
+
 The general norm claim, target order 5, axis classification, and Erdos
 problem #132 remain unresolved. The model audit and arithmetic checks
 are neither formal verification nor human peer review. No novelty claim

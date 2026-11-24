@@ -20,6 +20,24 @@ Claude's source readings from the independently checked comparisons.
 
 ## Latest result
 
+[SPLIT_MERSENNE_TARGET3_NOTES.md](SPLIT_MERSENNE_TARGET3_NOTES.md) extends
+the working argument to sources with three or more distinct prime factors.
+Examples include every `3^a*5^b*17^c`, `3^a*5^b*23^c` and
+`3^a*5^b*11^c*13^d`, with all exponents positive. A modified Mersenne
+weight criterion tests the two coprime norm factors separately.
+
+The [verification record](SPLIT_MERSENNE_VERIFICATION.md) describes
+independent polynomial, character and integer-factor checks: 26 factor
+polynomials, witnesses 7,31,127,8191, and all 1659 mixed source orders
+divisible by 3 through 10001. The smallest witness covers 194 of those
+orders uniformly. This extension has **not** received an independent
+model audit; the general source-order claim and #132 remain unresolved.
+
+```sh
+python split_mersenne_target3_132.py
+python verify_split_mersenne_target3_132.py
+```
+
 [TWO_FACTOR_TARGET3_NOTES.md](TWO_FACTOR_TARGET3_NOTES.md) gives a working
 proof for every source order `3^a * p^b`, with `a,b >= 1` and prime
 `p = 5 or 7 mod 12`. It splits the norm into two coprime factors, each
