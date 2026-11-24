@@ -26,6 +26,26 @@
       "path": "source/BOARD_MESSAGE_22.json",
       "bytes": 1036,
       "sha256": "bb502e5ff1a984e822b28fe3b5c7638116d64c8a9cb6ea93cff4b75637a3cc18"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_23.json",
+      "bytes": 6096,
+      "sha256": "a6786fbcc1fd296ac7f2d31ad62974a549f4bb6a513ac54a64459cc091aaa745"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_24.json",
+      "bytes": 8711,
+      "sha256": "ccb97058c440e96d6ff8376bf310e2a4745b8d93b1902bd05e80fd65350f7273"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_25.json",
+      "bytes": 4404,
+      "sha256": "449144e30ea39793cd74cfc07d17c0b305155627843d966287744a6b37a64c26"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_26.json",
+      "bytes": 7435,
+      "sha256": "43c8f0705d7a1dc95cbb38108ff0f9a8883a845ef6377c9c00b57d68efb2d5b6"
     }
   ],
   "supplied_pdf": {
@@ -36,5 +56,15 @@
     "printed_pages": "163-187",
     "included_in_repository": false
   },
-  "limits": "Literature applicability review only; Claude ran no scripts; 1986 chapter full text unread; no novelty determination"
+  "limits": "Literature applicability reviews only; no scripts run by Claude; Patras chapter full text unread; no novelty determination; see LITERATURE_AUDIT_RESPONSE.md for corrected transcriptions",
+  "supplemental_context_commit": "ea06c95",
+  "additional_supplied_pdfs": [
+    {
+      "path": "C:/Users/Michael/Desktop/aa8113.pdf",
+      "sha256": "4ef9aa503345ca7d5a802919859d72f2f9dbfc546f53ec994b3c671804c029c2",
+      "bytes": 3748934,
+      "pdf_pages": 6,
+      "included_in_repository": false
+    }
+  ]
 }

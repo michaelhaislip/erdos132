@@ -2,7 +2,12 @@
   "review_date": "2026-11-24",
   "baseline_commit": "00e39ba",
   "followup_baseline_commit": "ae8a4e7",
-  "followup_board_responses": [19, 21],
+  "followup_board_responses": [
+    19,
+    21,
+    24,
+    26
+  ],
   "scope": "Bounded first pass: target-order-three norms, Mersenne-weight criterion, and direct geometric context",
   "priority_assessment": "undetermined",
   "ledger_scope": "Selected substantive queries and sources; not an exhaustive search history",
@@ -120,19 +125,25 @@
     },
     {
       "id": "schinzel1963",
-      "title": "On primitive factors of Lehmer numbers I",
+      "title": "On primitive prime factors of Lehmer numbers I",
       "bibliography": "Acta Arithmetica 8 (1963), 213-223",
       "located_via": "Reference 8, p.186 of supplied Rotkiewicz 1983 original",
-      "inspected": "Bibliographic reference only",
-      "assessment": "Unread primitive-factor lead",
-      "limit": "No theorem applicability or priority claim"
+      "inspected": "Claude reports full original pp.213-223; Codex inspected title/definitions and relevant theorem/factorization pages214-219 of the supplied scan",
+      "assessment": "Thm1 gives >=2 primitive prime divisors at (8,-1), odd 3|n,n>=9. No directly applicable odd-valuation/nonsquare/Mersenne-character theorem identified. Lemma2 motivates the separately derived two-prime factor argument.",
+      "limit": "Bounded applicability comparison, not verification of all source proofs or a priority determination; SchinzelII/III and further citations unread",
+      "doi": "10.4064/aa-8-2-213-223",
+      "local_source": "C:/Users/Michael/Desktop/aa8113.pdf",
+      "local_source_sha256": "4ef9aa503345ca7d5a802919859d72f2f9dbfc546f53ec994b3c671804c029c2",
+      "local_source_bytes": 3748934,
+      "pdf_pages": 6,
+      "printed_pages": "213-223 (preceded by previous article p.212)"
     }
   ],
   "claude_reported_later_leads": [
     {
       "title": "R. Juricevic, Lehmer Numbers with at Least 2 Primitive Divisors, Waterloo thesis (2007)",
       "url": "https://uwspace.uwaterloo.ca/bitstreams/dc24ca7f-d2c2-400f-b42d-57719f0e532e/download",
-      "inspection_reported": "Abstract, contents and tables only",
+      "inspection_reported": "Expanded by Claude in response24: pp.1-6,12-21,100-102; chapters2-5 unread. Schinzel original subsequently supplied and inspected.",
       "limit": "Not independently inspected by Codex; primitive-divisor counts alone do not imply odd valuation"
     },
     {

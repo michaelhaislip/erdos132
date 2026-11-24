@@ -9,6 +9,30 @@ must tend to infinity with n.
 
 This project records experiments, not a claimed solution or new theorem.
 
+## Two-factor target-three proof, 2026-11-24
+
+`TWO_FACTOR_TARGET3_NOTES.md` gives a working proof for every source
+order 3^a*p^b with a,b>=1 and prime p=5 or 7 modulo 12. Integer
+Chebyshev-type polynomials split N_e into positive odd coprime factors,
+both 2 modulo 3. Their product is therefore nonsquare even though it
+is 1 modulo 3. The proof is elementary and motivated by Schinzel's
+factorization; it does not require the source paper to supply a step.
+
+The additional uniform families relative to the earlier proofs have
+p=7 or 17 modulo 24, including all 3^a*7^b and 3^a*17^b. Source orders
+through 10001 already had finite certificates. The new scripts check
+67 polynomial indices and all 428 applicable source orders in that
+range (213 in the additional prime classes), with independent binary
+Pell powering and binomial-coefficient polynomial reconstruction.
+Nine field-norm determinants agree as well.
+
+Claude's read-only review of the frozen proof reports no mathematical
+errors, assuming the earlier norm dependencies; it inspects no code
+and runs nothing. One incorrect extra example in its response (47)
+was rejected. The reviewed snapshot and full scope are preserved in
+`TWO_FACTOR_TARGET3_AUDIT_RESPONSE.md`. General source orders, the
+axis conjecture and #132 remain open; novelty is undetermined.
+
 ## Focused literature checkpoint, 2026-11-24
 
 `LITERATURE_REVIEW132.md` compares the target-three norm and recent

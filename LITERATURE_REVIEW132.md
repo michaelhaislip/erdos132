@@ -237,9 +237,19 @@ peer-reviewed proofs.
    zbMATH review by K. Szymiczek, which describes Fibonacci symbols and
    pseudoprimes; that is not full-text inspection. No direct relevance
    was found in the reported review. The chapter remains unchecked.
-3. Inspect Schinzel, *On primitive factors of Lehmer numbers I*,
-   Acta Arith. 8 (1963), 213–223, reference [8] in Rotkiewicz (1983).
-   It is an unread lead, not an applicable theorem established here.
+3. Schinzel, *On primitive prime factors of Lehmer numbers I*,
+   Acta Arith. 8 (1963), 213–223, has now been supplied by the user.
+   Claude reports reading the full original; Codex inspected its
+   definitions and the relevant theorem/factorization pages 214–219.
+   Theorem 1 is an explicit primitive-divisor count at our positive
+   discriminant: at (8,-1), kappa=-3 and eta=1, it supplies at least two
+   primitive prime divisors for odd indices divisible by 3 and at least
+   9. The exceptional parameter sets do not contain (8,-1). A count
+   alone does not supply the odd valuation or character we need, and
+   no theorem establishing our criterion was identified. The paper's
+   Lemma 2 and factorization motivate the independently derived
+   two-prime proof in TWO_FACTOR_TARGET3_NOTES.md. Schinzel II/III
+   remain bibliographic leads, not inspected original sources.
 4. Follow later citations specifically for the primitive factor at
    `(L,M)=(8,-1)`, its associated `(12,1)` description, and modular
    characters at Mersenne primes. Search both e and 2e conventions.
@@ -252,9 +262,11 @@ These are research tasks for the agents, not reading assignments for
 the user. No author contact or public novelty announcement has been made.
 We can retain the present proofs and computations as working results.
 The original Jacobi-symbol source no longer blocks this checkpoint.
-Remaining literature work concerns its follow-up and primitive-factor
-references; mathematical progress still requires an argument beyond
-the displayed square-theorem hypotheses.
+Remaining literature work concerns its follow-up and further citations.
+The bounded pass is closed for now; unread sources remain documented
+without being prerequisites to continued mathematical work. The
+two-factor argument is mathematical progress beyond this literature
+comparison, not an established novelty conclusion.
 
 The selected query/access ledger is `literature_review132_sources.json`.
 Search-engine snippets and automated mathematical summaries were used

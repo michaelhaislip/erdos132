@@ -207,3 +207,11 @@ are outside the scope of the audit discussed above. They supply uniform
 family explanations for the twelve source-order-35 rows previously
 handled here by finite norms. The general composite claim is still
 unproved; additional source prime factors are not automatically covered.
+
+`TWO_FACTOR_TARGET3_NOTES.md` subsequently proves every mixed source
+order 3^a*p^b, a,b>=1, for prime p=5 or 7 modulo 12. A pair of coprime
+integer factors of N_e is individually 2 modulo 3, yielding a square
+obstruction that the whole norm's residue 1 modulo 3 does not detect.
+The additional uniform classes relative to the earlier two-prime
+residue proofs are p=7 or 17 modulo 24. This is a separate result and
+audit; it does not cover arbitrary further source primes.

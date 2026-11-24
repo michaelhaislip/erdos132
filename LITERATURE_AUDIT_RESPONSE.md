@@ -56,3 +56,34 @@ check does not prove novelty or the general theorem.
 `LITERATURE_REVIEW132.md` and `literature_review132_sources.json` contain
 the integrated source comparison. Priority remains undetermined; neither
 the general target-three norm claim nor Erdős #132 is solved here.
+
+## Later bounded pass and supplied Schinzel original
+
+Discussion 9, request 23 and response 24, found that the Schinzel and
+Patras originals were still inaccessible. The Schinzel Theorem 1
+comparison was initially based on Juricevic's secondary restatement.
+The user then supplied the original (SHA-256
+`4ef9aa503345ca7d5a802919859d72f2f9dbfc546f53ec994b3c671804c029c2`),
+reviewed in discussion 10, request 25 and response 26. These board
+records are added to the same source archive. The PDF is not committed.
+
+Claude reports reading all six scanned spreads. Codex inspected the
+title/definitions and the relevant theorem and factorization pages
+214–219. The original supplies a primitive-divisor count for our pair,
+not an odd-valuation theorem. Its positive-discriminant branch is
+explicit; an asymptotic threshold in the negative-discriminant branch
+is not a limitation for (8,-1).
+
+One transcription detail in response 26's exception summary should not
+be copied: the original Theorem 1's second exceptional-index case is
+`n=3*eta*abs(kappa)` with parameters in N_0, not just another parameter
+set at `n=eta*abs(kappa)`. The conclusion at (8,-1) is unchanged
+because that pair is in neither exceptional parameter set. The source
+ledger records the applicable conclusion without adopting that
+mis-transcribed general exception list.
+
+The 1986 full chapter remains unread. The bounded novelty pass is now
+closed for mathematical work, with that gap and incomplete citation
+coverage retained explicitly. The subsequent two-factor proof derives
+its algebra directly rather than assuming a new source-paper lemma;
+its separate audit is TWO_FACTOR_TARGET3_AUDIT_RESPONSE.md.

@@ -1,0 +1,29 @@
+{
+  "source": "Board discussion11, messages27,28 and integration reply; frozen proof reviewed by Claude",
+  "context_commit": "ea06c95",
+  "audited_draft_sha256": "3b47984182e6180c8892394d9eabcb2eafff06440eaee302ce6143a43ae1f569",
+  "integration_reply_id": 29,
+  "files": [
+    {
+      "path": "source/BOARD_MESSAGE_27.json",
+      "bytes": 2533,
+      "sha256": "6486aa7edfb7b5a50e5cb3fbb1280592210fc6a5f8aba67601a9a55ec6821847"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_28.json",
+      "bytes": 5799,
+      "sha256": "f135e880c5f1301a6107b386866f303103bd9a49527da16830bf2fe88bbefb9f"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_29.json",
+      "bytes": 1106,
+      "sha256": "0487b15fd897ab4372f8d9b49099305588643514cb1ca3ec5177de154d928ce3"
+    },
+    {
+      "path": "source/TWO_FACTOR_TARGET3_NOTES_AUDITED.md",
+      "bytes": 6265,
+      "sha256": "3b47984182e6180c8892394d9eabcb2eafff06440eaee302ce6143a43ae1f569"
+    }
+  ],
+  "limits": "Read-only hand proof audit; earlier norm dependencies taken as given; no source-paper or code inspection; no execution; auditor did not itself verify hash"
+}

@@ -20,6 +20,25 @@ Claude's source readings from the independently checked comparisons.
 
 ## Latest result
 
+[TWO_FACTOR_TARGET3_NOTES.md](TWO_FACTOR_TARGET3_NOTES.md) gives a working
+proof for every source order `3^a * p^b`, with `a,b >= 1` and prime
+`p = 5 or 7 mod 12`. It splits the norm into two coprime factors, each
+`2 mod 3`, proving the norm is nonsquare even though their product is
+`1 mod 3`. Additional uniform families include all `3^a * 7^b` and
+`3^a * 17^b`.
+
+A [dedicated read-only Claude audit](TWO_FACTOR_TARGET3_AUDIT_RESPONSE.md)
+found no mathematical error in the frozen proof, taking the earlier
+norm condition as given. Separate polynomial and Pell implementations
+agree for 67 multiplier indices and all 428 applicable source orders
+through 10001; nine field-norm determinants also agree. General
+source orders and #132 remain unresolved; novelty is undetermined.
+
+```sh
+python two_factor_target3_132.py
+python verify_two_factor_target3_132.py
+```
+
 [MERSENNE_WEIGHT_TARGET3_NOTES.md](MERSENNE_WEIGHT_TARGET3_NOTES.md) gives
 a working criterion for target order 3 with more distinct source primes.
 Define `w(p)=2^(v2(p^2-1)-3)`. If the distinct source-prime weights sum
