@@ -1,5 +1,5 @@
 {
-  "scope": "Finite controls for a working general proof; no independent model audit or novelty determination",
+  "scope": "Finite controls for a written general proof; the separate read-only model audit does not inspect or execute this code; no novelty determination",
   "polynomial_controls": {
     "targets": [
       5,

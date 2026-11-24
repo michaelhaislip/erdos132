@@ -1,9 +1,12 @@
 # Verification record for the separate-factor extension
 
-This working proof was developed after `b033b36`. It has not received
-an independent model audit or human review. The previous Claude audit
-does not cover the new integer-polynomial construction, coprimality,
-character functions or signed source-prime operators.
+This working proof was developed after `b033b36`. A dedicated read-only
+Claude audit of the frozen draft at `5f8c98e` found no mathematical
+error in the integer-polynomial construction, coprimality, character
+functions or signed source-prime operators, assuming the preceding
+norm and finite-field facts. It inspected no verification code and ran
+nothing. See SPLIT_MERSENNE_AUDIT_RESPONSE.md for exact scope. This is
+not formal verification or human review.
 
 ## Mathematical scope
 
@@ -62,11 +65,14 @@ orders; progress concerns unbounded families. General sources and
 ## Collaboration status
 
 The board's recorded daily allowance was exhausted after the earlier
-two-factor audit. No new Claude review was launched or claimed. A
-status message identifies this reviewable proof for future coordination
-without queuing an automatic run.
+two-factor audit. The user then explicitly authorized further board
+usage. One additional bounded response was reserved in the existing
+attempt ledger, without resetting history or changing the standing
+daily limit. Discussion 12 completed the dedicated proof audit.
 
-Board status message 30 identifies the review-ready proof. Its LF-byte
+Board status message 30 identified the review-ready proof. Its LF-byte
 SHA-256 is
 `ab44b97a19355ce78d07df77e680cfcbae64d8ec662178a9c09139a7bb880d82`.
-That identifies the new draft, not a completed audit.
+Request 31 and response 32 now identify the completed read-only audit
+of that same draft. The unchanged snapshot and full report are archived
+with hashes under audits/claude_split_mersenne_20261124/.

@@ -24,8 +24,11 @@ character data for witnesses 7,31,127,8191, and all 1659 mixed source
 orders divisible by 3 through 10001 (194 eligible at witness 7).
 The key signed operators are checked in their original two-channel
 form as well as after collapsing to modified logarithmic shifts.
-These are finite controls for the written proof, not a model audit.
-`SPLIT_MERSENNE_VERIFICATION.md` records the current review status.
+These are finite controls for the written proof. A subsequent dedicated
+read-only Claude audit reports no mathematical error, taking earlier
+norm and finite-field dependencies as given. It runs no code and is
+not formal verification or human review. See
+`SPLIT_MERSENNE_AUDIT_RESPONSE.md` and `SPLIT_MERSENNE_VERIFICATION.md`.
 The general norm claim, axis conjecture and #132 remain open.
 
 ## Two-factor target-three proof, 2026-11-24

@@ -9,3 +9,4 @@ audits/claude_residue_20261124/source/** -text
 audits/claude_mersenne_20261124/source/** -text
 audits/claude_literature_20261124/source/** -text
 audits/claude_two_factor_20261124/source/** -text
+audits/claude_split_mersenne_20261124/source/** -text

@@ -1,9 +1,11 @@
 # A Mersenne character criterion for the separate norm factors
 
-Working proof, not yet independently audited. This extends the earlier
-two-factor argument to source orders with three or more distinct prime
-factors. It does not prove the general norm conjecture, the axis
-classification or Erdos #132, and makes no novelty claim.
+Working proof. A dedicated read-only Claude audit found no mathematical
+error in the frozen draft, taking earlier norm and finite-field facts
+as given. See SPLIT_MERSENNE_AUDIT_RESPONSE.md for the reviewed snapshot
+and exact limits. This extends the two-factor argument to sources with
+three or more distinct prime factors. It does not prove the general norm
+conjecture, axis classification or Erdos #132, and makes no novelty claim.
 
 ## Results
 
@@ -84,7 +86,11 @@ prime to 3 (including d=1),
 
 Here is a direct check. Set X=(z+z^(-1))/sqrt(3), so that
 g_d(X)=(z^d+z^(-d))/sqrt(3). The roots on the left are obtained
-from z=zeta_(12d)^r with chi(r)=-sigma. If h=gcd(r,d) and j=d/h,
+from z=zeta_(12d)^r with chi(r)=-sigma. Here r ranges over residues
+modulo 12d prime to 6, not necessarily prime to d. Inverse pairs have
+unique representatives 0<r<6d; cosine is injective on their angles
+in (0,pi), so the resulting X roots are distinct.
+If h=gcd(r,d) and j=d/h,
 then z has exact order 12j, and its primitive exponent r/h has
 character -sigma*chi(h). This gives the factors on the right, with
 j=1 supplying the displayed linear factor. Inverse roots pair up;
@@ -172,13 +178,15 @@ rather than the degree D of the old whole-U character.
 
 Let R flip sigma, and use epsilon_i from the theorem statement.
 Equation (3), with inverse characters equal to characters, shows that
-the exponent of (F_sigma/ell), at the basepoint for s, is
+the exponent of (F_sigma/ell), at the basepoint
+k_0=(a-1)*h_3+sum_i(b_i-1)*h_i modulo M for s, is
 
     product_i (S^(h_i)+R^(epsilon_i)) j_sigma.                 (9)
 
 Choosing p_i in d contributes S^(h_i); choosing it in g/d contributes
 the character sign flip R^(epsilon_i). Signs of residue representatives
-do not matter because U_(-n)=U_n and chi(-1)=1.
+do not matter because U_(-n)=U_n. The chi factors are evaluated on
+the actual integer divisors g/d.
 
 On j_sigma, (6) says R j_sigma=S^D j_sigma+1. Write
 
@@ -186,11 +194,13 @@ On j_sigma, (6) says R j_sigma=S^D j_sigma+1. Write
        =S^(D*epsilon_i)*(I+S^(beta_i)).
 
 For r>=2 the expression (9) equals product_i L_i j_sigma.
-To justify this without equating R and S^D on arbitrary functions,
-each single replacement produces only the constant epsilon_i;
-every other source-prime operator kills constants. Moreover all
-shifts and R commute, and L_i(1)=0. Induction after the first two
-operators proves the asserted product identity.
+This does not equate R and S^D on arbitrary functions. Expand (9)
+into its 2^r monomials. Each monomial S^v R^u, with u read modulo
+two, acts on j_sigma as S^(v+D*u)j_sigma+u. The accumulated
+constant is zero if every epsilon_i is zero; otherwise it is the
+parity of 2^(r-1), again zero for r>=2. This gives precisely the
+product of the L_i. For r=1 the constant epsilon_1 can survive,
+which is why this reduction and the theorem are restricted to r>=2.
 
 For nonzero beta_i, factor over F_2
 
@@ -271,9 +281,12 @@ two-channel operators S^h+R^epsilon directly, not the collapsed
 modified-shift operators. Their coefficient streams, character tables
 and integer factorization streams agree.
 
-The new proof has not received an independent model or human audit.
-The earlier audit of the two-prime argument does not cover the new
-cyclotomic polynomial construction or the signed operator calculation.
-The verification details and current review status are recorded in
-SPLIT_MERSENNE_VERIFICATION.md. The general result rests on the
-written argument, not on extending the finite tests beyond their range.
+A dedicated read-only Claude audit checks the new cyclotomic
+polynomial construction and signed operator calculation, with no
+mathematical error reported. It assumes the earlier norm and
+finite-field dependencies, inspects no verification code and executes
+nothing. The earlier two-prime audit is separate. Verification details
+are in SPLIT_MERSENNE_VERIFICATION.md and review scope is in
+SPLIT_MERSENNE_AUDIT_RESPONSE.md. The general result rests on the
+written proof, not on extending these finite tests beyond their range;
+neither model review nor numerical checking is formal or human review.

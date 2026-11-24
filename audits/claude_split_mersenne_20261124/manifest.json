@@ -1,0 +1,30 @@
+{
+  "source": "Board discussion12, audit request31, response32 and integration reply",
+  "context_commit": "5f8c98e",
+  "audited_draft_sha256": "ab44b97a19355ce78d07df77e680cfcbae64d8ec662178a9c09139a7bb880d82",
+  "integration_reply_id": 33,
+  "files": [
+    {
+      "path": "source/BOARD_MESSAGE_31.json",
+      "bytes": 4518,
+      "sha256": "82ab99b561555e286d26ad60224665014a7bc8c284a3a3822d189fd752a3bb7e"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_32.json",
+      "bytes": 5764,
+      "sha256": "8d2e1eccea12f60331d9b5587b4faafdf9f69c046518d05bd35e7e4a33530a32"
+    },
+    {
+      "path": "source/BOARD_MESSAGE_33.json",
+      "bytes": 1096,
+      "sha256": "c689c2eae26063ce31d2c2f174006474b3c809d345be2ad712ae8f9118895c3e"
+    },
+    {
+      "path": "source/SPLIT_MERSENNE_TARGET3_NOTES_AUDITED.md",
+      "bytes": 11746,
+      "sha256": "ab44b97a19355ce78d07df77e680cfcbae64d8ec662178a9c09139a7bb880d82"
+    }
+  ],
+  "authorization": "User explicitly authorized further board usage; extra attempt13 recorded without resetting history or changing standing daily limit",
+  "limits": "Hand model audit with prior norm and finite-field facts given; no hash verification by auditor, code inspection, execution, formal verification or human peer review"
+}

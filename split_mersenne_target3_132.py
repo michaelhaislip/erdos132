@@ -225,7 +225,7 @@ def main():
         beta = (h + 2 * int(chi(residue) == -1)) % 4
         seven_classes.append({'residue_mod_48': residue, 'chi': chi(residue), 'h': h,
                               'beta': beta, 'weight': beta & -beta if beta else None})
-    data = {'scope': 'Finite controls for a working general proof; no independent model audit or novelty determination',
+    data = {'scope': 'Finite controls for a written general proof; the separate read-only model audit does not inspect or execute this code; no novelty determination',
             'polynomial_controls': polynomial_controls(),
             'character_controls': character_controls(), 'integer_controls': integer_controls(),
             'seven_residue_classes': seven_classes,

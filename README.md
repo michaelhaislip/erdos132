@@ -30,8 +30,10 @@ The [verification record](SPLIT_MERSENNE_VERIFICATION.md) describes
 independent polynomial, character and integer-factor checks: 26 factor
 polynomials, witnesses 7,31,127,8191, and all 1659 mixed source orders
 divisible by 3 through 10001. The smallest witness covers 194 of those
-orders uniformly. This extension has **not** received an independent
-model audit; the general source-order claim and #132 remain unresolved.
+orders uniformly. A [dedicated read-only Claude audit](SPLIT_MERSENNE_AUDIT_RESPONSE.md)
+found no mathematical error in the frozen proof, assuming the earlier
+norm and finite-field facts. It inspected no code and ran nothing.
+The general source-order claim and #132 remain unresolved.
 
 ```sh
 python split_mersenne_target3_132.py
