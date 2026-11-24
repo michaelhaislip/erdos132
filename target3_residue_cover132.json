@@ -546,7 +546,12 @@
         ]
       }
     ],
+    "prior_target3_source_split": {
+      "prime_source": 73,
+      "source_25": 10,
+      "source_35": 12
+    },
     "all_previous_95_target3_rows_have_uniform_family_explanations": true
   },
-  "audit_status": "New working arguments; not covered by the earlier Claude audit."
+  "audit_status": "Read-only Claude audit of 5d97021 found no mathematical error; it did not execute scripts. Later local edits add assertions and proof explanations."
 }

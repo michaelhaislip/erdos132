@@ -15,8 +15,10 @@ working elementary proofs for every source order `5^a * 7^b`, every
 power of 11 or 13, and two-prime orders `p^a * q^b` with distinct primes
 `p,q = 3 or 5 mod 8`, all for target order 3. The 5/7 argument reduces
 to six residue cases using primes 17 and 73. A separate small-integer
-checker verifies its complete cycle and witness data. These new proofs
-postdate the previous audit; the general source-order claim is unproved.
+checker verifies its complete cycle and witness data. A [dedicated
+read-only Claude audit](RESIDUE_TARGET3_AUDIT_RESPONSE.md) reports no
+mathematical error and verifies key arithmetic by hand; it could not
+execute the scripts. The general source-order claim is unproved.
 
 ```sh
 python target3_residue_covers132.py

@@ -1,10 +1,12 @@
 # Periodic residue proofs for target-three source orders
 
-Working arguments developed after the audit recorded at c541d6e. They have
-not received that audit. There are elementary proofs for new prime-power
-and two-prime families, including a six-case modular proof for every
-source order 5^a*7^b with a,b>=1. The general source-order norm
-claim and the axis classification remain unproved.
+Working arguments. Claude's dedicated read-only audit of 5d97021 finds
+no mathematical error in the four residue arguments. It checked key
+arithmetic by hand but could not execute the scripts. See
+`RESIDUE_TARGET3_AUDIT_RESPONSE.md` for scope and subsequent clarifications.
+The proofs cover prime-power and two-prime families, including every
+source order 5^a*7^b with a,b>=1. The general source-order norm claim
+and the axis classification remain unproved.
 
 ## Reviewed setup and the periodic method
 
@@ -56,13 +58,19 @@ character H(n)=(U_n/7), for odd n modulo 16, are:
 
 No U_n vanishes modulo 7. Define epsilon(n)=1 for n=3 or 5 modulo 8,
 and zero for n=1 or 7 modulo 8. It is additive modulo two under
-multiplication of odd integers. Direct inspection of this eight-entry
-table gives, for every odd x,y,
+multiplication of odd integers. Every odd residue modulo 16 is uniquely
++/-5^k with k modulo 4. The displayed table gives
+
+    H(+/-5^k)=(-1)^(k*(k+1)/2),    epsilon(+/-5^k)=k modulo 2.
+
+The exponent is well-defined modulo 4: increasing k by 4 changes
+k*(k+1)/2 by the even integer 4k+10. Expanding the quadratic at k+l
+then gives, for every odd x,y,
 
     H(x*y)=H(x)*H(y)*(-1)^(epsilon(x)*epsilon(y)).                  (2)
 
-There are only 64 residue pairs to check; the standalone checker checks
-all of them. Now let p,q be distinct odd primes and a,b>=1. Put
+The standalone checker also checks all 64 residue pairs as a control.
+Now let p,q be distinct odd primes and a,b>=1. Put
 z=p^(a-1)*q^(b-1). Applying (2) to (1), with all denominators units, gives
 
     (N_(p^a*q^b)/7)=H(p*q*z)*H(z)*H(p*z)*H(q*z)
@@ -73,9 +81,10 @@ The H factors and all terms involving epsilon(z) cancel.
 Theorem A. If p,q are distinct odd primes, both 3 or 5 modulo 8, then
 every source order p^a*q^b, a,b>=1, is excluded for target order 3 at every
 cyclotomic ambient order. Indeed (3) is -1, while this mixed-prime order
-is not a power of 3. One of p,q is allowed to be 3; the earlier
-strengthened coprimality lemma handles that case. Examples include all
-orders 3^a*5^b, 5^a*11^b and 11^a*13^b.
+is not a power of 3. One of p,q is allowed to be 3: then the other
+distinct prime has positive exponent, so e is still not a power of 3
+and the reviewed necessary square-norm condition applies. Examples
+include all orders 3^a*5^b, 5^a*11^b and 11^a*13^b.
 
 Exactly two distinct prime factors are required for this theorem. Adding
 an arbitrary third source prime is not covered. In fact the third
@@ -245,8 +254,9 @@ Pell implementation, large integer norm computation, cyclotomic
 polynomial module, supplied audit code, or generator code. Its complete
 finite verification rests on the explicit certificate and small-integer
 arithmetic. It checks the six-case proof rather than replacing the
-written periodicity and norm arguments. This is not formal
-verification and has not yet received the earlier Claude audit.
+written periodicity and norm arguments. The subsequent read-only Claude
+audit reports no mathematical error, but did not execute this checker or
+the generator. This is not formal verification or human peer review.
 
 Two local negative controls also reject a changed cycle entry and a
 replacement witness that is a quadratic residue. The unchanged certificate

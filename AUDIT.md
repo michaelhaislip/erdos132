@@ -124,9 +124,10 @@ checks must not be described as a review of its Galois/norm argument.
   the review and a correction to one proposed cosmetic simplification.
 - No established literature novelty.
 - `RESIDUE_COVER_TARGET3_NOTES.md` postdates the composite proof audit.
-  Its modulo-7 character law, complete prime-power residue tables, and
-  six-case 5^a*7^b proof have local exact checks and a standalone small-
-  integer certificate checker, but have not received that Claude review.
+  A dedicated read-only Claude review of 5d97021 reports no mathematical
+  error in its character law, prime-power tables, or six-case 5^a*7^b
+  proof. It checked key arithmetic by hand but could not run scripts.
+  `RESIDUE_TARGET3_AUDIT_RESPONSE.md` records scope and the added assertions.
 - The independent checker shares the mathematical candidate reduction,
   despite using different arithmetic code and field representation.
 - The result requires a regular odd polygon core; it does not resolve #132

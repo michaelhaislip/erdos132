@@ -33,15 +33,18 @@ def check():
         assert result in (1,q-1)
         return 1 if result==1 else -1
 
+    assert len(tables[7])==8 and all(x for x,_ in tables[7])
     for x in range(1,16,2):
         for y in range(1,16,2):
             cross=int(x % 8 in (3,5))*int(y % 8 in (3,5))
             assert sign(7,U(7,x*y))==sign(7,U(7,x))*sign(7,U(7,y))*(-1)**cross
-    assert len(tables[7])==8 and all(x for x,_ in tables[7])
+            for z in range(1,16,2):
+                product=U(7,x*y*z)*U(7,z)*U(7,x*z)*U(7,y*z)
+                assert sign(7,product)==(-1)**cross
 
     assert 2*len(tables[13])==14 and 2*len(tables[17])==36
     assert pow(11,3,14)==1 and pow(11,3,36)==35
-    for q in (13,17):
+    for q in (13,17,29):
         assert all(U(q,-n)==U(q,n) for n in range(1,2*len(tables[q]),2))
     for a in (1,2,3):
         values=[]
@@ -52,10 +55,24 @@ def check():
             assert residue==data['eleven_power_norm_residues_by_a_mod3_1_2_0'][a-1][str(q)]
             values.append(sign(q,residue))
         assert -1 in values
+    for p in (11,25,227,241):
+        assert p % 14 in (3,11) and p % 36 in (11,25)
+        for a in range(1,7):
+            for q in (13,17):
+                denominator=U(q,p**(a-1))
+                assert denominator % q
+                residue=U(q,p**a)*pow(denominator,-1,q) % q
+                assert residue==data['eleven_power_norm_residues_by_a_mod3_1_2_0'][(a-1) % 3][str(q)]
     assert 2*len(tables[29])==56
     for p in (13,15,41,43):
         assert p*p % 56==1
         assert U(29,1)==1 and sign(29,U(29,p))==-1
+        for a in (1,2):
+            denominator=U(29,p**(a-1))
+            assert denominator % 29
+            residue=U(29,p**a)*pow(denominator,-1,29) % 29
+            expected=U(29,p) if a==1 else pow(U(29,p),-1,29)
+            assert residue==expected and sign(29,residue)==-1
 
     for q,scalar in ((17,1),(73,-1)):
         assert 2*len(tables[q])==(36 if q==17 else 72)

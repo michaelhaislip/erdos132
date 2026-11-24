@@ -521,3 +521,28 @@ The new proofs have not received the earlier Claude audit. The general
 norm nonsquareness claim, arbitrary composite source orders, target
 order 5, the axis conjecture, and #132 remain unresolved here. No novelty
 or formal-verification claim is made.
+
+## Read-only audit of the residue proofs
+
+Claude's audit of 5d97021, local board discussion 5 response 13, reports
+no mathematical error in the four new arguments. It hand-computes key
+cycle states, residue divisions, and non-residue witnesses, and checks
+inverse-power indexing, units, cancellation, source/ambient scope, and
+the zero exponent classes. It could not execute scripts; this is not
+an independent replay. The source is preserved with hashes under
+`audits/claude_residue_20261124/`.
+
+The notes incorporate its structural derivation H(+/-5^k)=
+(-1)^(k*(k+1)/2), which proves the modulo-7 multiplication law directly.
+The mixed-prime case involving 3 is now explicitly tied to the reviewed
+non-power-of-3 square-norm condition. The generator asserts and records
+the exact 73/10/12 old-residual split. The standalone checker adds the
+modulo-252 representatives, both modulo-56 exponent parities, modulo-29
+evenness, and the complete 512-triple cancellation identity.
+
+Both scripts and the negative controls pass after these changes. The
+mathematical certificate payload agrees with audited revision 5d97021;
+the audit-status and validation metadata are updated. Execution remains
+Codex's local verification, not Claude's. See
+`RESIDUE_TARGET3_AUDIT_RESPONSE.md`. The general classification and #132
+remain unproved here; no formal or human peer review is claimed.

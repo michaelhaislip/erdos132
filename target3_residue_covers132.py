@@ -164,7 +164,13 @@ def run():
     residuals=json.loads((ROOT/'small_target_descent132.json').read_text())['results']
     target3=[r for r in residuals if r['target_order']==3]
     assert len(target3)==95
-    assert all(prime(r['source_order']) or r['source_order'] in (25,35) for r in target3)
+    assert all((r['source_order']>=5 and prime(r['source_order'])) or r['source_order'] in (25,35) for r in target3)
+    source_split={
+        'prime_source':sum(r['source_order']>=5 and prime(r['source_order']) for r in target3),
+        'source_25':sum(r['source_order']==25 for r in target3),
+        'source_35':sum(r['source_order']==35 for r in target3),
+    }
+    assert source_split=={'prime_source':73,'source_25':10,'source_35':12}
     output={
         'scope':'Exact periodic modular certificate; infinite-family conclusions require the written norm/descent lemmas.',
         'cycles':{str(q):states for q,states in cycles.items()},
@@ -178,8 +184,9 @@ def run():
                       'two_prime_source_orders_rejected_mod7_in_range':mixed_count,
                       'fast_pell_matches_recurrence_through':1001,
                       'selected_large_exact_controls':controls,
+                      'prior_target3_source_split':source_split,
                       'all_previous_95_target3_rows_have_uniform_family_explanations':True},
-        'audit_status':'New working arguments; not covered by the earlier Claude audit.',
+        'audit_status':'Read-only Claude audit of 5d97021 found no mathematical error; it did not execute scripts. Later local edits add assertions and proof explanations.',
     }
     (ROOT/'target3_residue_cover132.json').write_text(json.dumps(output,indent=2)+'\n')
     print('Mod-7 quadratic-character identity: all 64 cases passed.')
