@@ -10,6 +10,18 @@ new mathematical result.
 
 ## Latest result
 
+[SIGMA2_NOTES.md](SIGMA2_NOTES.md) records a focused proof attempt on the
+doubling criterion: an exact identity restricts common prime-ideal factors,
+yielding a necessary norm filter. An explicit order-15 example proves that
+the norm filter is not sufficient. The notes also prove the sigma_2
+classification for primes where doubling generates the real Galois group.
+The general family classification remains open; this new argument has
+not received independent review.
+
+```sh
+python verify_sigma2_structure132.py
+```
+
 The expanded Claude research packet is reviewed in
 [CLAUDE_AXIS_REVIEW.md](CLAUDE_AXIS_REVIEW.md), with the source log and raw
 outputs preserved under `audits/claude_axis_20261124/`. Its conditional

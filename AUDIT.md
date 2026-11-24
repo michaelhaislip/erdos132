@@ -91,6 +91,10 @@ The established working bound remains e>=ceil((m+1)/10).
 
 ## Remaining limitations
 
+Scope update: `SIGMA2_NOTES.md` and its norm/gcd argument were developed
+after the supplied reviews. They are new working arguments requiring
+independent audit; the earlier favorable reviews do not certify them.
+
 Expanded-packet update: `CLAUDE_AXIS_REVIEW.md` reviews the subsequently
 supplied research log, short prime valuation proof, conditional family
 classification reduction, and Lemma G. It records two repairable proof

@@ -290,3 +290,33 @@ The general admissibility classification remains open. The heptagon
 harmlessness statement is conditional on the known-family classification;
 the source's detailed proof states that qualification. No general-plane
 solution or priority claim follows from this review.
+
+## Focused sigma_2 proof attempt
+
+`SIGMA2_NOTES.md` derives the exact identity for A=4*Delta and
+B=sigma_2(A):
+
+    4B=-A^2+2*(C_i^2+4)*A+3*(C_i^2-4)^2.
+
+For a reduced pair, common odd prime-ideal divisors of A,B can lie only
+over 3, or the base prime when the order is a prime power. If AB is a
+square, the ideal square class of A has this restricted support. This
+gives a necessary rational norm filter. The identity also proves valid
+odd-order discriminants cannot vanish exactly.
+
+The norm filter rejects order-15 pair (1,5), whose A norm is 59*179.
+But pair (3,5) passes with norm 89^2, while AB=89 and a reduction modulo
+31 certifies that the field-square condition fails. This establishes a
+precise obstruction to finishing the classification by norms alone.
+
+The notes additionally prove the sigma_2 classification for prime p>=7
+when doubling generates Gal(K_p/Q), using sign propagation, positive
+trace, and the earlier trigonometric inequality. This does not settle
+other primes' sigma_2 test or composite orders, even though the original
+prime-order axis conjecture is already settled by the stronger proof.
+
+`verify_sigma2_structure132.py` checked the identity symbolically, exact
+norms and residue witnesses for both order-15 examples, and 17 known-
+family controls. These support a working proof, not formal verification.
+No larger census was run. The general admissibility classification and
+the general planar problem remain unresolved.
