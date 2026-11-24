@@ -1,0 +1,61 @@
+{
+  "scope": "Regular polygons of orders 7,9,11,13,15,17,19 only; exact algebra, not a formal proof.",
+  "results": [
+    {
+      "m": 7,
+      "field_degree": 6,
+      "assignments_checked": 36,
+      "radii_satisfying_two_old_matches": 1,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    },
+    {
+      "m": 9,
+      "field_degree": 6,
+      "assignments_checked": 120,
+      "radii_satisfying_two_old_matches": 4,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    },
+    {
+      "m": 11,
+      "field_degree": 10,
+      "assignments_checked": 300,
+      "radii_satisfying_two_old_matches": 1,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    },
+    {
+      "m": 13,
+      "field_degree": 12,
+      "assignments_checked": 630,
+      "radii_satisfying_two_old_matches": 1,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    },
+    {
+      "m": 15,
+      "field_degree": 8,
+      "assignments_checked": 1176,
+      "radii_satisfying_two_old_matches": 7,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    },
+    {
+      "m": 17,
+      "field_degree": 16,
+      "assignments_checked": 2016,
+      "radii_satisfying_two_old_matches": 1,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    },
+    {
+      "m": 19,
+      "field_degree": 18,
+      "assignments_checked": 3240,
+      "radii_satisfying_two_old_matches": 1,
+      "noncentral_nonvertex_extensions": [],
+      "center_new_values": 1
+    }
+  ]
+}

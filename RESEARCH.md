@@ -157,3 +157,26 @@ should not present these cases as fresh targets without auditing them.
 The general case remains unresolved by this project. A precise next
 question is whether a two-new-distance extension can be excluded, or a
 nonregular core handled, without a full few-distance classification.
+
+## Fourth pass: two new distances
+
+`TWO_DISTANCE_NOTES.md` records an exact finite classification of single
+point extensions introducing at most two new distances, for regular
+polygons of orders 7,9,11,13,15,17,19. Only the center qualifies (apart
+from existing vertices). The calculation covers arbitrary real points:
+repeated distances force an axis, and two matches to old chord lengths
+force a finite list of algebraic signed radii. There is no coordinate
+bounding box, floating-point decision, or lattice restriction.
+
+The generator and a division-free cross-check both examined 7,518
+assignments. They share polynomial arithmetic, so this is not independent
+formal verification. The composite orders 9 and 15 have extra radii
+matching two old values; none survives the final distance-count test.
+
+The counting lemma then yields #132 for each listed regular polygon plus
+one through four arbitrary distinct added points. This includes, for
+example, 17-point sets containing a regular 13-gon, but not arbitrary
+17-point sets. The general odd-order extension statement remains open
+in this project. A bounded novelty search found no directly matching
+two-new-distance result; priority is unestablished and outside review
+has not occurred.

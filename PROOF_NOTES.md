@@ -142,3 +142,7 @@ The next substantive gap is handling nonregular few-distance cores, or
 allowing two additional distance values in a regular-polygon extension.
 Neither is resolved here. Further lattice enumeration alone does not close
 these gaps.
+
+Update: `TWO_DISTANCE_NOTES.md` handles two new distance values by an exact
+finite calculation for seven specific odd polygon orders. The unrestricted
+odd-order question and nonregular-core problem are still unresolved here.

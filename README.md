@@ -45,3 +45,22 @@ python verify_moments132.py
 ```
 
 The checks verify rational identities, not the geometric proof itself.
+
+## Two-new-distance computation
+
+[TWO_DISTANCE_NOTES.md](TWO_DISTANCE_NOTES.md) gives a completeness argument
+and exact finite computation for regular polygons of orders
+7, 9, 11, 13, 15, 17, and 19. For these orders, a point other than a vertex
+or the center introduces at least three new distance values. This yields
+a computer-assisted #132 result for each listed polygon plus up to four
+arbitrary points. It is not a result for arbitrary planar sets or all
+odd polygon orders; novelty is unestablished.
+
+```sh
+python polygon_extensions132.py
+python verify_polygon_extensions132.py
+```
+
+Both use exact rational polynomial arithmetic and Python's standard
+library. The verifier uses a division-free formulation but shares the
+generator's polynomial arithmetic; neither is a formal proof checker.
