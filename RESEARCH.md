@@ -69,3 +69,69 @@ checking whether this example belongs to an existing construction.
 Before sustained proof development or a serious attempt to extend a
 published theorem, recommend switching to High. Avoid scaling brute-force
 enumeration without a specific structural question.
+
+## Second pass: structure and prior work
+
+Run `python analyze132.py` to reproduce `analysis132.json`.
+It examines every sharp (exactly two qualifying distances) n=7 and n=11
+subset in the original triangular patch and identifies translations,
+rotations by multiples of 60 degrees, and reflections. It does not identify
+arbitrary similarities or claim to classify arbitrary planar examples.
+
+There is one lattice-isometry class at each of these two sizes: four patch
+occurrences at n=7 and six at n=11. The seven-point example is a regular
+hexagon with its center. The eleven-point example has exactly one possible
+single-point triangular-lattice extension that introduces no new distance,
+even if additions outside the original patch are allowed. It is (2,1).
+The candidate search is complete for this extension question because the
+existing diameter bounds the distance to a fixed anchor; the script uses
+q(x,y) >= 3*x*x/4 and q(x,y) >= 3*y*y/4 to bound both coordinates.
+
+The twelve-point parent's squared-distance profile is:
+1:24, 3:15, 4:12, 7:12, 9:3. It has three qualifying distances.
+Of its twelve single-point deletions, three have two qualifying distances
+and nine have three. All eleven-point examples found here are members
+of this deletion family, up to the specified lattice isometries.
+Deleting any point of our eleven-point witness gives at least three
+qualifying distances. Thus it is locally sharp with respect to deletion;
+this is a statement about this witness, not a general extremal theorem.
+
+### A useful counting reduction
+
+Write m for the number of distinct realized distances. If the diameter is
+the only qualifying distance, each of the other m-1 distances occurs at
+least n+1 times. Therefore
+
+    (m-1)(n+1) + 1 <= n(n-1)/2.
+
+This forces m <= 3,4,4,5,5,6,6 for n=7,8,9,10,11,12,13 respectively.
+This is an elementary necessary condition, not a new result.
+
+For n=7 it combines with a published classification to settle that case:
+every seven-point set has at least three distances, and the only
+seven-point three-distance sets, up to similarity, are the regular heptagon
+and the regular hexagon plus center. Their multiplicity profiles are
+(7,7,7) and (12,6,3), respectively; both have at least two qualifying
+distances. Four or more distances would require at least 25 pairs under
+the supposed counterexample, but there are only 21 pairs.
+
+Source for the classification: Balaji et al., Lattice Configurations
+Determining Few Distances, Theorem 1.3(iii), citing Erdos and Fishburn:
+https://arxiv.org/html/1911.11688v3
+This is a deduction using a literature input, not a novel seven-point claim.
+Our earlier summary that the unresolved cases 'start at seven' repeated
+the 2026 paper's broad wording and was too coarse for choosing a target.
+
+An existing eight-point proof project was also inspected:
+https://github.com/EvanBeller/erdos-132/blob/master/README.md
+It reports a Lean proof conditional on three explicit published geometry
+inputs and disclaims priority. We read its README, not its full proof or
+build, so its verification remains an author report in these notes.
+We should not invest in rediscovering the eight-point argument.
+
+### Next decision
+
+The next mathematical task is to assess whether the counting reduction,
+few-distance classifications, and deletion bounds yield anything beyond
+existing small-case work. High effort is now recommended before that
+proof-oriented phase. No new theorem or general solution is claimed.

@@ -21,3 +21,13 @@ The script exhaustively checks subsets of size 7 through 16 from two
 coordinates to `results132.json`. The scan covers 101,286 indexed subsets.
 
 See [RESEARCH.md](RESEARCH.md) for sources, findings, limitations, and next steps.
+
+For symmetry classification of the sharp seven- and eleven-point examples
+and their exact lattice extension/deletion checks, run:
+
+```sh
+python analyze132.py
+```
+
+This produces `analysis132.json`. The research notes also record a counting
+reduction and existing small-case work to avoid duplicating known results.
