@@ -377,3 +377,38 @@ from K_e*K_5 to K_e is C_e^4+12*C_e^2+16. A general nonsquareness
 argument remains missing. The new notes need fresh independent review;
 the earlier favorable Claude audit does not cover them. No general
 axis classification, general solution to #132, or novelty claim follows.
+
+## Dedicated small-target audit and independent replay
+
+Claude's subsequent audit of ba43b71 reports no fatal gap, missing
+hypothesis, or circularity. We replayed its independently written full
+cyclotomic-polynomial/CRT implementation: all 177 field indices and
+smaller-field norms agree exactly, and the regenerated selection matches.
+The target-order split is confirmed as 95/82, with 73 rows covered by
+the prime-source theorem. Two implicit proof steps are now explicit:
+B=108 modulo A, and the factorisation used in the norm evaluation.
+
+The source checks the norm/Pell identity for 166 primes 5..997 modulo
+four split primes per case, and exactly by CRT for 28 primes 5..113.
+Our wrapper adds explicit assertions for every printed boolean summary,
+trial-divides all 788 used primes, checks 1,055 generator plans and
+205 CRT bounds, and saves an exact ambient sigma_2 non-residue witness
+for each of the 177 pairs. Those pairs were already excluded at every
+ambient multiple by the earlier residue sweep and Lemma G. The smaller-
+field norm calculation rechecks those exclusions rather than adding new
+ones; the prime-source theorem is the unbounded result.
+
+The audit derives the composite-source identity
+N_e=product_(d|e) U_d^mu(e/d), agreeing with all 11 target-3 source orders
+in the residual data. It checks 18 composite samples through 245 as
+nonsquares, not an exhaustive range or general theorem. For source order
+coprime to 6, coprimality still holds, so proving nonsquareness of these
+primitive parts is a focused next goal. Bumby's theorem alone does not
+prove it. The target-5 case remains open in general.
+
+Run `python review_small_target_audit132.py`; see
+`SMALL_TARGET_AUDIT_RESPONSE.md` and `small_target_audit_replay132.json`
+for reproduction and limitations. Both supplied packets are preserved
+with manifests, including the corrected sigma_2 export. This remains
+model review and computational cross-verification, not formal or human
+peer review. The general classification and #132 remain unresolved.

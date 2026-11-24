@@ -123,3 +123,17 @@ especially the quadratic-extension square-class test for
 Delta=2+c_i^2. The concentration is proved only for the finite selected
 range; generic pairs at arbitrary orders have not been eliminated.
 The all-order classification and general planar Erdős problem remain open.
+
+## Subsequent corrected packet and small-target audit
+
+The user later supplied an updated export with the 95/82 grouping fixed
+in code, documentation, and the combined-filter transcript. It is preserved
+separately under `audits/claude_sigma2_updated_20261124/`; the original
+source above is unchanged. The 177-pair selection is the same.
+
+`SMALL_TARGET_AUDIT_RESPONSE.md` records the subsequent dedicated review
+of the smaller-field descent and prime-source target-3 theorem. Its
+independent code recomputes the 177 indices and norms from scratch.
+The local replay agrees. The finite smaller-field exclusions are second
+certificates for pairs already rejected by the earlier sigma_2 sweep;
+the prime-source argument supplies an unbounded exclusion.

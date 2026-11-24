@@ -1,0 +1,46 @@
+{
+  "source_archive": "C:\\Users\\Michael\\Desktop\\small_target_audit_for_codex.tar.gz",
+  "archive_sha256": "2fd0d61a77e5e74664b146c28d68e67c65b0c8a81c86a37631bb80d62517c672",
+  "files": [
+    {
+      "path": "small_target_audit_for_codex/AUDIT_SMALL_TARGET.md",
+      "bytes": 9041,
+      "sha256": "2bbdb9b3115dce2f4c5a066321916ca12878df73c65f09193bcd9ad172c1fa7e"
+    },
+    {
+      "path": "small_target_audit_for_codex/sigma2_audit.py",
+      "bytes": 5528,
+      "sha256": "ae0c812568ed34e8caafa8f33a1559c97483b21a18de7ebd8018b57f414de504"
+    },
+    {
+      "path": "small_target_audit_for_codex/small_target_audit.py",
+      "bytes": 6635,
+      "sha256": "3f6a52bb42122636b985f07b5eef0e5e7c126be88b344162541d4ca9b07532aa"
+    },
+    {
+      "path": "small_target_audit_for_codex/small_target_audit_out.txt",
+      "bytes": 626,
+      "sha256": "d83d6853bea03dfd17f548caefbe806b97780a4b66c75d4f32c34a1883d2ff43"
+    },
+    {
+      "path": "small_target_audit_for_codex/README.md",
+      "bytes": 2254,
+      "sha256": "96ddf1904605e2303de7f89827f22aa123bc0555d553fb5676b5b0feb8312857"
+    },
+    {
+      "path": "small_target_audit_for_codex/filter_survivors.py",
+      "bytes": 1811,
+      "sha256": "ae320fa92c8b6fbdb6a20ca114081710e871c7936bcf79e79ef834d0cab07c99"
+    },
+    {
+      "path": "small_target_audit_for_codex/combined_filter.py",
+      "bytes": 2036,
+      "sha256": "512c06b5139766b5652c1fa46dd38b0de072b8fa53d3a1d5357e1cdd1e6f2f9a"
+    },
+    {
+      "path": "small_target_audit_for_codex/exactcheck.py",
+      "bytes": 2630,
+      "sha256": "0c80521f6ecdcf55bfa7b0f86270d437ee302bb7bc3b40ea6db36d0533716312"
+    }
+  ]
+}

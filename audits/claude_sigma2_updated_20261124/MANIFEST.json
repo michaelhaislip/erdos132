@@ -1,0 +1,76 @@
+{
+  "source_archive": "C:\\Users\\Michael\\Desktop\\sigma2_audit_for_codex.tar.gz",
+  "archive_sha256": "5e2fe55d4193a6e1f5dc03e5b4ee399aed05c77b2e42c33245879c243392ea21",
+  "files": [
+    {
+      "path": "sigma2_audit_for_codex/fixed_sigma.py",
+      "bytes": 1265,
+      "sha256": "0683381cfcb6c00a84cf6a8d8698343d11ee80a734900dc0b9394a16d57c9b8d"
+    },
+    {
+      "path": "sigma2_audit_for_codex/filter_survivors_out.txt",
+      "bytes": 549,
+      "sha256": "8260a94c8364eeb31da6b2dcb445d1a6e75b59a07d21d5866b527b138aad19cc"
+    },
+    {
+      "path": "sigma2_audit_for_codex/sigma2_audit.py",
+      "bytes": 5528,
+      "sha256": "ae0c812568ed34e8caafa8f33a1559c97483b21a18de7ebd8018b57f414de504"
+    },
+    {
+      "path": "sigma2_audit_for_codex/sigma2_sweep.jsonl",
+      "bytes": 11173,
+      "sha256": "1a6181caebc28f536dbd822be6cac6ca78ca2363741a51d862de639cdb7ceed2"
+    },
+    {
+      "path": "sigma2_audit_for_codex/AUDIT_SIGMA2.md",
+      "bytes": 9832,
+      "sha256": "2a2de30549f420a14b8e60a6534e261c9934337759ecbd23196a8a1b6db6417b"
+    },
+    {
+      "path": "sigma2_audit_for_codex/README.md",
+      "bytes": 2868,
+      "sha256": "03a7e9a812db05b3d730990721a5e449543bd168bc9eca099fb5f14315862073"
+    },
+    {
+      "path": "sigma2_audit_for_codex/prime_hypothesis_out.txt",
+      "bytes": 197,
+      "sha256": "6a984fcffcd537693c5ca6c2182e1221a72bf99ccafd35b7816e6417b66359e1"
+    },
+    {
+      "path": "sigma2_audit_for_codex/filter_survivors.py",
+      "bytes": 1811,
+      "sha256": "ae320fa92c8b6fbdb6a20ca114081710e871c7936bcf79e79ef834d0cab07c99"
+    },
+    {
+      "path": "sigma2_audit_for_codex/combined_filter.py",
+      "bytes": 2036,
+      "sha256": "512c06b5139766b5652c1fa46dd38b0de072b8fa53d3a1d5357e1cdd1e6f2f9a"
+    },
+    {
+      "path": "sigma2_audit_for_codex/sieve.py",
+      "bytes": 4861,
+      "sha256": "29e17551d6826266ce984dbc25b1c8c0f9ec262d5b8cb36c74dd811516868163"
+    },
+    {
+      "path": "sigma2_audit_for_codex/prime_hypothesis.py",
+      "bytes": 479,
+      "sha256": "022c720d33dc16a9ae7b654ac1e93db471e0b0592e068ef693b98e11610e014e"
+    },
+    {
+      "path": "sigma2_audit_for_codex/galois_sieve.py",
+      "bytes": 3334,
+      "sha256": "ba41105fa6a22455e6f869840073a9f2dd4cf184c88a247963e63888123b2c85"
+    },
+    {
+      "path": "sigma2_audit_for_codex/fixed_sigma2_7_301_out.txt",
+      "bytes": 74,
+      "sha256": "24db8d085c643a67be6f98e91cccc1fce76439f0dcf2024a6041304038d88e7b"
+    },
+    {
+      "path": "sigma2_audit_for_codex/combined_filter_out.txt",
+      "bytes": 853,
+      "sha256": "129933da9117d2fbc4a9dd2e8defc310fbce9d2ed9525708c0899d45d8a46b94"
+    }
+  ]
+}

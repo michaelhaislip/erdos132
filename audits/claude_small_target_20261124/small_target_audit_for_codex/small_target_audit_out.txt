@@ -1,0 +1,6 @@
+1. Pell/norm: N(C^2+8) = U_p for all 166 primes 5..997 (4 split primes each), exactly for primes 5..113; every U_p odd, prime to 3, nonsquare.
+2. 177 rows: index 2, N_E > 0, rejected after removing 3, and matching the JSON: True
+   target orders: {3: 95, 5: 82} | source orders of target-3 rows: {5: 2, 7: 3, 11: 5, 13: 6, 17: 8, 19: 9, 23: 11, 25: 10, 29: 14, 31: 15, 35: 12}
+   rows covered by the prime-source theorem: 73
+3. prod_(d|e) U_d^mu(e/d) equals the JSON N_E for all 11 target-3 source orders: True; nonsquare for sample e coprime to 6 up to 245: True
+4. repo selection == auditor residual list: True (177 vs 177)

@@ -188,4 +188,6 @@ This gives a stronger necessary norm filter for actual cyclotomic
 admissibility, as opposed to the sigma_2-only condition in K_d. It rejects
 all 177 selected finite residuals and, using a classical Pell-equation
 theorem, excludes target order 3 with prime source order at all ambient
-orders. These new arguments are outside the audit's scope.
+orders. These arguments are outside that original audit's scope; the
+subsequent dedicated review and local replay are recorded in
+`SMALL_TARGET_AUDIT_RESPONSE.md`.

@@ -98,11 +98,12 @@ replay, exact residual-degree checks, and corrections to two audit claims.
 This is model review, not formal or human peer review.
 
 Scope update: `SMALL_TARGET_NOTES.md` and the smaller-field norm/Pell
-argument were developed after the dedicated sigma_2 audit. Neither the
-unbounded prime-source target-order-3 exclusion nor the new 177-pair
-descent check is covered by that favorable review. The written proof uses
-Bumby's published theorem; the local script checks supporting identities
-and finite cases, not that theorem or the general field-theoretic argument.
+argument were developed after the dedicated sigma_2 audit. Claude then
+supplied a separate audit of revision ba43b71, finding no mathematical
+error. `SMALL_TARGET_AUDIT_RESPONSE.md` records that review and our local
+replay of its independent arithmetic. Bumby's theorem is used as published;
+neither the script nor model review constitutes formal verification or
+human peer review. The finite norm test rechecks existing exclusions.
 
 Expanded-packet update: `CLAUDE_AXIS_REVIEW.md` reviews the subsequently
 supplied research log, short prime valuation proof, conditional family
